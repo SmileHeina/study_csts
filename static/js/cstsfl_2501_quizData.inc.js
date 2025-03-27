@@ -245,10 +245,10 @@ var cstsfl_2501_quizData = [
     "question": "다음은 무엇에 대한 내용인가?[FL-2501-21.jpg]",
     "explanation": "",
     "options": [
-           {"value": "",  "right": false}, 
-           {"value": "",  "right": false},
-           {"value": "",  "right": true}, 
-           {"value": "",  "right": false}
+           {"value": "인스펙션(Inspection)",  "right": false}, 
+           {"value": "워크쓰루(Walk-through)",  "right": false},
+           {"value": "기술 리뷰(Technical review)",  "right": true}, 
+           {"value": "감사(Audit)",  "right": false}
     ],
     "correct": 2
 },
@@ -293,10 +293,10 @@ var cstsfl_2501_quizData = [
     "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 달성하기 위해 필요한 테스트 케이스의 최소 개수는 몇 개인가?[FL-2501-25.jpg]",
     "explanation": "",
     "options": [
-           {"value": "1",  "right": false}, 
-           {"value": "2",  "right": false},
-           {"value": "3",  "right": true}, 
-           {"value": "4",  "right": false}
+           {"value": "1개",  "right": false}, 
+           {"value": "2개",  "right": false},
+           {"value": "3개",  "right": true}, 
+           {"value": "4개",  "right": false}
     ],
     "correct": 2
 },
@@ -365,10 +365,10 @@ var cstsfl_2501_quizData = [
     "question": "다음 보기를 읽고 페어와이즈 조합 테스트 기법으로 테스트 케이스를 설계한 것이다. 빈칸 (가)와 (나)에 들어가는 테스트 케이스로 올바른 것은?[FL-2501-31.jpg]",
     "explanation": "",
     "options": [
-           {"value": "(가) (환자, 전화)       (나) (치과, 온라인)",  "right": false}, 
-           {"value": "(가) (의사, 전화)       (나) (정형외과, 현장)",  "right": true},
-           {"value": "(가) (의사, 전화)       (나) (소아과, 전화)",  "right": false}, 
-           {"value": "(가) (환자, 현장)       (나) (정형외과, 현장)",  "right": false}
+           {"value": "(가) (환자, 전화) / (나) (치과, 온라인)",  "right": false}, 
+           {"value": "(가) (의사, 전화) / (나) (정형외과, 현장)",  "right": true},
+           {"value": "(가) (의사, 전화) / (나) (소아과, 전화)",  "right": false}, 
+           {"value": "(가) (환자, 현장) / (나) (정형외과, 현장)",  "right": false}
     ],
     "correct": 1
 },
