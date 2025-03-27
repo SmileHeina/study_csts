@@ -90,25 +90,25 @@
         <h1></h1>
     </div>
     <div class="nav-tabs">
-      <a href="file:///D:/CHE/test_al/CSTS_AL.html" 
+      <a href="/csts_fl_2405.html" 
            class="active">
            CSTS FL 2024-05 기출 문제
         </a>
-        <a href="file:///D:/CHE/test_al/CSTS_AL" 
+        <a href="/csts_fl_2404.html" 
            >
-           CSTS AL 기출 문제
+           CSTS FL 2024-04 기출 문제
         </a>
-        <a href="file:///D:/CHE/test_al/ai900_learn" 
+        <a href="/csts_fl_2403.html" 
            >
-           개념요약1
+           CSTS FL 2024-03 기출 문제
         </a>
-        <a href="/mynote" 
+        <a href="/csts_fl_2405.html" 
            >
-           개념요약2
+           CSTS FL 2024-02 기출 문제
         </a>
-        <a href="/keynote" 
+        <a href="/csts_fl_2405.html" 
            >
-           속성 문답정리
+           CSTS FL 2024-01 기출 문제
         </a>
         
     </div>
@@ -450,7 +450,7 @@
   <div id="score"></div>
 </div>
 
-<script src="file:///D:/CHE/test_al/static/js/cstsfl_2405_quizData.inc.js"></script>
+<script src="/static/js/cstsfl_2405_quizData.inc.js"></script>
 <script>
   let QUESTIONS_PER_PAGE = 10;
   let currentPage = 0;
@@ -497,7 +497,7 @@
   function replaceImageTags(text) {
     return text.replace(
       /\[([^\]]+\.(?:jpg|png|jpeg|gif))\]/gi,
-      '<img src="file:///D:/CHE/test_al/img/$1" alt="$1" onclick=\'showFullSizeImage("file:///D:/CHE/test_al/img/$1")\' />'
+      '<img src="/img/$1" alt="$1" onclick=\'showFullSizeImage("/img/$1")\' />'
     );
   }
 
@@ -516,9 +516,9 @@
         if (imageRegex.test(imagePart)) {
                 return `
                     <div style="display: inline-block; text-align: center; margin: 10px;">
-                        <img src="file:///D:/CHE/test_al/img/${imagePart}" alt="${imagePart}" 
+                        <img src="/img/${imagePart}" alt="${imagePart}" 
                              style="cursor:pointer; max-width:100%; height:auto;"
-                             onclick='showFullSizeImage("file:///D:/CHE/test_al/img/${imagePart}")' />
+                             onclick='showFullSizeImage("/img/${imagePart}")' />
                     </div>
                     <div style="margin-top: 5px;">${captionPart}</div>
                 `;
