@@ -2,7 +2,7 @@
 var cstsfl_2405_quizData = [
 { 
     "type": "radio",
-    "question": "1. 테스팅과 디버깅에 대한 설명으로 올바르지 않은 것은 무엇인가?",
+    "question": "테스팅과 디버깅에 대한 설명으로 올바르지 않은 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "테스팅의 목적은 알려지지 않은 결함을 발견하는 것이다.",  "right": false}, 
@@ -14,7 +14,7 @@ var cstsfl_2405_quizData = [
 }, 
 {
     "type": "radio",
-    "question": "2. 테스트 케이스를 체계적으로 관리해야 하는 목적으로 올바른 것은?",
+    "question": "테스트 케이스를 체계적으로 관리해야 하는 목적으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트 케이스를 재사용하여 테스트하기 위해서",  "right": true}, 
@@ -26,7 +26,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "3. 다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?[FL-2405-03.jpg]",
+    "question": "다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?[FL-2405-03.jpg]",
     "explanation": "",
     "options": [
            {"value": "(가) 인수 테스트   (나) 단위 테스트  (다) 통합 테스트   (라) 시스템 테스트",  "right": true}, 
@@ -38,7 +38,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "4. 피처에 대한 설명으로 올바르지 않은 것은 무엇인가?",
+    "question": "피처에 대한 설명으로 올바르지 않은 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "피처는 테스트 대상의 특성 중에서 테스트하고자 하는 측면 또는 관점을 말한다.",  "right": false}, 
@@ -50,7 +50,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "5. 다음 중 정적 테스트에 대한 설명으로 가장 올바른 것은 무엇인가?",
+    "question": "다음 중 정적 테스트에 대한 설명으로 가장 올바른 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "정적 테스트는 테스트 대상을 실행하지 않고 테스트를 수행하는 방식이며, 정적 분석 도구를 통해서만 수행할 수 있다.",  "right": false}, 
@@ -62,7 +62,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "6. 다음에서 설명하고 있는 용어는 무엇인가?[FL-2405-06.jpg]",
+    "question": "다음에서 설명하고 있는 용어는 무엇인가?[FL-2405-06.jpg]",
     "explanation": "",
     "options": [
            {"value": "테스트 스텁",  "right": false}, 
@@ -74,7 +74,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "7. 다음은 모의객체의 분류에 대한 설명으로 맞는 것은?",
+    "question": "다음은 모의객체의 분류에 대한 설명으로 맞는 것은?",
     "explanation": "",
     "options": [
            {"value": " 더미(Dummy)는 테스트 할 때 해당 객체의 기능이 필요한 경우에 사용되며, 더미 객체의 메소드가 호출되면 정상 동작한다.",  "right": false}, 
@@ -86,7 +86,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "8. 통합 테스트에 대한 설명으로 올바른 것은?",
+    "question": "통합 테스트에 대한 설명으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "상향식 통합 테스트는 하위 컴포넌트를 충분하게 테스트 할 수 있다.",  "right": true}, 
@@ -98,7 +98,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "9. 통합 테스트 단계에 수행하는 테스트 방법으로 올바르지 않은 것은?",
+    "question": "통합 테스트 단계에 수행하는 테스트 방법으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "상향식 테스트",  "right": false}, 
@@ -110,7 +110,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "10. 소프트웨어 개발 단계별 테스트에 대한 설명으로 올바른 것은?",
+    "question": "소프트웨어 개발 단계별 테스트에 대한 설명으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "단위 테스트: 모듈을 통합하는 과정에 사용되는 인터페이스를 대상으로 상호 작용이 올바르게 이루어지는지 검증하는 테스트",  "right": false}, 
@@ -122,7 +122,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "11. 시스템의 성능 테스트를 수행할 때 자원의 최대 사용치를 모니터링하기 위해 필요한 요소가 아닌 것은?",
+    "question": "시스템의 성능 테스트를 수행할 때 자원의 최대 사용치를 모니터링하기 위해 필요한 요소가 아닌 것은?",
     "explanation": "",
     "options": [
            {"value": "CPU 사용률",  "right": false}, 
@@ -134,7 +134,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "12. 호환성이 특히 중요한 산업 분야가 아닌 것은?",
+    "question": "호환성이 특히 중요한 산업 분야가 아닌 것은?",
     "explanation": "",
     "options": [
            {"value": "국방 정보 시스템",  "right": false}, 
@@ -146,7 +146,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "13. 다음 중 신뢰성 테스트에 관한 설명 중 올바르지 않은 것은 무엇인가?",
+    "question": "다음 중 신뢰성 테스트에 관한 설명 중 올바르지 않은 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "신뢰성 테스트는 일반적으로 통계적인 테스트 방법을 사용하여 측정한다.",  "right": false}, 
@@ -158,7 +158,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "14. 침입 테스트에 대한 설명으로 올바르지 않은 것은 ?",
+    "question": "침입 테스트에 대한 설명으로 올바르지 않은 것은 ?",
     "explanation": "",
     "options": [
            {"value": "침입 테스트 통과로 시스템의 보안성이 확보되었다고 확신할 수 있다.",  "right": true}, 
@@ -170,7 +170,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "15. 다음은 프로그램을 얼마나 손쉽게 테스트할 수 있는지를 나타내는 테스트 용이성을 나타내는 특성들과 그에 대한 설명들이다. 특성과 설명이 올바르게 연결된 것은?[FL-2405-15.jpg]",
+    "question": "다음은 프로그램을 얼마나 손쉽게 테스트할 수 있는지를 나타내는 테스트 용이성을 나타내는 특성들과 그에 대한 설명들이다. 특성과 설명이 올바르게 연결된 것은?[FL-2405-15.jpg]",
     "explanation": "",
     "options": [
            {"value": "(가)―Ⓓ, (나)―Ⓐ, (다)―Ⓒ, (라)―Ⓑ",  "right": true}, 
@@ -182,7 +182,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "16. 다음 중 테스트 수행 방법에 대한 설명으로 올바르지 않은 것은?",
+    "question": "다음 중 테스트 수행 방법에 대한 설명으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "회귀(Regression) 테스트 전략으로는 Retest-all 전략, 선택적 회귀 테스트 전략, 테스트 최소화 전략, 테스트 우선 순위화 전략이 있다.",  "right": false}, 
@@ -194,7 +194,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "17. 테스트와 관련된 다음의 설명 중 올바른 것은?",
+    "question": "테스트와 관련된 다음의 설명 중 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "성숙도가 높은 테스트는 결함이 발견된 소프트웨어 모듈을 확인하고, 이를 해결하기 위해 소스 코드를 어떻게 수정해야 하는지 알려준다.",  "right": false}, 
@@ -206,7 +206,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "18. 다음 소프트웨어 생명 주기 모형 중 진화적 개발 모델에 대한 설명으로 가장 올바른 것은?",
+    "question": "다음 소프트웨어 생명 주기 모형 중 진화적 개발 모델에 대한 설명으로 가장 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "요구사항이 프로젝트 시작부터 명확하게 정의된 프로젝트에 적합한 개발 모델이다.",  "right": false}, 
@@ -218,7 +218,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "19. 탐색적 테스트가 가장 적합한 소프트웨어 생명 주기 모델은 무엇인가?",
+    "question": "탐색적 테스트가 가장 적합한 소프트웨어 생명 주기 모델은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "애자일 모델",  "right": true}, 
@@ -230,7 +230,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "20. 다음 설명 중에서 모델 기반 테스트와 거리가 가장 먼 것은?",
+    "question": "다음 설명 중에서 모델 기반 테스트와 거리가 가장 먼 것은?",
     "explanation": "",
     "options": [
            {"value": "개발 단계 산출물에 존재할 수 있는 결함을 검출할 수 있다는 이점도 있다.",  "right": false}, 
@@ -242,7 +242,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "21. 나머지 셋과 성격이 다른 테스트는 무엇인가?",
+    "question": "나머지 셋과 성격이 다른 테스트는 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "조합테스트",  "right": false}, 
@@ -254,7 +254,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "22. 인스펙션 주재자가 수행해야 하는 역할로 올바른 것은?",
+    "question": "인스펙션 주재자가 수행해야 하는 역할로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "인스펙션 참가자들을 선정하고 인스펙션을 계획한다.",  "right": false}, 
@@ -266,7 +266,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "23. 워크쓰루(Walkthroughs)를 수행하는 목적으로 올바르지 않은 것은?",
+    "question": "워크쓰루(Walkthroughs)를 수행하는 목적으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "결함 검출",  "right": false}, 
@@ -278,7 +278,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "24. 외부 인원에 의해 수행되는 리뷰 유형은 무엇인가?",
+    "question": "외부 인원에 의해 수행되는 리뷰 유형은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "감사",  "right": true}, 
@@ -290,7 +290,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "25. <보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?[FL-2405-25.jpg]",
+    "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?[FL-2405-25.jpg]",
     "explanation": "",
     "options": [
            {"value": "초기화 하지 않은 변수의 사용",  "right": true}, 
@@ -302,7 +302,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "26. 순환 복잡도를 측정하는 식으로 올바른 것은?",
+    "question": "순환 복잡도를 측정하는 식으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "닫힌 영역의 개수 + 1",  "right": true}, 
@@ -314,7 +314,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "27. 모듈 안의 동작을 자세히 관찰하면서 프로그램 원시 코드의 논리적인 구조를 검사하도록 테스트 케이스를 설계하는 방법은?",
+    "question": "모듈 안의 동작을 자세히 관찰하면서 프로그램 원시 코드의 논리적인 구조를 검사하도록 테스트 케이스를 설계하는 방법은?",
     "explanation": "",
     "options": [
            {"value": "구조 기반 테스트",  "right": true}, 
@@ -326,7 +326,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "28. <보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 만족시키는 테스트 케이스는?[FL-2405-28.jpg]",
+    "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 만족시키는 테스트 케이스는?[FL-2405-28.jpg]",
     "explanation": "",
     "options": [
            {"value": "x = 1, y = 0, z = 1",  "right": false}, 
@@ -338,7 +338,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "29. <보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?[FL-2405-29.jpg]",
+    "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?[FL-2405-29.jpg]",
     "explanation": "",
     "options": [
            {"value": "2개",  "right": false}, 
@@ -350,7 +350,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "30. 커버리지 간의 포용 관계를 도식화한 것 중 올바른 것은?",
+    "question": "커버리지 간의 포용 관계를 도식화한 것 중 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "결정 커버리지 ⊇ 조건 커버리지 ⊇ 문장 커버리지지",  "right": false}, 
@@ -362,7 +362,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "31. 다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?[FL-2405-31.jpg]",
+    "question": "다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?[FL-2405-31.jpg]",
     "explanation": "",
     "options": [
            {"value": "2",  "right": false}, 
@@ -374,7 +374,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "32. 명세기반 테스트의 이점에 대한 설명으로 올바르지 않은 것은?",
+    "question": "명세기반 테스트의 이점에 대한 설명으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "명세기반 테스트는 어떤 테스트 레벨에서든 적용할 수 있다.",  "right": false}, 
@@ -386,7 +386,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "33. 다음 중 입력 인자와 클래스의 개수가 <보기>와 같을 때, 테스트 케이스가 가장 많이 생성되는 조합 테스트 방법은 무엇인가?[FL-2405-33.jpg]",
+    "question": "다음 중 입력 인자와 클래스의 개수가 <보기>와 같을 때, 테스트 케이스가 가장 많이 생성되는 조합 테스트 방법은 무엇인가?[FL-2405-33.jpg]",
     "explanation": "",
     "options": [
            {"value": "Each choice 테스트",  "right": false}, 
@@ -398,7 +398,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "34. 결정표 테스트에 대한 설명으로 올바른 것은?",
+    "question": "결정표 테스트에 대한 설명으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "명세서를 분석하여 조건과 행위를 식별한다.",  "right": true}, 
@@ -410,7 +410,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "35. 시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?[FL-2405-35.jpg]",
+    "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?[FL-2405-35.jpg]",
     "explanation": "",
     "options": [
            {"value": "(가) → (나) → (다) → (라)",  "right": false}, 
@@ -422,7 +422,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "36. 다음 중 경험기반 테스트의 특징으로 올바르지 않은 것은?",
+    "question": "다음 중 경험기반 테스트의 특징으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트 시간이 제한되는 경우에 사용한다.",  "right": false}, 
@@ -434,7 +434,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "37. 테스트 프로세스의 필요성으로 거리가 먼 것은 무엇인가?",
+    "question": "테스트 프로세스의 필요성으로 거리가 먼 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "소프트웨어 품질 목표 달성에 프로세스가 중요한 역할을 하기 때문에",  "right": false}, 
@@ -446,7 +446,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "38. 테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?[FL-2405-38.jpg]",
+    "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?[FL-2405-38.jpg]",
     "explanation": "",
     "options": [
            {"value": "(라) - (다) - (나) - (마)",  "right": false}, 
@@ -458,7 +458,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "39. 테스트 계획을 구성하는 4가지 상위 수준의 항목으로 보기에 가장 거리가 먼 것은 무엇인가?",
+    "question": "테스트 계획을 구성하는 4가지 상위 수준의 항목으로 보기에 가장 거리가 먼 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "위험분석",  "right": false}, 
@@ -470,7 +470,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "40. 테스트 계획을 수립하는 과정에서 “테스터의 기술 및 경험 부족”이라는 위험이 높은 것으로 파악되었다. 이에 따른 완화 유형의 조치 계획으로 가장 적절하지 않은 것은?",
+    "question": "테스트 계획을 수립하는 과정에서 “테스터의 기술 및 경험 부족”이라는 위험이 높은 것으로 파악되었다. 이에 따른 완화 유형의 조치 계획으로 가장 적절하지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트 인력에 대한 교육훈련 계획을 테스트 계획에 포함",  "right": false}, 
@@ -482,7 +482,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "41. 테스트 계획에서 전략을 수립할 때 고려사항으로 올바르지 않은 것은?",
+    "question": "테스트 계획에서 전략을 수립할 때 고려사항으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트 중단 및 재시작 조건",  "right": false}, 
@@ -494,7 +494,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "42. 다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?[FL-2405-42.jpg]",
+    "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?[FL-2405-42.jpg]",
     "explanation": "",
     "options": [
            {"value": "(가)",  "right": false},
@@ -506,7 +506,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "43. 다음의 보기는 테스트 활동의 수행할 역할별로 인력을 정의한 예시이다. 역할이 틀리게 지정된 것은 무엇인가?[FL-2405-43.jpg]",
+    "question": "다음의 보기는 테스트 활동의 수행할 역할별로 인력을 정의한 예시이다. 역할이 틀리게 지정된 것은 무엇인가?[FL-2405-43.jpg]",
     "explanation": "",
     "options": [
            {"value": "(가) : 테스트 관리자",  "right": false}, 
@@ -518,7 +518,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "44. 피처 집합에 대한 설명으로 올바른 것은?",
+    "question": "피처 집합에 대한 설명으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "상호의존적으로 확인이 필요한 피처들이더라도 서로 다른 피처 집합으로 나눌 수 있다.",  "right": false}, 
@@ -530,7 +530,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "45. 테스트를 계획한 이후 테스트 케이스를 개발할 때 불명확한 테스트 케이스 개발로 이어지는 주된 원인은 무엇인가?",
+    "question": "테스트를 계획한 이후 테스트 케이스를 개발할 때 불명확한 테스트 케이스 개발로 이어지는 주된 원인은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "테스트 대상에 대한 명확한 정리",  "right": false}, 
@@ -542,7 +542,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "46. 테스트 설계 시 테스트 절차 명세에 작성되는 항목이 아닌 것은?",
+    "question": "테스트 설계 시 테스트 절차 명세에 작성되는 항목이 아닌 것은?",
     "explanation": "",
     "options": [
            {"value": "종료 작업",  "right": false}, 
@@ -554,7 +554,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "47. 다음 중 테스트 환경에 대한 요구사항 정의와 가장 거리가 먼 것은 무엇인가?",
+    "question": "다음 중 테스트 환경에 대한 요구사항 정의와 가장 거리가 먼 것은 무엇인가?",
     "explanation": "",
     "options": [
            {"value": "테스트 대상 요소가 실행될 수 있는 하드웨어 및 시스템 소프트웨어 환경이 정의되어야 한다.",  "right": false}, 
@@ -566,7 +566,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "48. 다음 중 테스트 실행에 대한 설명으로 올바른 것은?",
+    "question": "다음 중 테스트 실행에 대한 설명으로 올바른 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트를 실행하는 주체는 테스트 단계(레벨)에 따라서 달라질 수 있다.",  "right": true}, 
@@ -578,7 +578,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "49. 테스트 현황 보고서를 통해 파악할 수 있는 내용이 아닌 것은?",
+    "question": "테스트 현황 보고서를 통해 파악할 수 있는 내용이 아닌 것은?",
     "explanation": "",
     "options": [
            {"value": "테스트 활동의 계획 대비 진척도",  "right": false}, 
@@ -590,7 +590,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "50. 다음 중 테스트 종료 조건에 대한 기준(Exit Criteria)으로 올바르지 않은 것은?",
+    "question": "다음 중 테스트 종료 조건에 대한 기준(Exit Criteria)으로 올바르지 않은 것은?",
     "explanation": "",
     "options": [
            {"value": "전체 요구 사항 중 테스트를 통해 확인된 요구 사항 비율",  "right": false}, 
@@ -602,7 +602,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "51. 명세 기반 테스트와 구조 기반 테스트 방법은 대표적인 정적 테스트 방법이다.",
+    "question": "명세 기반 테스트와 구조 기반 테스트 방법은 대표적인 정적 테스트 방법이다.",
     "explanation": "",
     "options": [
            {"value": "○",  "right": false}, 
@@ -612,7 +612,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "52. 소프트웨어 생명주기 모델 중 폭포수 모델은 사용자의 요구사항이 개발자에게 익숙한 경우나 요구사항 변경이 개발도중에 빈번하게 이루어 질 경우에 적합한 개발 모형이다.",
+    "question": "소프트웨어 생명주기 모델 중 폭포수 모델은 사용자의 요구사항이 개발자에게 익숙한 경우나 요구사항 변경이 개발도중에 빈번하게 이루어 질 경우에 적합한 개발 모형이다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -622,7 +622,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "53. 기술 리뷰(Technical review)에서는 체크리스트를 필수적으로 사용하여야 한다.",
+    "question": "기술 리뷰(Technical review)에서는 체크리스트를 필수적으로 사용하여야 한다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -632,7 +632,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "54. 명세기반 테스트는 소프트웨어를 실행하면서 테스트하고, 구조기반 테스트는 소프트웨어를 실행하지 않고 테스트를 수행한다.",
+    "question": "명세기반 테스트는 소프트웨어를 실행하면서 테스트하고, 구조기반 테스트는 소프트웨어를 실행하지 않고 테스트를 수행한다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -642,7 +642,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "55. 조건/분기 커버리지는 각 개별 조건식 및 전체 조건식의 결과 값이 참(True)과 거짓(False)을 적어도 한 번 이상 실행시키는 것을 기준으로 하는 테스트 방법이다.",
+    "question": "조건/분기 커버리지는 각 개별 조건식 및 전체 조건식의 결과 값이 참(True)과 거짓(False)을 적어도 한 번 이상 실행시키는 것을 기준으로 하는 테스트 방법이다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": true}, 
@@ -652,7 +652,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "56. 명세 기반 테스트 기법 중에서 경곗값 분석은 동등분할 테스트보다 테스트 강도가 높다.",
+    "question": "명세 기반 테스트 기법 중에서 경곗값 분석은 동등분할 테스트보다 테스트 강도가 높다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": true}, 
@@ -662,7 +662,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "57. 테스트 프로세스는 개발 프로세스가 종료된 후에 시작되며, 한번 정립된 프로세스는 변경하지 않는 것이 효율적이다.",
+    "question": "테스트 프로세스는 개발 프로세스가 종료된 후에 시작되며, 한번 정립된 프로세스는 변경하지 않는 것이 효율적이다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -672,7 +672,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "58. 테스트 계획 수립 시에는 테스트 절차 실행 시 테스트 대상에 입력되는 테스트 데이터만 식별한다.",
+    "question": "테스트 계획 수립 시에는 테스트 절차 실행 시 테스트 대상에 입력되는 테스트 데이터만 식별한다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -682,7 +682,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "59. 테스트 설계 및 구현 단계에서 피처 집합을 구성하는 하나의 세부 피처마다 테스트 케이스는 하나씩만 개발해야한다.",
+    "question": "테스트 설계 및 구현 단계에서 피처 집합을 구성하는 하나의 세부 피처마다 테스트 케이스는 하나씩만 개발해야한다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -692,7 +692,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "60. 결함 나이(defect age)는 수정(resolved)된 이후 검증(verified)이 될 때까지의 시간을 말한다.",
+    "question": "결함 나이(defect age)는 수정(resolved)된 이후 검증(verified)이 될 때까지의 시간을 말한다.",
     "explanation": "",
     "options": [
         {"value": "○",  "right": false}, 
@@ -702,7 +702,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "61. 규정된 조건에서 규정된 기간 동안 오동작 없이 의도된 기능을 수행하는 소프트웨어의 품질 특성을 무엇이라 하는가?",
+    "question": "규정된 조건에서 규정된 기간 동안 오동작 없이 의도된 기능을 수행하는 소프트웨어의 품질 특성을 무엇이라 하는가?",
     "explanation": "신뢰성, reliability",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -711,7 +711,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "62. 다음은 무엇에 대한 설명인지 기재하시오.[FL-2405-62.jpg]",
+    "question": "다음은 무엇에 대한 설명인지 기재하시오.[FL-2405-62.jpg]",
     "explanation": "인수 테스트 사용자 인수 테스트",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -720,7 +720,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "63. 다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?[FL-2405-63.jpg]",
+    "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?[FL-2405-63.jpg]",
     "explanation": "재테스팅(Re-testing)",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -729,7 +729,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "64. <보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?[FL-2405-64.jpg]",
+    "question": "<보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?[FL-2405-64.jpg]",
     "explanation": "5개",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -738,7 +738,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "65. 다음은 구조기반 테스트 커버리지에 대한 설명이다. 어떤 테스트 커버리지에 대한 설명인지 기재하시오.[FL-2405-65.jpg]",
+    "question": "다음은 구조기반 테스트 커버리지에 대한 설명이다. 어떤 테스트 커버리지에 대한 설명인지 기재하시오.[FL-2405-65.jpg]",
     "explanation": "결정/조건, 조건/분기 및 / 기준 좌우가 바뀌어도 정답",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -747,7 +747,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "66. <보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.[FL-2405-66.jpg]",
+    "question": "<보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.[FL-2405-66.jpg]",
     "explanation": "나 → 라 → 가 → 다",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -756,7 +756,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "67. <보기>의 명세를 기반으로 동등분할과 경계값 분석을 적용하여 테스트 케이스를 설계하였다. 이때 설계된 테스트 케이스 수는 각각 몇 개 인가? (단. 경계값 분석은 2-value를 적용한다.)[FL-2405-67.jpg]",
+    "question": "<보기>의 명세를 기반으로 동등분할과 경계값 분석을 적용하여 테스트 케이스를 설계하였다. 이때 설계된 테스트 케이스 수는 각각 몇 개 인가? (단. 경계값 분석은 2-value를 적용한다.)[FL-2405-67.jpg]",
     "explanation": "동등분할: 4개, 경계값 분석: 7개",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -765,7 +765,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "68. 다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?[FL-2405-68.jpg]",
+    "question": "다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?[FL-2405-68.jpg]",
     "explanation": "리그레션 또는 회귀",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -774,7 +774,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "69. 다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?[FL-2405-69.jpg]",
+    "question": "다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?[FL-2405-69.jpg]",
     "explanation": "고립화 또는 Isolation",
     "options": [
         {"value": "정답 확인", "right": true}
@@ -783,7 +783,7 @@ var cstsfl_2405_quizData = [
 },
 {
     "type": "radio",
-    "question": "70. 다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2405-70.jpg]",
+    "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2405-70.jpg]",
     "explanation": "테스트 종료",
     "options": [
             {"value": "정답 확인", "right": true}
