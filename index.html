@@ -5,7 +5,7 @@
     <!-- 모바일 기기에서 화면 너비에 맞춰 스케일링 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
-    <title>AI-900 Part</title>
+    <title>CSTS FL 2025년 1회</title>
     <style>
         body {
             font-family: 'Malgun Gothic', sans-serif;
@@ -90,27 +90,22 @@
         <h1></h1>
     </div>
     <div class="nav-tabs">
-      <a href="csts_fl_2501.html" class="active">
-           CSTS FL 2025년 1회 기출
-        </a>
+      <a href="csts_fl_2501.html"  class="active">
+           CSTS FL 2025년 1회 기출 </a>
         <a href="csts_fl_2405.html" >
-           CSTS FL 2024년 4회 기출
-        </a>
+           CSTS FL 2024년 5회 기출 </a>
+        <a href="csts_fl_2404.html" >
+           CSTS FL 2024년 4회 기출 </a>
         <a href="csts_fl_2403.html" >
-           CSTS FL 2024년 3회 기출
-        </a>
+           CSTS FL 2024년 3회 기출 </a>
         <a href="csts_fl_2402.html" >
-           CSTS FL 2024년 2회 기출
-        </a>
+           CSTS FL 2024년 2회 기출 </a>
         <a href="csts_fl_2401.html" >
-           CSTS FL 2024년 1회 기출
-        </a>
+           CSTS FL 2024년 1회 기출 </a>
         <a href="csts_al_2402.html" >
-           CSTS AL 2024년 2회 기출
-        </a>
+           CSTS AL 2024년 2회 기출 </a>
         <a href="csts_al_2401.html" >
-           CSTS AL 2024년 1회 기출
-        </a>
+           CSTS AL 2024년 1회 기출 </a>
     </div>
     <div class="content">
         
@@ -450,7 +445,7 @@
   <div id="score"></div>
 </div>
 
-<script src="static/js/cstsfl_2405_quizData.inc.js"></script>
+<script src="static/js/cstsfl_2501_quizData.inc.js"></script>
 <script>
   let QUESTIONS_PER_PAGE = 10;
   let currentPage = 0;
@@ -465,8 +460,8 @@
   function jumpToQuestion() {
   const input = document.getElementById('questionNumberInput');
   const questionNum = parseInt(input.value);
-  if (isNaN(questionNum) || questionNum < 1 || questionNum > cstsfl_2405_quizData.length) {
-    alert('올바른 문제 번호를 입력하세요. (1 ~ ' + cstsfl_2405_quizData.length + ')');
+  if (isNaN(questionNum) || questionNum < 1 || questionNum > cstsfl_2501_quizData.length) {
+    alert('올바른 문제 번호를 입력하세요. (1 ~ ' + cstsfl_2501_quizData.length + ')');
     return;
   }
   
@@ -560,8 +555,8 @@
 
   function loadQuestionSet() {
     const startIdx = currentPage * QUESTIONS_PER_PAGE;
-    const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, cstsfl_2405_quizData.length);
-    currentQuestions = cstsfl_2405_quizData.slice(startIdx, endIdx);
+    const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, cstsfl_2501_quizData.length);
+    currentQuestions = cstsfl_2501_quizData.slice(startIdx, endIdx);
     displayQuestions();
     updateCurrentQuestions();
   }
@@ -573,17 +568,17 @@
       prevButton.disabled = (currentPage === 0);
     }
     if (nextButton) {
-      nextButton.disabled = (currentPage === Math.ceil(cstsfl_2405_quizData.length / QUESTIONS_PER_PAGE) - 1);
+      nextButton.disabled = (currentPage === Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE) - 1);
     }
   }
 
   function updateProgress() {
     const progressElement = document.getElementById('progress');
-    const totalPages = Math.ceil(cstsfl_2405_quizData.length / QUESTIONS_PER_PAGE);
+    const totalPages = Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE);
     let progressPercent = ((currentPage + 1) / totalPages) * 100;
     progressElement.style.width = progressPercent + '%';
 
-    const totalQuestions = cstsfl_2405_quizData.length;
+    const totalQuestions = cstsfl_2501_quizData.length;
     const startQuestion = currentPage * QUESTIONS_PER_PAGE + 1;
     const endQuestion = Math.min((currentPage + 1) * QUESTIONS_PER_PAGE, totalQuestions);
 
@@ -823,8 +818,8 @@
 
   function updateCurrentQuestions() {
     const start = currentPage * QUESTIONS_PER_PAGE;
-    const end = Math.min(start + QUESTIONS_PER_PAGE, cstsfl_2405_quizData.length);
-    currentQuestions = cstsfl_2405_quizData.slice(start, end);
+    const end = Math.min(start + QUESTIONS_PER_PAGE, cstsfl_2501_quizData.length);
+    currentQuestions = cstsfl_2501_quizData.slice(start, end);
   }
 
   function resetQuiz() {
@@ -866,7 +861,7 @@
   }
 
   function nextPage() {
-    const maxPage = Math.ceil(cstsfl_2405_quizData.length / QUESTIONS_PER_PAGE) - 1;
+    const maxPage = Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE) - 1;
     if (currentPage < maxPage) {
       currentPage++;
       updateCurrentQuestions();
