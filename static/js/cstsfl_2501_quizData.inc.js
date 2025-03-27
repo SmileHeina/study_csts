@@ -290,27 +290,27 @@ var cstsfl_2501_quizData = [
 },
 {
     "type": "radio",
-    "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 달성하기 위해 필요한 테스트 케이스의 최소 개수는 몇 개인가?",
+    "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 달성하기 위해 필요한 테스트 케이스의 최소 개수는 몇 개인가?[FL-2501-25.jpg]",
     "explanation": "",
     "options": [
-           {"value": "",  "right": false}, 
-           {"value": "",  "right": false},
-           {"value": "",  "right": false}, 
-           {"value": "",  "right": false}
+           {"value": "1",  "right": false}, 
+           {"value": "2",  "right": false},
+           {"value": "3",  "right": true}, 
+           {"value": "4",  "right": false}
     ],
-    "correct": 
+    "correct": 2
 },
 {
     "type": "radio",
-    "question": "",
+    "question": "다음의 제어 흐름도를 이용해 테스트 케이스를 설계하고자 한다. 결정 커버리지 50%를 달성하는 테스트 케이스 세트를 고르시오.",
     "explanation": "",
     "options": [
-           {"value": "",  "right": false}, 
-           {"value": "",  "right": false},
-           {"value": "",  "right": false}, 
-           {"value": "",  "right": false}
+           {"value": "테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 2: A → B → C → E → G → H → J → K / 테스트 케이스 3: A → B → D → K",  "right": false}, 
+           {"value": "테스트 케이스 1: A → B → C → E → F → H → I → K",  "right": true},
+           {"value": "테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 2: A → B → C → E → G → H → J → K",  "right": false}, 
+           {"value": "테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 3: A → B → D → K",  "right": false}
     ],
-    "correct": 
+    "correct": 1
 },
 {
     "type": "radio",
