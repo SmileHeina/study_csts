@@ -782,13 +782,20 @@ var cstsfl_2501_quizData = [
     "correct": 0
 },
 {
-    "type": "radio",
+    "type": "text",
     "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2501-70.jpg]",
     "explanation": "테스트 종료",
-    "options": [
-            {"value": "정답 확인", "right": true}
-        ],
-        "correct": 0
+    "options": [],
+    "correct": "테스트 종료"
 }
+// {
+//     "type": "radio",
+//     "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2501-70.jpg]",
+//     "explanation": "테스트 종료",
+//     "options": [
+//             {"value": "정답 확인", "right": true}
+//         ],
+//         "correct": 0
+// }
 ];
 
