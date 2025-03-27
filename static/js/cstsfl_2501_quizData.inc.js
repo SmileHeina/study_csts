@@ -692,7 +692,7 @@ var cstsfl_2501_quizData = [
 },
 {
     "type": "radio",
-    "question": "결함 생명 주기 중 “Deferred" 상태는 ”Open" 된 결함을 곧바로 수정하지 않고 다음 릴리스에서 해결하기로 연기된 상태를 뜻한다.",
+    "question": "결함 생명 주기 중 'Deferred' 상태는 'Open' 된 결함을 곧바로 수정하지 않고 다음 릴리스에서 해결하기로 연기된 상태를 뜻한다.",
     "explanation": "",
     "options": [
            {"value": "○",  "right": true}, 
