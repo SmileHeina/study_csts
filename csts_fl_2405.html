@@ -497,7 +497,7 @@
   function replaceImageTags(text) {
     return text.replace(
       /\[([^\]]+\.(?:jpg|png|jpeg|gif))\]/gi,
-      '<img src="/img/$1" alt="$1" onclick=\'showFullSizeImage("/img/$1")\' />'
+      '<img src="img/$1" alt="$1" onclick=\'showFullSizeImage("img/$1")\' />'
     );
   }
 
@@ -516,9 +516,9 @@
         if (imageRegex.test(imagePart)) {
                 return `
                     <div style="display: inline-block; text-align: center; margin: 10px;">
-                        <img src="/img/${imagePart}" alt="${imagePart}" 
+                        <img src="img/${imagePart}" alt="${imagePart}" 
                              style="cursor:pointer; max-width:100%; height:auto;"
-                             onclick='showFullSizeImage("/img/${imagePart}")' />
+                             onclick='showFullSizeImage("img/${imagePart}")' />
                     </div>
                     <div style="margin-top: 5px;">${captionPart}</div>
                 `;
@@ -530,8 +530,8 @@
       } else {
         // "<br>"가 없는 단일 항목
         if (imageRegex.test(item)) {
-          return `<img src="D:/CHE/test_al/img/${item}" alt="${item}" style="cursor:pointer;"
-                  onclick='showFullSizeImage("D:/CHE/test_al/img/${item}")' />`;
+          return `<img src="img/${item}" alt="${item}" style="cursor:pointer;"
+                  onclick='showFullSizeImage("img/${item}")' />`;
         } else {
           return replaceImageTags(item);
         }
