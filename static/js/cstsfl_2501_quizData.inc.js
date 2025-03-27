@@ -1,5 +1,5 @@
-//CSTS FL 2405
-var cstsfl_2405_quizData = [
+//CSTS FL 2501
+var cstsfl_2501_quizData = [
 { 
     "type": "radio",
     "question": "1. 테스팅과 디버깅에 대한 설명으로 올바르지 않은 것은 무엇인가?",
