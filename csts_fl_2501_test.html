@@ -638,115 +638,116 @@ function renderQuizInput() {
 }
   
   function displayQuestions() {
+    const questionsContainer = document.getElementById('questions');
+    questionsContainer.innerHTML = '';
+    const startNumber = currentPage * QUESTIONS_PER_PAGE + 1;
+    
+    currentQuestions.forEach((q, index) => {
+    const questionDiv = document.createElement('div');
+    questionDiv.className = 'question';
+    
+    const questionNumber = startNumber + index;
+    // 문제 텍스트 내 이미지 태그 치환
+    const processedQuestion = replaceImageTags(q.question);
+    // 해설 텍스트 내 이미지 태그 치환
+    const processedExplanation = processExplanation(q.explanation);
+    
+    let optionsHTML = generateOptions(q, index);
+    
+    let inputFieldHTML = ''; //20250328 heina
+
+    // 페이지당 1문항일 때 개별 버튼 감추기(선택 사항)
+    let questionButtonsHTML = '';
+    if (QUESTIONS_PER_PAGE !== 1) {
+        questionButtonsHTML = `
+          <div class="question-buttons">
+            <button onclick="checkSingleAnswer(${index})" class="check-button">정답 확인</button>
+            <button onclick="resetSingleQuestion(${index})" class="reset-button">리셋</button>
+          </div>
+        `;
+    }
+
+    // 주관식 문제 처리 : 20250328 heina
+    if (item.type === 'text') {
+        inputFieldHTML = `
+            <input type="text" id="question${index}" placeholder="답을 입력하세요">
+        `;
+        optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
+    }
+      
+    questionDiv.innerHTML = `
+        <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
+        <div class="options">${optionsHTML}</div>
+        ${inputFieldHTML}
+        ${questionButtonsHTML}
+        <div class="result" id="result${index}"></div>
+        <div class="message" id="message${index}" style="display: none;"></div>
+        <div class="explanation" id="explanation${index}">
+          ${processedExplanation}
+        </div>
+        `;
+
+      questionsContainer.appendChild(questionDiv);
+    });
     // const questionsContainer = document.getElementById('questions');
-    // questionsContainer.innerHTML = '';
-    // const startNumber = currentPage * QUESTIONS_PER_PAGE + 1;
+    // questionsContainer.innerHTML = ''; // 기존 내용 초기화
 
-    // currentQuestions.forEach((q, index) => {
-    //   const questionDiv = document.createElement('div');
-    //   questionDiv.className = 'question';
+    // cstsfl_2501_quizData_test.forEach((item, index) => {
+    //     const questionNumber = index + 1;
+    //     let processedQuestion = item.question;
+    //     let optionsHTML = '';
+    //     let questionButtonsHTML = '';
+    //     let inputFieldHTML = '';
 
-    //   const questionNumber = startNumber + index;
-    //   // 문제 텍스트 내 이미지 태그 치환
-    //   const processedQuestion = replaceImageTags(q.question);
-    //   // 해설 텍스트 내 이미지 태그 치환
-    //   const processedExplanation = processExplanation(q.explanation);
+    //     // 객관식 문제 처리
+    //     if (item.type === 'radio') {
+    //         item.options.forEach((option, i) => {
+    //             optionsHTML += `
+    //                 <label>
+    //                     <input type="radio" name="question${index}" value="${i}">
+    //                     ${option.value}
+    //                 </label><br>
+    //             `;
+    //         });
+    //     }
 
-    //   let optionsHTML = generateOptions(q, index);
+    //     // 체크박스 문제 처리
+    //     if (item.type === 'checkbox') {
+    //         item.options.forEach((option, i) => {
+    //             optionsHTML += `
+    //                 <label>
+    //                     <input type="checkbox" name="question${index}" value="${i}">
+    //                     ${option.value}
+    //                 </label><br>
+    //             `;
+    //         });
+    //     }
 
-    //   let inputFieldHTML = ''; //20250328 heina
-
-    //   // 페이지당 1문항일 때 개별 버튼 감추기(선택 사항)
-    //   let questionButtonsHTML = '';
-    //   if (QUESTIONS_PER_PAGE !== 1) {
-    //     questionButtonsHTML = `
-    //       <div class="question-buttons">
-    //         <button onclick="checkSingleAnswer(${index})" class="check-button">정답 확인</button>
-    //         <button onclick="resetSingleQuestion(${index})" class="reset-button">리셋</button>
-    //       </div>
-    //     `;
-    //   }
-
-    //     // 주관식 문제 처리 : 20250328 heina
+    //     // 주관식 문제 처리
     //     if (item.type === 'text') {
     //         inputFieldHTML = `
     //             <input type="text" id="question${index}" placeholder="답을 입력하세요">
     //         `;
     //         optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
     //     }
-      
-    //   questionDiv.innerHTML = `
-    //     <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
-    //     <div class="options">${optionsHTML}</div>
-    //     ${questionButtonsHTML}
-    //     <div class="result" id="result${index}"></div>
-    //     <div class="message" id="message${index}" style="display: none;"></div>
-    //     <div class="explanation" id="explanation${index}">
-    //       ${processedExplanation}
-    //     </div>
-    //   `;
 
-    //   questionsContainer.appendChild(questionDiv);
+    //     const processedExplanation = item.explanation;
+
+    //     questionDiv = document.createElement('div');
+    //     questionDiv.innerHTML = `
+    //         <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
+    //         <div class="options">${optionsHTML}</div>
+    //         ${inputFieldHTML}
+    //         ${questionButtonsHTML}
+    //         <div class="result" id="result${index}"></div>
+    //         <div class="message" id="message${index}" style="display: none;"></div>
+    //         <div class="explanation" id="explanation${index}">
+    //             ${processedExplanation}
+    //         </div>
+    //     `;
+
+    //     questionsContainer.appendChild(questionDiv);
     // });
-    const questionsContainer = document.getElementById('questions');
-    questionsContainer.innerHTML = ''; // 기존 내용 초기화
-
-    cstsfl_2501_quizData_test.forEach((item, index) => {
-        const questionNumber = index + 1;
-        let processedQuestion = item.question;
-        let optionsHTML = '';
-        let questionButtonsHTML = '';
-        let inputFieldHTML = '';
-
-        // 객관식 문제 처리
-        if (item.type === 'radio') {
-            item.options.forEach((option, i) => {
-                optionsHTML += `
-                    <label>
-                        <input type="radio" name="question${index}" value="${i}">
-                        ${option.value}
-                    </label><br>
-                `;
-            });
-        }
-
-        // 체크박스 문제 처리
-        if (item.type === 'checkbox') {
-            item.options.forEach((option, i) => {
-                optionsHTML += `
-                    <label>
-                        <input type="checkbox" name="question${index}" value="${i}">
-                        ${option.value}
-                    </label><br>
-                `;
-            });
-        }
-
-        // 주관식 문제 처리
-        if (item.type === 'text') {
-            inputFieldHTML = `
-                <input type="text" id="question${index}" placeholder="답을 입력하세요">
-            `;
-            optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
-        }
-
-        const processedExplanation = item.explanation;
-
-        questionDiv = document.createElement('div');
-        questionDiv.innerHTML = `
-            <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
-            <div class="options">${optionsHTML}</div>
-            ${inputFieldHTML}
-            ${questionButtonsHTML}
-            <div class="result" id="result${index}"></div>
-            <div class="message" id="message${index}" style="display: none;"></div>
-            <div class="explanation" id="explanation${index}">
-                ${processedExplanation}
-            </div>
-        `;
-
-        questionsContainer.appendChild(questionDiv);
-    });
   }
 
   function checkSingleAnswer(index) {
