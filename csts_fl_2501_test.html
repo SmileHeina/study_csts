@@ -717,7 +717,11 @@
 
       if (userAnswer === '') {
         message = '답을 입력하지 않았습니다.';
-        messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+        if (Array.isArray(q.correct)) {
+            messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+        } else {
+            messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
+        }
       } else {
         isCorrect = q.correct.includes(userAnswer);
         handleTextResult(isCorrect, userAnswer, q, index);
@@ -832,7 +836,11 @@
     
         if (userAnswer === '') {
             message = '답을 입력하지 않았습니다.';
-            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+            if (Array.isArray(q.correct)) {
+                messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+            } else {
+                messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
+            }
         } else {
             if (Array.isArray(q.correct)) {
                 isCorrect = q.correct.includes(userAnswer);
@@ -845,7 +853,11 @@
                 messageDiv.innerHTML = '';
             } else {
                 message = '틀렸습니다.';
-                messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+                if (Array.isArray(q.correct)) {
+                    messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+                } else {
+                    messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
+                }
             }
         }
         if (isCorrect) score++;
@@ -960,7 +972,11 @@
         if (isCorrect) {
             messageDiv.innerHTML = '';
         } else {
-            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+            if (Array.isArray(q.correct)) {
+                messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+            } else {
+                messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
+            }
         }
         return; // 주관식 문제이므로 추가 처리는 필요하지 않음
     }
