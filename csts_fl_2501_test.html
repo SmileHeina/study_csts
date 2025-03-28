@@ -668,7 +668,7 @@ function renderQuizInput() {
     }
 
     // 주관식 문제 처리 : 20250328 heina
-    if (item.type === 'text') {
+    if (q.type === 'text') {
         inputFieldHTML = `
             <input type="text" id="question${index}" placeholder="답을 입력하세요">
         `;
