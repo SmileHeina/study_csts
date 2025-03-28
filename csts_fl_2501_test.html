@@ -616,27 +616,6 @@
     `).join('');
   }
   
-// 주관식 문제에 대한 입력 창 생성 : 20250328 heina
-function renderQuizInput() {
-    cstsfl_2501_quizData_test.forEach((item, index) => {
-        if (item.type === 'text') {
-            const inputField = document.createElement('input');
-            inputField.type = 'text';
-            inputField.id = `question${index}`;
-            inputField.placeholder = '답을 입력하세요';
-
-            // 입력 창을 보여줄 요소에 추가
-            const questionContainer = document.getElementById(`question-container-${index}`);
-            if (!questionContainer) {
-                const container = document.createElement('div');
-                container.id = `question-container-${index}`;
-                document.body.appendChild(container);
-            }
-            document.getElementById(`question-container-${index}`).appendChild(inputField);
-        }
-    });
-}
-  
   function displayQuestions() {
     const questionsContainer = document.getElementById('questions');
     questionsContainer.innerHTML = '';
@@ -738,17 +717,11 @@ function renderQuizInput() {
       const userAnswer = document.getElementById(`question${index}`).value.trim();
 
       if (userAnswer.length === 0) {
-        message = '답을 선택하지 않았습니다.';
-        messageDiv.innerHTML = `정답은 ${q.correct.map(i => `"${q.options[i].value}"`).join(', ')} 입니다.`;
-        q.correct.forEach(correctIndex => {
-          const correctElement = document.getElementById(`q${index}o${correctIndex}`);
-          if (correctElement) {
-            correctElement.closest('.option').classList.add('correct-answer');
-          }
-        });
+        message = '답을 입력하지 않았습니다.';
+        messageDiv.innerHTML = `정답은 ${q.correct.map(i => `${q.correct.join(', ')}' 입니다.`;
       } else {
         isCorrect = q.correct.includes(userAnswer);
-        handleCheckboxResult(isCorrect, userAnswer, q, index);
+        handleTextResult(isCorrect, userAnswer, q, index);
       }
     }
     showResult(resultDiv, messageDiv, explanationDiv, isCorrect, message);
@@ -766,15 +739,6 @@ function renderQuizInput() {
   function handleResult(isCorrect, selectedOption, q, index) {
     const messageDiv = document.getElementById(`message${index}`);
 
-     if (q.type === 'text') { // 주관식 처리
-        if (isCorrect) {
-            messageDiv.innerHTML = '';
-        } else {
-            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
-        }
-        return; // 주관식 문제이므로 추가 처리는 필요하지 않음
-    }
-    
     if (isCorrect) {
       messageDiv.innerHTML = '';
       selectedOption.closest('.option').classList.add('correct-answer');
@@ -942,15 +906,6 @@ function renderQuizInput() {
   function handleCheckboxResult(isCorrect, selectedOptions, q, index) {
     const messageDiv = document.getElementById(`message${index}`);
 
-     if (q.type === 'text') { // 주관식 처리
-        if (isCorrect) {
-            messageDiv.innerHTML = '';
-        } else {
-            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
-        }
-        return; // 주관식 문제이므로 추가 처리는 필요하지 않음
-    }
-      
     if (isCorrect) {
       messageDiv.innerHTML = '';
     } else {
@@ -971,6 +926,20 @@ function renderQuizInput() {
       }
     });
   }
+
+  function handleTextResult(isCorrect, q, index) { // 주관식 : 20250328 heina
+    const messageDiv = document.getElementById(`message${index}`);
+
+     if (q.type === 'text') { // 주관식 처리
+        if (isCorrect) {
+            messageDiv.innerHTML = '';
+        } else {
+            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+        }
+        return; // 주관식 문제이므로 추가 처리는 필요하지 않음
+    }
+  }
+
 // 스크롤 이벤트 감지하여 버튼 표시 여부 결정
 window.addEventListener("scroll", function() {
   const btn = document.getElementById("scrollTopBtn");
