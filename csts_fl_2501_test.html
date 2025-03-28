@@ -827,14 +827,28 @@
       // 주관식 답 체크 : 20250328 heina
       else if (q.type === 'text') {
         const userAnswer = document.getElementById(`question${index}`).value.trim();
-        
-        if (userAnswer.length === 0) {
+        let isCorrect = false;
+        let message = '';
+    
+        if (userAnswer === '') {
             message = '답을 입력하지 않았습니다.';
             messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
         } else {
-            isCorrect = q.correct.includes(userAnswer);
-            handleTextResult(isCorrect, userAnswer, q, index);
+            if (Array.isArray(q.correct)) {
+                isCorrect = q.correct.includes(userAnswer);
+            } else {
+                isCorrect = userAnswer === q.correct;
+            }
+    
+            if (isCorrect) {
+                message = '정답입니다!';
+                messageDiv.innerHTML = '';
+            } else {
+                message = '틀렸습니다.';
+                messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+            }
         }
+        if (isCorrect) score++;
       }
         
       resultDiv.textContent = message;
