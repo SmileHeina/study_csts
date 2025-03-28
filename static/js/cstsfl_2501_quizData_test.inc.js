@@ -1,7 +1,7 @@
 //CSTS FL 2501
 var cstsfl_2501_quizData_test = [
 {
-    "type": "check",
+    "type": "checkbox",
     "question": "소프트웨어 개발 단계별 테스트에 대한 설명으로 올바르지 않은 것은 무엇인가?",
     "explanation": "",
     "options": [
