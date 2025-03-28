@@ -715,7 +715,7 @@
     else if (q.type === 'text') {
       const userAnswer = document.getElementById(`question${index}`).value.trim();
 
-      if (userAnswer.length === 0) {
+      if (userAnswer === '') {
         message = '답을 입력하지 않았습니다.';
         messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
       } else {
