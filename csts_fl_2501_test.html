@@ -692,65 +692,6 @@ function renderQuizInput() {
 
       questionsContainer.appendChild(questionDiv);
     });
-    // const questionsContainer = document.getElementById('questions');
-    // questionsContainer.innerHTML = ''; // 기존 내용 초기화
-
-    // cstsfl_2501_quizData_test.forEach((item, index) => {
-    //     const questionNumber = index + 1;
-    //     let processedQuestion = item.question;
-    //     let optionsHTML = '';
-    //     let questionButtonsHTML = '';
-    //     let inputFieldHTML = '';
-
-    //     // 객관식 문제 처리
-    //     if (item.type === 'radio') {
-    //         item.options.forEach((option, i) => {
-    //             optionsHTML += `
-    //                 <label>
-    //                     <input type="radio" name="question${index}" value="${i}">
-    //                     ${option.value}
-    //                 </label><br>
-    //             `;
-    //         });
-    //     }
-
-    //     // 체크박스 문제 처리
-    //     if (item.type === 'checkbox') {
-    //         item.options.forEach((option, i) => {
-    //             optionsHTML += `
-    //                 <label>
-    //                     <input type="checkbox" name="question${index}" value="${i}">
-    //                     ${option.value}
-    //                 </label><br>
-    //             `;
-    //         });
-    //     }
-
-    //     // 주관식 문제 처리
-    //     if (item.type === 'text') {
-    //         inputFieldHTML = `
-    //             <input type="text" id="question${index}" placeholder="답을 입력하세요">
-    //         `;
-    //         optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
-    //     }
-
-    //     const processedExplanation = item.explanation;
-
-    //     questionDiv = document.createElement('div');
-    //     questionDiv.innerHTML = `
-    //         <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
-    //         <div class="options">${optionsHTML}</div>
-    //         ${inputFieldHTML}
-    //         ${questionButtonsHTML}
-    //         <div class="result" id="result${index}"></div>
-    //         <div class="message" id="message${index}" style="display: none;"></div>
-    //         <div class="explanation" id="explanation${index}">
-    //             ${processedExplanation}
-    //         </div>
-    //     `;
-
-    //     questionsContainer.appendChild(questionDiv);
-    // });
   }
 
   function checkSingleAnswer(index) {
@@ -824,6 +765,15 @@ function renderQuizInput() {
 
   function handleResult(isCorrect, selectedOption, q, index) {
     const messageDiv = document.getElementById(`message${index}`);
+     if (q.type === 'text') { // 주관식 처리
+        if (isCorrect) {
+            messageDiv.innerHTML = '';
+        } else {
+            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+        }
+        return; // 주관식 문제이므로 추가 처리는 필요하지 않음
+    }
+    
     if (isCorrect) {
       messageDiv.innerHTML = '';
       selectedOption.closest('.option').classList.add('correct-answer');
