@@ -824,6 +824,19 @@
         });
         if (isCorrect) score++;
       }
+      // 주관식 답 체크 : 20250328 heina
+      else if (q.type === 'text') {
+        const userAnswer = document.getElementById(`question${index}`).value.trim();
+        
+        if (userAnswer.length === 0) {
+            message = '답을 입력하지 않았습니다.';
+            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+        } else {
+            isCorrect = q.correct.includes(userAnswer);
+            handleTextResult(isCorrect, userAnswer, q, index);
+        }
+      }
+        
       resultDiv.textContent = message;
       resultDiv.style.color = isCorrect ? 'blue' : 'red';
       resultDiv.style.display = 'block';
