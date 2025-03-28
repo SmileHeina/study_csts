@@ -765,6 +765,7 @@ function renderQuizInput() {
 
   function handleResult(isCorrect, selectedOption, q, index) {
     const messageDiv = document.getElementById(`message${index}`);
+
      if (q.type === 'text') { // 주관식 처리
         if (isCorrect) {
             messageDiv.innerHTML = '';
@@ -921,6 +922,7 @@ function renderQuizInput() {
       updateNavigation();
       updateProgress();
       resetQuiz();
+      scrollToTop();
     }
   }
 
@@ -933,11 +935,22 @@ function renderQuizInput() {
       updateNavigation();
       updateProgress();
       resetQuiz();
+      scrollToTop()
     }
   }
 
   function handleCheckboxResult(isCorrect, selectedOptions, q, index) {
     const messageDiv = document.getElementById(`message${index}`);
+
+     if (q.type === 'text') { // 주관식 처리
+        if (isCorrect) {
+            messageDiv.innerHTML = '';
+        } else {
+            messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
+        }
+        return; // 주관식 문제이므로 추가 처리는 필요하지 않음
+    }
+      
     if (isCorrect) {
       messageDiv.innerHTML = '';
     } else {
