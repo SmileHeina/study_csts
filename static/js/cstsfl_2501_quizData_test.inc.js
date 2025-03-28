@@ -71,7 +71,7 @@ var cstsfl_2501_quizData_test = [
     "type": "text",
     "question": "<보기>의 수식은 (      ) 커버리지를 구하기 위한 계산법이다.[FL-2501-67.jpg]",
     "explanation": "다중 조건",
-    "correct": "다중 조건
+    "correct": "다중 조건"
 },
 {
     "type": "radio",
