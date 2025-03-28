@@ -717,7 +717,7 @@
 
       if (userAnswer.length === 0) {
         message = '답을 입력하지 않았습니다.';
-        messageDiv.innerHTML = `정답은 ${q.correct.map(i => '${q.correct.join(', ')}') 입니다.`;
+        messageDiv.innerHTML = `정답은 '${q.correct.join(', ')}' 입니다.`;
       } else {
         isCorrect = q.correct.includes(userAnswer);
         handleTextResult(isCorrect, userAnswer, q, index);
