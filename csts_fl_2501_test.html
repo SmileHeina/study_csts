@@ -756,7 +756,7 @@
   }
 
   function checkAnswers() {
-    let score = 0;
+    let score = 0; // 현재 페이지의 점수
     document.querySelectorAll('.option').forEach(option => {
       option.classList.remove('correct-answer', 'wrong-answer');
     });
@@ -836,17 +836,13 @@
     
         if (userAnswer === '') {
             message = '답을 입력하지 않았습니다.';
-            if (Array.isArray(q.correct)) {
-                messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
-            } else {
-                messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
-            }
+	        messageDiv.innerHTML = Array.isArray(q.correct)
+                    ? `정답은 '${q.correct.join(' | ')}' 입니다.`
+                    : `정답은 '${q.correct}' 입니다.`;
         } else {
-            if (Array.isArray(q.correct)) {
-                isCorrect = q.correct.includes(userAnswer);
-            } else {
-                isCorrect = userAnswer === q.correct;
-            }
+            isCorrect = Array.isArray(q.correct)
+                    ? q.correct.includes(userAnswer)
+                    : userAnswer === q.correct;
     
             if (isCorrect) {
                 message = '정답입니다!';
@@ -871,10 +867,13 @@
       explanationDiv.classList.add('visible');
     });
 
-    totalScore = score;
+//250331    totalScore = score;
+    totalScore += score; // 현재 페이지 점수를 totalScore에 누적
     const scoreElement = document.getElementById('score');
     if (scoreElement) {
-      scoreElement.textContent = `점수: ${score}/${currentQuestions.length}`;
+//250331      scoreElement.textContent = `점수: ${score}/${currentQuestions.length}`;
+    scoreElement.textContent =
+            `현재 페이지 점수: ${score}/${currentQuestions.length}, 총 점수: ${totalScore}/${cstsfl_2501_quizData_test.length}`;
     }
   }
 
@@ -909,7 +908,7 @@
       if(explanationDiv) explanationDiv.classList.remove('visible');
     });
 
-    totalScore = 0;
+//250331    totalScore = 0;
     const scoreElement = document.getElementById('score');
     if (scoreElement) {
       scoreElement.textContent = '점수: 0/0';
