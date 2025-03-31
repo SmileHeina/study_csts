@@ -48,14 +48,26 @@ var cstsfl_2501_quizData_test = [
 },
 {
     "type": "text",
+    "question": "다음 설명은 어떤 용어에 대한 설명인지 기재하시오.[FL-2501-61.jpg]",
+    "explanation": "디버깅 | Debugging",
+    "correct": ["디버깅", "Debugging"]
+},
+{
+    "type": "radio",
+    "question": "다음 보기에서 설명하는 경험기반 테스트 기법은 무엇인가?[FL-2501-62.jpg]",
+    "explanation": "오류 추정 | Error Guessing | error guessing",
+    "correct": ["오류 추정", "Error Guessing", "error guessing""
+},
+{
+    "type": "text",
     "question": "다음 괄호 안에 들어갈 알맞은 테스팅 방법을 기술하시오.[FL-2501-64.jpg]",
-    "explanation": "재테스팅(Re-testing)",
-    "correct": ["재테스팅", "Re-testing"]
+    "explanation": "재테스팅 | Re-testing",
+    "correct": ["재테스팅", "Re-testing", "re-testing"]
 },
 {
     "type": "text",
     "question": "<보기>는 인스펙션 실행 순서이다. 빈칸에 들어갈 절차는 무엇인가?[FL-2501-65.jpg]",
-    "explanation": "재작업, rework",
+    "explanation": "재작업 | rework",
     "correct": ["재작업", "rework", "Rework"]
 },
 {
@@ -72,8 +84,20 @@ var cstsfl_2501_quizData_test = [
 },
 {
     "type": "text",
+    "question": "다음 괄호 안에 알맞은 테스트 활동을 기재하시오.[FL-2501-68.jpg]",
+    "explanation": "테스트 종료 | 테스트 완료",
+    "correct": ["테스트 종료", "테스트 완료"]
+},
+{
+    "type": "text",
     "question": "다음 테스트 환경구축 및 관리 활동에서 아래에 해당되는 산출물의 명칭을 기재하시오.[FL-2501-69.jpg]",
     "explanation": "테스트 환경 준비 보고서",
     "correct": "테스트 환경 준비 보고서"
 },
+{
+    "type": "text",
+    "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2501-70.jpg]",
+    "explanation": "테스트 종료",
+    "correct": "테스트 종료"
+}
 ];
