@@ -858,7 +858,7 @@
         }
         if (isCorrect) score++;
       }
-        
+console.log(`Question Type: ${q.type}, Is Correct: ${isCorrect}`); // Add this line to log q.type and isCorrect
       resultDiv.textContent = message;
       resultDiv.style.color = isCorrect ? 'blue' : 'red';
       resultDiv.style.display = 'block';
