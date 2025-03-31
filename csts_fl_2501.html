@@ -560,7 +560,6 @@
       }
 
 
-
       // 문제 내 이미지를 <img> 태그로 치환하며, onclick 이벤트를 주어 원본 보기 가능하게 함
       function replaceImageTags(text) {
         return text.replace(
@@ -800,7 +799,6 @@
         showResult(resultDiv, messageDiv, explanationDiv, isCorrect, message);
       }
 
-
       function showResult(resultDiv, messageDiv, explanationDiv, isCorrect, message) {
         resultDiv.textContent = message || (isCorrect ? '정답입니다!' : '틀렸습니다.');
         resultDiv.style.color = isCorrect ? 'blue' : 'red';
@@ -825,7 +823,6 @@
           correctOptionElement.closest('.option').classList.add('correct-answer');
         }
       }
-
 
       function checkAnswers() {
         let score = 0; // 현재 페이지의 점수
