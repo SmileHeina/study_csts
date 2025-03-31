@@ -717,11 +717,9 @@
 
       if (userAnswer === '') {
         message = '답을 입력하지 않았습니다.';
-        if (Array.isArray(q.correct)) {
-            messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
-        } else {
-            messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
-        }
+	messageDiv.innerHTML = Array.isArray(q.correct)
+	    ? `정답은 '${q.correct.join(' | ')}' 입니다.`
+	    : `정답은 '${q.correct}' 입니다.`;
       } else {
         isCorrect = q.correct.includes(userAnswer);
         handleTextResult(isCorrect, userAnswer, q, index);
@@ -831,8 +829,6 @@
       // 주관식 답 체크 : 20250328 heina
       else if (q.type === 'text') {
         const userAnswer = document.getElementById(`question${index}`).value.trim();
-        let isCorrect = false;
-        // let message = '';
     
         if (userAnswer === '') {
             message = '답을 입력하지 않았습니다.';
@@ -863,7 +859,7 @@ console.log(`Question Type: ${q.type}, Is Correct: ${isCorrect}`); // Add this l
       resultDiv.style.color = isCorrect ? 'blue' : 'red';
       resultDiv.style.display = 'block';
       messageDiv.style.display = 'block';
-      messageDiv.style.color = isCorrect ? 'blue' : 'red';
+      messageDiv.style.color = 'red';
       explanationDiv.classList.add('visible');
     });
 
@@ -911,7 +907,8 @@ console.log(`Question Type: ${q.type}, Is Correct: ${isCorrect}`); // Add this l
 //250331    totalScore = 0;
     const scoreElement = document.getElementById('score');
     if (scoreElement) {
-      scoreElement.textContent = '점수: 0/0';
+//250331      scoreElement.textContent = '점수: 0/0';
+	    scoreElement.textContent = '점수: 0/0, 총 점수: ${totalScore}/${cstsfl_2501_quizData_test.length}`;
     }
   }
 
