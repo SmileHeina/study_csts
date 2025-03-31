@@ -718,7 +718,7 @@
       if (userAnswer === '') {
         message = '답을 입력하지 않았습니다.';
         if (Array.isArray(q.correct)) {
-            messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+            messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
         } else {
             messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
         }
@@ -837,7 +837,7 @@
         if (userAnswer === '') {
             message = '답을 입력하지 않았습니다.';
             if (Array.isArray(q.correct)) {
-                messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+                messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
             } else {
                 messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
             }
@@ -854,7 +854,7 @@
             } else {
                 message = '틀렸습니다.';
                 if (Array.isArray(q.correct)) {
-                    messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+                    messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
                 } else {
                     messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
                 }
@@ -973,7 +973,7 @@
             messageDiv.innerHTML = '';
         } else {
             if (Array.isArray(q.correct)) {
-                messageDiv.innerHTML = `정답은 '${q.correct.join(' 또는 ')}' 입니다.`;
+                messageDiv.innerHTML = `정답은 '${q.correct.join(' | ')}' 입니다.`;
             } else {
                 messageDiv.innerHTML = `정답은 '${q.correct}' 입니다.`;
             }
