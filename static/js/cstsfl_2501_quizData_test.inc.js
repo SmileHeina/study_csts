@@ -53,7 +53,7 @@ var cstsfl_2501_quizData_test = [
     "correct": ["디버깅", "Debugging"]
 },
 {
-    "type": "radio",
+    "type": "text",
     "question": "다음 보기에서 설명하는 경험기반 테스트 기법은 무엇인가?[FL-2501-62.jpg]",
     "explanation": "오류 추정 | Error Guessing | error guessing",
     "correct": ["오류 추정", "Error Guessing", "error guessing"]
