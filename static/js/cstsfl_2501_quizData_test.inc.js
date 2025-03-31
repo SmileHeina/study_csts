@@ -25,14 +25,14 @@ var cstsfl_2501_quizData_test = [
 {
     "type": "text",
     "question": "다음 보기에서 설명하는 경험기반 테스트 기법은 무엇인가?[FL-2501-62.jpg]",
-    "explanation": "오류 추정(Error Guessing)",
-    "correct": ["오류 추정","Error Guessing"]
+    "explanation": "오류 추정 또는 Error Guessing",
+    "correct": ["오류 추정","Error Guessing", "error guessing"]
 },
 {
     "type": "text",
     "question": "시스템 처리 능력 이상의 부하를 가하여 비정상적인 상황에서의 처리가 적절히 수행되는지 확인하는 테스트를 무엇이라 하는가? (       ) 테스트",
     "explanation": "스트레스, Stress",
-    "correct": ["스트레스", "Stress"]
+    "correct": ["스트레스", "Stress", "stress"]
 },
 { 
     "type": "radio",
@@ -56,10 +56,7 @@ var cstsfl_2501_quizData_test = [
     "type": "text",
     "question": "<보기>는 인스펙션 실행 순서이다. 빈칸에 들어갈 절차는 무엇인가?[FL-2501-65.jpg]",
     "explanation": "재작업, rework",
-    "options": [
-        {"value": "정답 확인", "right": true}
-    ],
-    "correct": 0
+    "correct": ["재작업", "rework", "Rework"]
 },
 {
     "type": "text",
@@ -72,15 +69,6 @@ var cstsfl_2501_quizData_test = [
     "question": "<보기>의 수식은 (      ) 커버리지를 구하기 위한 계산법이다.[FL-2501-67.jpg]",
     "explanation": "다중 조건",
     "correct": "다중 조건"
-},
-{
-    "type": "radio",
-    "question": "다음 괄호 안에 알맞은 테스트 활동을 기재하시오.[FL-2501-68.jpg]",
-    "explanation": "테스트 종료/ 완료",
-    "options": [
-        {"value": "정답 확인", "right": true}
-    ],
-    "correct": 0
 },
 {
     "type": "text",
