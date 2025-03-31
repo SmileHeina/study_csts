@@ -907,8 +907,8 @@ console.log(`Question Type: ${q.type}, Is Correct: ${isCorrect}`); // Add this l
 //250331    totalScore = 0;
     const scoreElement = document.getElementById('score');
     if (scoreElement) {
-//250331      scoreElement.textContent = '점수: 0/0';
-	    scoreElement.textContent = '점수: 0/${currentQuestions.length}, 총 점수: ${totalScore}/${cstsfl_2501_quizData_test.length}`;
+	//250331      scoreElement.textContent = '점수: 0/0';
+	 scoreElement.textContent = `점수: 0/${currentQuestions.length}, 총 점수: ${totalScore}/${cstsfl_2501_quizData_test.length}`;
     }
   }
 
