@@ -41,10 +41,10 @@ var cstsal_2402_quizData = [
         "question": "소프트웨어 품질 관련 표준(ISO/IEC 25010)에서 정의하고 있는 8가지 품질 주 특성(Quality Characteristics)에 속하지 않는 것은?",
         "explanation": "",
         "options": [
-            { "value": "", "right": false },
-            { "value": "", "right": false },
-            { "value": "", "right": true },
-            { "value": "", "right": false }
+            { "value": "호환성", "right": false },
+            { "value": "신뢰성", "right": false },
+            { "value": "완전성", "right": true },
+            { "value": "이식성", "right": false }
         ],
         "correct": 2
     },
@@ -98,8 +98,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "",
-        "explanation": "<보기>의 평가 방법을 통해 확인할 수 있는 품질 특성은 무엇인가?<br>[AL-2402-09.jpg]",
+        "question": "<보기>의 평가 방법을 통해 확인할 수 있는 품질 특성은 무엇인가?<br>[AL-2402-09.jpg]",
+        "explanation": "",
         "options": [
             { "value": "기밀성", "right": true },
             { "value": "무결성", "right": false },
@@ -398,8 +398,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "",
-        "explanation": "테스트 프로세스를 구성하는 활동에 대한 설명으로 적절한 것은?",
+        "question": "테스트 프로세스를 구성하는 활동에 대한 설명으로 적절한 것은?",
+        "explanation": "",
         "options": [
             { "value": "테스트 계획에서는 테스트 대상, 목적 그리고 테스트 대상에 대한 테스트 통과 기준 등을 결정한다.", "right": true },
             { "value": "테스트 설계 및 구현활동에서는 테스트 범위를 구체화하고 테스트 활동에 대한 개선 방향을 결정한다.", "right": false },
@@ -426,7 +426,7 @@ var cstsal_2402_quizData = [
         "explanation": "",
         "options": [
             { "value": "테스트 현황 보고서 - 계획 대비 진척도", "right": false },
-            { "value": "테스트 현황 보고서 – 이후 테스트 계획", "right": false },
+            { "value": "테스트 현황 보고서 - 이후 테스트 계획", "right": false },
             { "value": "테스트 종료 보고서 - 테스트 방해 요인", "right": false },
             { "value": "테스트 종료 보고서 - 위험 분석", "right": true }
         ],
@@ -720,7 +720,7 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "text",
-        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.<br>IEEE 1028-2008에서는 (     )의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.<br>[AL-2402-64.jpg]",
+        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.<br><table>  <tr>  <td>IEEE 1028-2008에서는 (     )의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.</td>  </tr></table><br>[AL-2402-64.jpg]",
         "explanation": "감사, Audit",
         "correct": ["감사", "Audit", "audit"]
     },
