@@ -305,10 +305,10 @@ var cstsfl_2501_quizData = [
         "question": "다음의 제어 흐름도를 이용해 테스트 케이스를 설계하고자 한다. 결정 커버리지 50%를 달성하는 테스트 케이스 세트를 고르시오.[FL-2501-26.jpg]",
         "explanation": "",
         "options": [
-            { "value": "① 테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 2: A → B → C → E → G → H → J → K / 테스트 케이스 3: A → B → D → K", "right": false },
-            { "value": "② 테스트 케이스 1: A → B → C → E → F → H → I → K", "right": true },
-            { "value": "③ 테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 2: A → B → C → E → G → H → J → K", "right": false },
-            { "value": "④ 테스트 케이스 1: A → B → C → E → F → H → I → K / 테스트 케이스 3: A → B → D → K", "right": false }
+            { "value": "① TC 1: A → B → C → E → F → H → I → K /<br> TC 2: A → B → C → E → G → H → J → K /<br> TC 3: A → B → D → K", "right": false },
+            { "value": "② TC 1: A → B → C → E → F → H → I → K", "right": true },
+            { "value": "③ TC 1: A → B → C → E → F → H → I → K / TC 2: A → B → C → E → G → H → J → K", "right": false },
+            { "value": "④ TC 1: A → B → C → E → F → H → I → K / TC 3: A → B → D → K", "right": false }
         ],
         "correct": 1
     },
