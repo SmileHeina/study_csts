@@ -605,8 +605,8 @@ var cstsal_2402_quizData = [
         "question": "단위 테스트 중에 테스트 스텁을 이용하면, 실제 모듈에서 발생하기 어려운 다양한 상황을 만들어 테스트할 수 있다.",
         "explanation": "",
         "options": [
-            { "value": "⭕O", "right": true },
-            { "value": "❌X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -615,8 +615,8 @@ var cstsal_2402_quizData = [
         "question": "나선형 개발 모델은 한 가지 모델만 채택하여 개발을 종료하는 대신, 여러 개의 생명 주기 모델들을 혼합하여 개발할 수 있다. 이러한 점 때문에 나선형 모델을 메타 생명 주기 모델이라고도 한다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": true },
-            { "value": "🗙X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -625,8 +625,8 @@ var cstsal_2402_quizData = [
         "question": "정적테스트 자동화 도구의 종류로는 리뷰 프로세스 지원도구, 정적 분석도구, 모델링 도구 등이 있다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -635,8 +635,8 @@ var cstsal_2402_quizData = [
         "question": "일부 컴포넌트를 외주 업체를 통해서 개발하여 소스 코드를 제공받지 못하더라도 실행 가능한 컴포넌트만 있다면 정적 분석을 수행할 수 있다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -645,8 +645,8 @@ var cstsal_2402_quizData = [
         "question": "기본 경로 테스트(Basis Path Test)는 프로그램 경로 중에서 기본경로를 테스트하도록 요구하는데, 이 때 기본경로의 개수는 순환복잡도와 같다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -655,8 +655,8 @@ var cstsal_2402_quizData = [
         "question": "축약된 결정표에서 테스트 케이스를 생성하기 위해서는 각 규칙이 최소한 한번은 테스트 되도록 테스트 케이스들을 생성해야 한다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -665,8 +665,8 @@ var cstsal_2402_quizData = [
         "question": "시나리오 테스트에서 테스트 케이스는 요구사항 명세서를 기반으로 추출되며, 하나의 요구사항은 하나의 시나리오로 정의된다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -675,8 +675,8 @@ var cstsal_2402_quizData = [
         "question": "테스트 환경은 하드웨어, 시스템소프트웨어, 외부 연동 시스템, 테스트 도구 등 테스트 대상의 실행 환경을 의미한다. 그러므로, 테스트의 내용이 구체화 되는 “테스트 설계 단계”에서 테스트 환경을 식별하는 것이 바람직하다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -685,8 +685,8 @@ var cstsal_2402_quizData = [
         "question": "결함의 심각도 또는 우선순위에 상관없이 모든 결함은 동일한 결함 생명 주기에 따라 처리된다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -695,8 +695,8 @@ var cstsal_2402_quizData = [
         "question": "테스트 프로세스를 구성하는 활동 중에서 일반적으로 테스트 실행이 가장 많은 시간이 소요된다.",
         "explanation": "",
         "options": [
-            { "value": "O", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -720,7 +720,7 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "text",
-        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.<br><table><tr><td>IEEE 1028-2008에서는 (        )의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.</td></tr></table><br>[AL-2402-64.jpg]",
+        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.<br>[AL-2402-64.jpg]",
         "explanation": "감사, Audit",
         "correct": ["감사", "Audit", "audit"]
     },
