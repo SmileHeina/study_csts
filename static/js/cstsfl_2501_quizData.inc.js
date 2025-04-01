@@ -714,7 +714,7 @@ var cstsfl_2501_quizData = [
     },
     {
         "type": "text",
-        "question": "시스템 처리 능력 이상의 부하를 가하여 비정상적인 상황에서의 처리가 적절히 수행되는지 확인하는 테스트를 무엇이라 하는가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(______) 테스트<br>            (______) 테스트 <br>\t\t\t(______) 테스트",
+        "question": "시스템 처리 능력 이상의 부하를 가하여 비정상적인 상황에서의 처리가 적절히 수행되는지 확인하는 테스트를 무엇이라 하는가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(______) 테스트",
         "explanation": "스트레스 | Stress",
         "correct": ["스트레스", "Stress", "stress"]
     },
