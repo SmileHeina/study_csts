@@ -305,10 +305,10 @@ var cstsfl_2501_quizData = [
         "question": "다음의 제어 흐름도를 이용해 테스트 케이스를 설계하고자 한다. 결정 커버리지 50%를 달성하는 테스트 케이스 세트를 고르시오.[FL-2501-26.jpg]",
         "explanation": "",
         "options": [
-            { "value": "① TC 1: A → B → C → E → F → H → I → K /<br> TC 2: A → B → C → E → G → H → J → K /<br> TC 3: A → B → D → K", "right": false },
+            { "value": "① TC 1: A → B → C → E → F → H → I → K<br> TC 2: A → B → C → E → G → H → J → K<br> TC 3: A → B → D → K", "right": false },
             { "value": "② TC 1: A → B → C → E → F → H → I → K", "right": true },
-            { "value": "③ TC 1: A → B → C → E → F → H → I → K / TC 2: A → B → C → E → G → H → J → K", "right": false },
-            { "value": "④ TC 1: A → B → C → E → F → H → I → K / TC 3: A → B → D → K", "right": false }
+            { "value": "③ TC 1: A → B → C → E → F → H → I → K<br> TC 2: A → B → C → E → G → H → J → K", "right": false },
+            { "value": "④ TC 1: A → B → C → E → F → H → I → K<br> TC 3: A → B → D → K", "right": false }
         ],
         "correct": 1
     },
@@ -714,7 +714,7 @@ var cstsfl_2501_quizData = [
     },
     {
         "type": "text",
-        "question": "시스템 처리 능력 이상의 부하를 가하여 비정상적인 상황에서의 처리가 적절히 수행되는지 확인하는 테스트를 무엇이라 하는가? (       ) 테스트",
+        "question": "시스템 처리 능력 이상의 부하를 가하여 비정상적인 상황에서의 처리가 적절히 수행되는지 확인하는 테스트를 무엇이라 하는가?<br> (______) 테스트",
         "explanation": "스트레스 | Stress",
         "correct": ["스트레스", "Stress", "stress"]
     },
@@ -738,9 +738,9 @@ var cstsfl_2501_quizData = [
     },
     {
         "type": "text",
-        "question": "<보기>의 수식은 (      ) 커버리지를 구하기 위한 계산법이다.[FL-2501-67.jpg]",
+        "question": "<보기>의 수식은 (______) 커버리지를 구하기 위한 계산법이다.[FL-2501-67.jpg]",
         "explanation": "다중 조건",
-        "correct": "다중 조건건"
+        "correct": "다중 조건"
     },
     {
         "type": "text",
