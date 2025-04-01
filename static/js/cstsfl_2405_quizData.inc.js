@@ -26,7 +26,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?[FL-2405-03.jpg]",
+        "question": "다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?<br>[FL-2405-03.jpg]",
         "explanation": "",
         "options": [
             { "value": "① (가) 인수 테스트   (나) 단위 테스트  (다) 통합 테스트   (라) 시스템 테스트", "right": true },
@@ -62,7 +62,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음에서 설명하고 있는 용어는 무엇인가?[FL-2405-06.jpg]",
+        "question": "다음에서 설명하고 있는 용어는 무엇인가?<br>[FL-2405-06.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 테스트 스텁", "right": false },
@@ -170,7 +170,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음은 프로그램을 얼마나 손쉽게 테스트할 수 있는지를 나타내는 테스트 용이성을 나타내는 특성들과 그에 대한 설명들이다. 특성과 설명이 올바르게 연결된 것은?[FL-2405-15.jpg]",
+        "question": "다음은 프로그램을 얼마나 손쉽게 테스트할 수 있는지를 나타내는 테스트 용이성을 나타내는 특성들과 그에 대한 설명들이다. 특성과 설명이 올바르게 연결된 것은?<br>[FL-2405-15.jpg]",
         "explanation": "",
         "options": [
             { "value": "① (가) - Ⓓ, (나) - Ⓐ, (다) - Ⓒ, (라) - Ⓑ", "right": true },
@@ -290,7 +290,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?[FL-2405-25.jpg]",
+        "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?<br>[FL-2405-25.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 초기화 하지 않은 변수의 사용", "right": true },
@@ -326,7 +326,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 만족시키는 테스트 케이스는?[FL-2405-28.jpg]",
+        "question": "<보기>의 제어 흐름 그래프에서 문장 커버리지 100%를 만족시키는 테스트 케이스는?<br>[FL-2405-28.jpg]",
         "explanation": "",
         "options": [
             { "value": "① x = 1, y = 0, z = 1", "right": false },
@@ -338,7 +338,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?[FL-2405-29.jpg]",
+        "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?<br>[FL-2405-29.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 2개", "right": false },
@@ -350,7 +350,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "커버리지 간의 포용 관계를 도식화한 것 중 올바른 것은?[FL-2405-30.jpg]",
+        "question": "커버리지 간의 포용 관계를 도식화한 것 중 올바른 것은?<br>[FL-2405-30.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 결정 커버리지 ⊇ 조건 커버리지 ⊇ 문장 커버리지지", "right": false },
@@ -362,7 +362,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?[FL-2405-31.jpg]",
+        "question": "다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?<br>[FL-2405-31.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 2", "right": false },
@@ -386,7 +386,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중 입력 인자와 클래스의 개수가 <보기>와 같을 때, 테스트 케이스가 가장 많이 생성되는 조합 테스트 방법은 무엇인가?[FL-2405-33.jpg]",
+        "question": "다음 중 입력 인자와 클래스의 개수가 <보기>와 같을 때, 테스트 케이스가 가장 많이 생성되는 조합 테스트 방법은 무엇인가?<br>[FL-2405-33.jpg]",
         "explanation": "",
         "options": [
             { "value": "① Each choice 테스트", "right": false },
@@ -410,7 +410,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?[FL-2405-35.jpg]",
+        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?<br>[FL-2405-35.jpg]",
         "explanation": "",
         "options": [
             { "value": "① (가) → (나) → (다) → (라)", "right": false },
@@ -446,7 +446,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?[FL-2405-38.jpg]",
+        "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?<br>[FL-2405-38.jpg]",
         "explanation": "",
         "options": [
             { "value": "① (라) - (다) - (나) - (마)", "right": false },
@@ -494,7 +494,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?[FL-2405-42.jpg]",
+        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?<br>[FL-2405-42.jpg]",
         "explanation": "",
         "options": [
             { "value": "① (가)", "right": false },
@@ -708,19 +708,19 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "text",
-        "question": "다음은 무엇에 대한 설명인지 기재하시오.[FL-2405-62.jpg]",
+        "question": "다음은 무엇에 대한 설명인지 기재하시오.<br>[FL-2405-62.jpg]",
         "explanation": "인수 테스트 | 사용자 인수 테스트",
         "correct": ["인수 테스트", "사용자 인수 테스트"]
     },
     {
         "type": "text",
-        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?[FL-2405-63.jpg]",
+        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?<br>[FL-2405-63.jpg]",
         "explanation": "재테스팅(Re-testing)",
         "correct": ["재테스팅", "Re-testing", "re-testing"]
     },
     {
         "type": "text",
-        "question": "<보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?[FL-2405-64.jpg]",
+        "question": "<보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?<br>[FL-2405-64.jpg]",
         "explanation": "5개",
         "correct": "5개"
     },
@@ -732,7 +732,7 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "text",
-        "question": "<보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.[FL-2405-66.jpg]",
+        "question": "<보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.<br>[FL-2405-66.jpg]",
         "explanation": "나 → 라 → 가 → 다",
         "correct": "나 → 라 → 가 → 다"
     },
@@ -744,19 +744,19 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "text",
-        "question": "다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?[FL-2405-68.jpg]",
+        "question": "다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?<br>[FL-2405-68.jpg]",
         "explanation": "리그레션 또는 회귀",
         "correct": ["리그레션", "회귀", "regression", "Regression"]
     },
     {
         "type": "text",
-        "question": "다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?[FL-2405-69.jpg]",
+        "question": "다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?<br>[FL-2405-69.jpg]",
         "explanation": "고립화 또는 Isolation",
         "correct": ["고립화", "Isolation", "isolation"]
     },
     {
         "type": "text",
-        "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?[FL-2405-70.jpg]",
+        "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?<br>[FL-2405-70.jpg]",
         "explanation": "테스트 종료",
         "correct": "테스트 종료"
     }
