@@ -312,24 +312,21 @@
 
       /* 선택된 상태에서 가운데 파란색 점 */
       input[type="radio"]:checked {
-        border-color: blue;
-        /* 파란색 테두리 */
+        border-color: #ccc;
+        /* 기본 테두리 유지 */
       }
 
       input[type="radio"]:checked::before {
-        content: '';
-        /* 가상 요소 생성 */
+        content: '';         /* 가상 요소 생성 */
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 10px;
-        /* 가운데 점 크기 */
-        height: 10px;
-        background-color: blue;
-        /* 파란색 점 */
-        border-radius: 50%;
-        /* 원형 점 */
+        width: 16px;        /* 이미지 크기 조정 */
+        height: 16px;
+        background-image: url('radio_checked_p.png');        /* 체크된 상태의 이미지 */
+        background-size: cover;        /* 이미지를 축소하여 맞춤 */
+        background-repeat: no-repeat;
       }
 
       /* 라벨과 간격 조정  : 250402 */
