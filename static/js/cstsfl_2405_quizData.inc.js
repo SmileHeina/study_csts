@@ -342,7 +342,7 @@ var cstsfl_2405_quizData = [
     {
         "type": "radio",
         "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?",
-        "question_sub": "<보기>int computeBill(int a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int b=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (a>120) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a<=240) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-120)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-240)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (b>=100) b=b*3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return b;}",
+        "question_sub": "<보기>int computeBill(int a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int b=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (a>120) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a<=240) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-120)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-240)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (b>=100) b=b*3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return b;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 2개", "right": false },
@@ -453,7 +453,7 @@ var cstsfl_2405_quizData = [
     {
         "type": "radio",
         "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?",
-        "question_sub": "<다음>(가) 테스트 계획서&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 설계 명세서&nbsp;&nbsp;&nbsp;&nbsp;(다) 테스트 케이스  명세서&nbsp;&nbsp;&nbsp;&nbsp;(라) 테스트 절차서&nbsp;&nbsp;&nbsp;&nbsp;(마) 테스트 결함 보고서&nbsp;&nbsp;&nbsp;&nbsp;(바) 테스트 평가 보고서",
+        "question_sub": "<다음>(가) 테스트 계획서&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 설계 명세서&nbsp;&nbsp;&nbsp;&nbsp;(다) 테스트 케이스  명세서<br>(라) 테스트 절차서&nbsp;&nbsp;&nbsp;&nbsp;(마) 테스트 결함 보고서&nbsp;&nbsp;&nbsp;&nbsp;(바) 테스트 평가 보고서",
         "explanation": "",
         "options": [
             { "value": "① (라) - (다) - (나) - (마)", "right": false },
