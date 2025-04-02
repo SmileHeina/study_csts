@@ -26,7 +26,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음은 무엇에 대한 설명인가?<br>[AL-2401-03.jpg]",
+        "question": "다음은 무엇에 대한 설명인가?",
         "question_sub": "<보기>테스트가 테스트 요구사항을 얼마만큼 만족하는지 나타내는 용어로 “테스팅 정도에 대한 양적 평가”를 결정하는 것이다. 이를 근거로 테스트를 얼마나 더 해야 할지 멈추어야 할지 결정할 수 있다.",
         "explanation": "",
         "options": [
@@ -46,6 +46,18 @@ var cstsal_2401_quizData = [
             { "value": "② 워크쓰루", "right": false },
             { "value": "③ 감사", "right": false },
             { "value": "④ 시뮬레이션", "right": true }
+        ],
+        "correct": 3
+    },
+    {
+        "type": "radio",
+        "question": "컴포넌트 테스트를 잘 수행하기 위한 FIRST 원칙에 대한 설명으로 올바른 것은?",
+        "explanation": "",
+        "options": [
+            { "value": "① F : First, 컴포넌트 테스트는 먼저 수행되어야 한다.", "right": false },
+            { "value": "② I : Information, 테스트 정보는 정확해야 한다.", "right": false },
+            { "value": "③ R : Reliable, 테스트는 신뢰성이 보장되어야 한다.", "right": false },
+            { "value": "④ T : Timely, 컴포넌트 테스트는 코드가 작성되는 시점에 수행되어야 한다.", "right": true }
         ],
         "correct": 3
     },
@@ -123,7 +135,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "A 애플리케이션이 변경되었다. 이에 따라 수행되어야하는 테스트의 절차로 올바른 것은?<br>[AL-2401-12.jpg]",
+        "question": "A 애플리케이션이 변경되었다. 이에 따라 수행되어야하는 테스트의 절차로 올바른 것은?",
         "question_sub": "<보기>(가) 변경된 컴포넌트와 상호 연동하는 컴포넌트 대상으로 통합 테스트를 수행한다.<br>(나) 변경이 올바르게 되었는지 컴포넌트 테스트를 수행한다.<br>(다) 새로 추가된 테스트 케이스가 있다면 이를 자동화한다.<br>(라) Retest-all 방식을 적용하여 GUI 엔드투엔드 테스트를 수행한다.",
         "explanation": "",
         "options": [
@@ -208,7 +220,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>에서 리뷰 프로세스를 순서대로 나열한 것중 올바른 것은?<br>[AL-2401-19.jpg]",
+        "question": "<보기>에서 리뷰 프로세스를 순서대로 나열한 것중 올바른 것은?",
         "question_sub": "<보기>(가) 검출된 문제를 해결하는 작업을 수행한다.<br>(나) 리뷰팀을 구성하고 책임을 할당한다.<br>(다) 개별적으로 작업물이나 프로세스를 검토한다.<br>(라) 리뷰 참가자들이 검토할 작업물에 대해 설명한다.<br>(마) 리뷰 목적을 파악하고 리뷰 일정을 공지한다.",
         "explanation": "",
         "options": [
@@ -234,7 +246,7 @@ var cstsal_2401_quizData = [
     {
         "type": "radio",
         "question": "다음 프로그램에 대해 자료흐름 분석을 수행하여 검출되는 자료 패턴 중에서 잠재적 오류인 패턴은 무엇인가?",
-        "question_sub": "<다음>int foo(int x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int y;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (x==1)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y=x+1;<br>&nbsp;&nbsp;&nbsp;&nbsp;x=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;return y;<br>&nbsp;&nbsp;&nbsp;&nbsp;y=10;<br>&nbsp;}",
+        "question_sub": "<다음>int foo(int x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int y;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (x==1)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y=x+1;<br>&nbsp;&nbsp;&nbsp;&nbsp;x=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;return y;<br>&nbsp;&nbsp;&nbsp;&nbsp;y=10;<br>}",
         "explanation": "",
         "options": [
             { "value": "① ~k", "right": false },
@@ -246,8 +258,8 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 <보기>의 프로그램에 대하여 100% 문장 커버리지를 만족하는 테스트 데이터는 무엇인가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(※ 단, short circuit evaluation은 없다고 가정한다.)<br>[AL-2401-22.jpg]",
-        "question_sub": "<보기>IF (( X > 1 ) AND ( Y == 1 ))<br>&nbsp;&nbsp;&nbsp;&nbsp;Z = Z / X<br>&nbsp;&nbsp;END<br>&nbsp;&nbsp; IF (( X == 2 ) OR ( Z > 1 ))<br>&nbsp;&nbsp;&nbsp;&nbsp;Z = Z + 1<br>&nbsp;&nbsp;END",
+        "question": "다음 <보기>의 프로그램에 대하여 100% 문장 커버리지를 만족하는 테스트 데이터는 무엇인가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(※ 단, short circuit evaluation은 없다고 가정한다.)",
+        "question_sub": "<보기>IF (( X > 1 ) AND ( Y == 1 ))<br>&nbsp;&nbsp;&nbsp;&nbsp;Z = Z / X<br>END<br>IF (( X == 2 ) OR ( Z > 1 ))<br>&nbsp;&nbsp;&nbsp;&nbsp;Z = Z + 1<br>END",
         "explanation": "",
         "options": [
             { "value": "① X=3, Y=1, Z=0", "right": false },
@@ -283,8 +295,8 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 보기와 같은 foo 함수에서, 다중조건 테스트의 커버리지 100%를 달성하기 위한 최소한의 테스트 케이스는 몇 개인가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(단, short circuit evaluation은 없다고 가정한다.)<br>[AL-2401-25.jpg]",
-        "question_sub": "<보기>int foo(int i, int j, int k) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int result = 0;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;if(i>3 && j<5 || k==1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = i + j+ k;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;return result;<br>&nbsp;&nbsp;}",
+        "question": "다음 보기와 같은 foo 함수에서, 다중조건 테스트의 커버리지 100%를 달성하기 위한 최소한의 테스트 케이스는 몇 개인가?<br>&nbsp;&nbsp;&nbsp;&nbsp;(단, short circuit evaluation은 없다고 가정한다.)",
+        "question_sub": "<보기>int foo(int i, int j, int k) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int result = 0;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;if(i>3 && j<5 || k==1) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result = i + j+ k;<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br><br>&nbsp;&nbsp;&nbsp;&nbsp;return result;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 8개", "right": true },
@@ -296,8 +308,8 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "A라는 프로그램 코드의 MCDC 커버리지를 100%만족하기 위해 도출되어야 하는 테스트케이스는 몇 개인가?<br>[AL-2401-26.jpg]",
-        "question_sub": "<보기>If (level=“vip” and ((early>60) or (period>5)){<br>&nbsp;&nbsp;&nbsp;&nbsp;price = 150000;<br>&nbsp;&nbsp;}else{<br>&nbsp;&nbsp;&nbsp;&nbsp;price = 200000;<br>&nbsp;&nbsp;}",
+        "question": "A라는 프로그램 코드의 MCDC 커버리지를 100%만족하기 위해 도출되어야 하는 테스트 케이스는 몇 개인가?",
+        "question_sub": "<보기>if (level=“vip” and ((early>60) or (period>5)){<br>&nbsp;&nbsp;&nbsp;&nbsp;price = 150000;<br>}else{<br>&nbsp;&nbsp;&nbsp;&nbsp;price = 200000;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 8개", "right": false },
@@ -321,7 +333,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 보기를 읽고 동등 분할 기법으로 테스트 케이스를 설계하였다. 가장 효율적인 테스트 케이스는 무엇인가?<br>[AL-2401-28.jpg]",
+        "question": "다음 보기를 읽고 동등 분할 기법으로 테스트 케이스를 설계하였다. 가장 효율적인 테스트 케이스는 무엇인가?",
         "question_sub": "<보기>우리 회사는 다음과 같은 인력 채용 규정을 따르고 있다. 21~23세 까지는 Part-time으로만 채용 가능하고, 24~55세 까지는 Full-time으로 채용이 가능하다. 20세 이하, 56세 이상은 채용이 불가능하다.",
         "explanation": "",
         "options": [
@@ -358,7 +370,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?<br>[AL-2401-31.jpg]",
+        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?",
         "question_sub": "<보기>(가) 비정상적인 전이를 테스트하는 테스트 케이스를 생성한다.<br>(나) 상태 전이도로부터 전이 트리를 만든다.<br>(다) 대상 시스템의 상태 전이도를 모델링한다.<br>(라) 전이 트리로부터 각 전이 경로를 테스트하는 테스트 케이스를 생성한다.",
         "explanation": "",
         "options": [
@@ -371,7 +383,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>와 같이 데이터베이스 시스템의 명세가 있다. 분류 트리 기법을 이용하여 최소화 방법을 사용하여 도출된 테스트 케이스는 몇 개인가?<br>[AL-2401-32.jpg]",
+        "question": "<보기>와 같이 데이터베이스 시스템의 명세가 있다. 분류 트리 기법을 이용하여 최소화 방법을 사용하여 도출된 테스트 케이스는 몇 개인가?",
         "question_sub": "<보기>- 접근 권한: 관리자, 일반 사용자<br>- 동작: add, edit, delete<br>- 접근 방법: native tool, browser(IE, Firefox, safari), API",
         "explanation": "",
         "options": [
@@ -396,7 +408,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음에서 설명하고 있는 테스트 프로세스 표준은 무엇인가?<br>[AL-2401-34.jpg]",
+        "question": "다음에서 설명하고 있는 테스트 프로세스 표준은 무엇인가?",
         "question_sub": "<다음>테스트 프로세스를 조직 테스트 프로세스, 테스트 관리 프로세스, 동적 테스트 프로세스로 분류하여 각 구성 활동",
         "explanation": "",
         "options": [
@@ -481,8 +493,8 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음은 테스트 설계 및 구현 활동에 대한 설명이다. 먼저 수행하는 것부터 순서대로 올바르게 나열한 것은 무엇인가?<br>[AL-2401-41.jpg]",
-        "question_sub": "<보기>(가) 테스트 커버리지 기준을 구체적으로 정의한다. 예를 들어, 동등분할 테스트 기법을 적용할 경우, One-to-One 동등분할 인지 최소화 동등분할 인지 결정한다.<br>(나) 요구사항 명세서 등의 테스트 베이시스를 바탕으로 테스트할 세부적인 상황을 식별한다.<br>(다) 테스트 대상의 테스트 범위에 대해 동일한 테스트 전략을 적용하는 피처들을 그룹핑한다.<br>(라) 테스트하고자 하는 구체적인 상황에 대해 선행조건, 입력, 예상 결과를 정의한다.<br>(마) 수동 테스트할 테스트케이스와 자동으로 수행할 테스트케이스들을 분리한다.",
+        "question": "다음은 테스트 설계 및 구현 활동에 대한 설명이다. 먼저 수행하는 것부터 순서대로 올바르게 나열한 것은 무엇인가?",
+        "question_sub": "<보기>(가) 테스트 커버리지 기준을 구체적으로 정의한다. 예를 들어, 동등분할 테스트 기법을 적용할 경우, One-to-One 동등분할 인지 최소화 동등분할 인지 결정한다.<br>(나) 요구사항 명세서 등의 테스트 베이시스를 바탕으로 테스트할 세부적인 상황을 식별한다.<br>(다) 테스트 대상의 테스트 범위에 대해 동일한 테스트 전략을 적용하는 피처들을 그룹핑한다.<br>(라) 테스트하고자 하는 구체적인 상황에 대해 선행조건, 입력, 예상 결과를 정의한다.<br>(마) 수동 테스트할 테스트 케이스와 자동으로 수행할 테스트 케이스들을 분리한다.",
         "explanation": "",
         "options": [
             { "value": "① (다), (가), (나), (라), (마)", "right": false },
