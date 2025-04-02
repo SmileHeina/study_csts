@@ -43,7 +43,7 @@
       text-decoration: none;
       padding: 0.5rem 1rem;
       border-radius: 20px;
-      font-weight: 500;
+      font-weight: bold;
       transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
       /* 메뉴 항목에도 옅은 테두리 */
@@ -58,11 +58,11 @@
     }
 
     .nav-tabs a.active {
-      background: #007bff;
+      background: #6839a0;
       color: #fff;
 
       /* 활성화 상태일 때 테두리 색상도 강조 */
-      border-color: #007bff;
+      border-color: #6839a0;
 
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
@@ -91,6 +91,53 @@
         padding: 1rem;
       }
     }
+
+    /* question-sub 테이블 스타일 */
+    .question-sub-table {
+      width: 100%;      /* 테이블 너비를 100%로 설정 */
+      border: 1px solid #2a0073;      /* 테두리 색상 */
+      margin: 10px 0;      /* 테이블 위아래 여백 */
+      border-collapse: collapse;      /* 테두리 겹침 제거 */
+    }
+
+    /* <보기> 제목 스타일 */
+    .question-sub-title {
+      text-align: center;      /* 가운데 정렬 */
+      font-weight: bold;      /* 굵은 글씨 */
+  /*     margin-bottom: 10px;      아래 여백 */
+    }
+
+    /* <보기> 내용 스타일 */
+    .question-sub-content {
+      text-align: left;      /* 왼쪽 정렬 */
+      padding: 10px;      /* 내부 여백 */
+      line-height: 1.6;      /* 줄 간격 설정 */
+      text-indent: 20px;      /* 첫 줄 들여쓰기 */
+      white-space: pre-line;      /* 줄바꿈 유지 */
+    }
+
+    /* 주관식 input 필드 스타일 */
+    input.text-input {
+      border: 2px solid rgb(203, 203, 255);       /* 색 테두리 */
+      padding: 10px 12px; /* 내부 여백 (위아래 10px, 좌우 12px) */
+      font-size: 15px; /* 폰트 크기 */
+      width: 100%;      /* 너비를 100%로 설정 */
+      box-sizing: border-box;      /* 테두리와 패딩을 포함한 크기 계산 */
+      border-radius: 4px;      /* 둥근 모서리 */
+      height: 40px; /* 높이를 명확하게 지정 */
+      color: rgba(0, 0, 34, 0.322); /* 글자색 설정 */
+    }
+
+    /* 포커스 상태의 스타일 */
+    input.text-input:focus {
+      outline: none;
+      /* 기본 포커스 아웃라인 제거 */
+      border-color: darkblue;
+      /* 포커스 시 더 진한 파란색 테두리 */
+      background-color: #f0f8ff;
+      /* 포커스 시 연한 파란색 배경 */
+      color: rgba(0, 0, 34, 0.322); /* 글자색 설정 */
+    }
   </style>
 </head>
 
@@ -100,21 +147,21 @@
   </div>
   <div class="nav-tabs">
     <a href="csts_fl_2501.html">
-      FL 2025년 1회</a>
+      FL 25-1회</a>
     <a href="csts_fl_2405.html">
-      FL 2024년 5회 </a>
+      FL 24-5회 </a>
     <a href="csts_fl_2404.html">
-      FL 2024년 4회 </a>
+      FL 24-4회 </a>
     <a href="csts_fl_2403.html">
-      FL 2024년 3회 </a>
+      FL 24-3회 </a>
     <a href="csts_fl_2402.html">
-      FL 2024년 2회 </a>
+      FL 24-2회 </a>
     <a href="csts_fl_2401.html" class="active">
-      FL 2024년 1회 </a>
+      FL 24-1회 </a>
     <a href="csts_al_2402.html">
-      AL 2024년 2회 </a>
+      AL 24-2회 </a>
     <a href="csts_al_2401.html">
-      AL 2024년 1회 </a>
+      AL 24-1회 </a>
   </div>
   <div class="content">
 
@@ -200,6 +247,7 @@
       .question-text {
         font-weight: 500;
         margin-bottom: 15px;
+        line-height: 1.6;      /* 줄 간격 설정 */
       }
 
       .options {
@@ -211,10 +259,50 @@
         padding: 10px;
         border-radius: 5px;
         transition: background 0.3s ease;
+
+        display: flex;
+        align-items: center;
       }
 
       .option:hover {
-        background-color: #f0f0f0;
+        background-color: #dfdffc;
+      }
+
+      /* 기본 라디오 버튼 숨기기 : 250402 */
+      input[type="radio"] {
+        appearance: none;        /* 기본 브라우저 스타일 제거 */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;        /* 기본 테두리 */
+        border-radius: 50%;        /* 원형 버튼 */
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        /* 부드러운 전환 효과 */
+      }
+
+      /* 마우스 오버 시 테두리 */
+      input[type="radio"]:hover {
+        border-color: rgb(197, 170, 255);        /*  테두리 */
+      }
+
+      /* 선택된 상태에서 이미지 사용 */
+      input[type="radio"]:checked {
+        background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
+        background-size: 100% 100%;        /* 이미지를 축소하여 맞춤 */
+        background-repeat: no-repeat;
+        background-position: center;        /* 이미지 위치 조정 */
+        border: none;        /* 기존 테두리 제거 */
+      }
+
+      /* 라벨과 간격 조정  : 250402 */
+      .option label {
+        display: inline-block;        /* 라벨을 인라인 블록으로 설정 */
+        vertical-align: middle;        /* 텍스트와 라벨 정렬 */
+        padding-left: 20px;        /* 텍스트와 이미지 간격 확보 */
       }
 
       .result {
@@ -303,7 +391,7 @@
 
       .progress {
         height: 100%;
-        background: #0078d4;
+        background: #ecddff;
         transition: width 0.4s ease-in-out;
         width: 0;
         border-radius: 15px 0 0 15px;
@@ -316,10 +404,10 @@
         left: 0;
         text-align: center;
         line-height: 25px;
-        color: #848383;
+        color: #3a005e;
         font-size: 16px;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); */
         z-index: 1;
       }
 
@@ -702,8 +790,9 @@
           const processedExplanation = processExplanation(q.explanation);
 
           let optionsHTML = ''; //generateOptions(q, index);
-
           let inputFieldHTML = ''; //20250328 heina
+          let questionSubHTML = ''; // <보기> 내용 HTML : 250402
+          let questionSub02HTML = ''; // <보기> 내용 HTML : 250402
 
           // 페이지당 1문항일 때 개별 버튼 감추기(선택 사항)
           let questionButtonsHTML = '';
@@ -719,18 +808,50 @@
           // 주관식 문제 처리 : 20250328 heina
           if (q.type === 'text') {
             inputFieldHTML = `
-            <input type="text" id="question${index}" placeholder="답을 입력하세요">
+            <input type="text" id="question${index}" class="text-input" placeholder="답을 입력하세요">
         `;
             optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
           }
           else {
             optionsHTML = generateOptions(q, index);
           }
-
+          // <보기> 처리: question_sub가 있는 경우 표로 표시 : 250402
+          if (q.question_sub) {
+            questionSubHTML = `
+              <table class="question-sub-table">
+                <tr>
+                  <td class="question-sub-title">${q.question_sub.startsWith('<보기>') ? '<보기>' : '<다음>'}</td> <!-- 제목 처리 -->
+                </tr>
+                <tr>
+                  <td class="question-sub-content">
+                    ${q.question_sub.replace('<보기>', '').replace('<다음>', '').trim()} <!-- 내용 처리 -->
+                  </td>
+                </tr>
+             </table>
+            `;
+          }
+          // <보기/다음> 2개인 경우 처리: question_sub_02가 있는 경우 표로 표시 : 250402
+          if (q.question_sub_02) {
+            questionSub02HTML = `
+              <table class="question-sub-table">
+                <tr>
+                  <td class="question-sub-title">${q.question_sub_02.startsWith('<보기>') ? '<보기>' : '<다음>'}</td> <!-- 제목 처리 -->
+                </tr>
+                <tr>
+                  <td class="question-sub-content">
+                    ${q.question_sub_02.replace('<보기>', '').replace('<다음>', '').trim()} <!-- 내용 처리 -->
+                  </td>
+                </tr>
+             </table>
+            `;
+          }
+          // 문제 HTML 생성
           questionDiv.innerHTML = `
         <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
+        ${questionSubHTML} <!-- <보기/다음음> 내용 추가 -->
+        ${questionSub02HTML} <!-- <보기/다음음> 내용 추가 -->
         <div class="options">${optionsHTML}</div>
-        ${inputFieldHTML}
+        ${inputFieldHTML} <!-- 주관식 답 입력 필드 추가 -->
         ${questionButtonsHTML}
         <div class="result" id="result${index}"></div>
         <div class="message" id="message${index}" style="display: none;"></div>
@@ -810,6 +931,7 @@
 
       function handleResult(isCorrect, selectedOption, q, index) {
         const messageDiv = document.getElementById(`message${index}`);
+
         if (isCorrect) {
           messageDiv.innerHTML = '';
           selectedOption.closest('.option').classList.add('correct-answer');
@@ -989,6 +1111,7 @@
           updateNavigation();
           updateProgress();
           resetQuiz();
+          scrollToTop();
         }
       }
 
