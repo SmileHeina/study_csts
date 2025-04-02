@@ -91,6 +91,43 @@
         padding: 1rem;
       }
     }
+
+    .question-sub-table {
+      width: 100%;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      border-collapse: collapse;
+    }
+
+    .question-sub-table td {
+      padding: 10px;
+      text-align: left;
+      background-color: #f9f9f9;
+    }
+
+    /* 주관식 input 필드 스타일 */
+    input.text-input {
+      border: 2px solid blue;
+      /* 파란색 테두리 */
+      padding: 8px;
+      /* 내부 여백 */
+      width: 100%;
+      /* 너비를 100%로 설정 */
+      box-sizing: border-box;
+      /* 테두리와 패딩을 포함한 크기 계산 */
+      border-radius: 4px;
+      /* 둥근 모서리 */
+    }
+
+    /* 포커스 상태의 스타일 */
+    input.text-input:focus {
+      outline: none;
+      /* 기본 포커스 아웃라인 제거 */
+      border-color: darkblue;
+      /* 포커스 시 더 진한 파란색 테두리 */
+      background-color: #f0f8ff;
+      /* 포커스 시 연한 파란색 배경 */
+    }
   </style>
 </head>
 
@@ -211,10 +248,50 @@
         padding: 10px;
         border-radius: 5px;
         transition: background 0.3s ease;
+
+        display: flex;
+        align-items: center;
       }
 
       .option:hover {
         background-color: #f0f0f0;
+      }
+
+      /* 기본 라디오 버튼 숨기기 : 250402 */
+      input[type="radio"] {
+        appearance: none;
+        /* 기본 브라우저 스타일 제거 */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ccc;
+        /* 기본 테두리 */
+        border-radius: 50%;
+        /* 원형 버튼 */
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        /* 부드러운 전환 효과 */
+      }
+
+      /* 마우스 오버 시 초록색 테두리 */
+      input[type="radio"]:hover {
+        border-color: green;
+        /* 초록색 테두리 */
+      }
+
+      /* 선택된 상태에서 파란색 배경 */
+      input[type="radio"]:checked {
+        background-color: blue;
+        /* 파란색 배경 */
+        border-color: blue;
+        /* 파란색 테두리 */
+      }
+
+      /* 라벨과 간격 조정  : 250402 */
+      .option label {
+        margin-left: 10px;
       }
 
       .result {
@@ -702,8 +779,8 @@
           const processedExplanation = processExplanation(q.explanation);
 
           let optionsHTML = ''; //generateOptions(q, index);
-
           let inputFieldHTML = ''; //20250328 heina
+          let questionSubHTML = ''; // <보기> 내용 HTML : 250402
 
           // 페이지당 1문항일 때 개별 버튼 감추기(선택 사항)
           let questionButtonsHTML = '';
@@ -719,18 +796,29 @@
           // 주관식 문제 처리 : 20250328 heina
           if (q.type === 'text') {
             inputFieldHTML = `
-            <input type="text" id="question${index}" placeholder="답을 입력하세요">
+            <input type="text" id="question${index}" class="text-input" placeholder="답을 입력하세요">
         `;
             optionsHTML = ''; // 주관식 문제일 경우 optionsHTML 초기화
           }
           else {
             optionsHTML = generateOptions(q, index);
           }
-
+          // <보기> 처리: question_sub가 있는 경우 표로 표시 : 250402
+          if (q.question_sub) {
+            questionSubHTML = `
+                <table class="question-sub-table">
+                    <tr>
+                        <td>${q.question_sub}</td>
+                    </tr>
+                </table>
+            `;
+          }
+          // 문제 HTML 생성
           questionDiv.innerHTML = `
         <div class="question-text">[${questionNumber}] ${processedQuestion}</div>
+        ${questionSubHTML} <!-- <보기> 내용 추가 -->
         <div class="options">${optionsHTML}</div>
-        ${inputFieldHTML}
+        ${inputFieldHTML} <!-- 주관식 답 입력 필드 추가 -->
         ${questionButtonsHTML}
         <div class="result" id="result${index}"></div>
         <div class="message" id="message${index}" style="display: none;"></div>
