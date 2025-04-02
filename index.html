@@ -309,17 +309,17 @@
 
       /* 선택된 상태에서 이미지 사용 */
       input[type="radio"]:checked+label {
-        background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
+        background-image: url('img/radio_checked_b.png');        /* 체크된 상태의 이미지 */
         background-size: contain;        /* 이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
-        background-position: left center; /* 이미지 위치 조정 */
-        padding-left: 30px; /* 텍스트와 이미지 간격 확보 */
+        background-position: center center; /* 이미지 위치 조정 */
       }
 
       /* 라벨과 간격 조정  : 250402 */
       .option label {
-        display: inline-block;
-        vertical-align: middle;
+        display: inline-block; /* 라벨을 인라인 블록으로 설정 */
+        vertical-align: middle; /* 텍스트와 라벨 정렬 */
+        padding-left: 30px; /* 텍스트와 이미지 간격 확보 */
       }
 
       .result {
