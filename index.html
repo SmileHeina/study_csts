@@ -104,11 +104,11 @@
       /* 테두리 겹침 제거 */
     }
 
-    .question-sub-table td {
+    /* .question-sub-table td {
       padding: 10px;
       text-align: left;
       background-color: #f9f9f9;
-    }
+    } */
 
     /* <보기> 제목 스타일 */
     .question-sub-title {
@@ -317,15 +317,19 @@
       }
 
       input[type="radio"]:checked::before {
-        content: '';         /* 가상 요소 생성 */
+        content: '';
+        /* 가상 요소 생성 */
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 16px;        /* 이미지 크기 조정 */
+        width: 16px;
+        /* 이미지 크기 조정 */
         height: 16px;
-        background-image: url('/img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
-        background-size: cover;        /* 이미지를 축소하여 맞춤 */
+        background-image: url('/img/radio_checked_p.png');
+        /* 이미지 경로 */
+        background-size: cover;
+        /* 이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
       }
 
@@ -848,11 +852,11 @@
             questionSubHTML = `
               <table class="question-sub-table">
                 <tr>
-                  <td class="question-sub-title"><보기></td>
+                  <td class="question-sub-title">${q.question_sub.startsWith('<보기>') ? '<보기>' : '<다음>'}</td> <!-- 제목 처리 -->
                 </tr>
                 <tr>
                   <td class="question-sub-content">
-                    ${q.question_sub.replace('<보기>', '').trim()}
+                    ${q.question_sub.replace('<보기>', '').replace('<다음>', '').trim()} <!-- 내용 처리 -->
                   </td>
                 </tr>
              </table>
