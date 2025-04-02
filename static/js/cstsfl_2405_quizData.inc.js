@@ -26,7 +26,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?<br>[FL-2405-03.jpg]",
+        "question": "다음에서 설명하는 특징과 테스트 단계를 올바르게 연결한 것은?",
+        "question_sub": "<다음>(가) 사용자 또는 제3자 테스트, 사용자 환경, 다양한 형태의 테스트가 가능함<br>(나) 개발자 중심의 코드 레벨 테스트, 개발 환경, 개발자 또는 개발 지식이 있는 테스터가 수행하고, 테스트 대상 소프트웨어를 독립적으로 실행시킬 환경이 필요함<br>(다) 개발자 중심의 코드 레벨 테스트, 개발 환경, 개발자 또는 개발 지식이 있는 테스터가 수행하고, 소프트웨어 통합에 필요한 환경이 필요함<br>(라) 제3자 중심 명세 기반 테스트, 소프트웨어 기능 및 비기능 요구사항 만족 여부를 검증하고, 사용자 환경 또는 사용자 환경과 최대한 유사한 환경 구성 필요함",
         "explanation": "",
         "options": [
             { "value": "① (가) 인수 테스트   (나) 단위 테스트  (다) 통합 테스트   (라) 시스템 테스트", "right": true },
@@ -62,7 +63,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음에서 설명하고 있는 용어는 무엇인가?<br>[FL-2405-06.jpg]",
+        "question": "다음에서 설명하고 있는 용어는 무엇인가?",
+        "question_sub": "<다음>상향식 테스트에서 아직 통합되지 않은 상위 컴포넌트의 동작을 시뮬레이션하는 모의 모듈로 테스트를 위한 인터페이스를 제공하는 형태로 구현된다.",
         "explanation": "",
         "options": [
             { "value": "① 테스트 스텁", "right": false },
@@ -290,7 +292,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?<br>[FL-2405-25.jpg]",
+        "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?",
+        "question_sub": "<보기>Bool p;<br>if(p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts('p is true');<br>if(!p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts('p is false');",
         "explanation": "",
         "options": [
             { "value": "① 초기화 하지 않은 변수의 사용", "right": true },
@@ -338,7 +341,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?<br>[FL-2405-29.jpg]",
+        "question": "<보기>의 프로그램 코드에서 결정 커버리지 100%를 만족하기 위한 최소 테스트 케이스의 수는 몇 개인가?",
+        "question_sub": "<보기>int computeBill(int a) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int b=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (a>120) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (a<=240) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-120)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b=(a-240)*2;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (b>=100) b=b*3;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;&nbsp;&nbsp;return b;}",
         "explanation": "",
         "options": [
             { "value": "① 2개", "right": false },
@@ -362,7 +366,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?<br>[FL-2405-31.jpg]",
+        "question": "다음 소스 코드에 대하여 100% 다중 조건 커버리지를 만족하는 최소의 테스트 케이스 개수는 몇 개인가?",
+        "question_sub": "<다음>IF ((impact>90 OR date>5) AND (severity==‘Major’))<br>&nbsp;&nbsp;&nbsp;&nbsp;handling = 24<br>ELSE<br>&nbsp;&nbsp;&nbsp;&nbsp;handling = 48<br>END",
         "explanation": "",
         "options": [
             { "value": "① 2", "right": false },
@@ -410,7 +415,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?<br>[FL-2405-35.jpg]",
+        "question": "시스템의 상태 전이도를 기반으로 테스트 케이스를 도출하는 절차로 올바른 것은?",
+        "question_sub": "<보기>(가) 비정상적인 전이를 테스트하는 테스트 케이스를 생성한다.<br>(나) 상태 전이도로부터 전이 트리를 만든다.<br>(다) 대상 시스템의 상태 전이도를 모델링한다.<br>(라) 전이 트리로부터 각 전이 경로를 테스트하는 테스트 케이스를 생성한다.",
         "explanation": "",
         "options": [
             { "value": "① (가) → (나) → (다) → (라)", "right": false },
@@ -446,7 +452,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?<br>[FL-2405-38.jpg]",
+        "question": "테스트 프로세스에 따른 문서의 산출물 순서가 올바른 것은 무엇인가?",
+        "question_sub": "<다음>(가) 테스트 계획서&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 설계 명세서&nbsp;&nbsp;&nbsp;&nbsp;(다) 테스트 케이스  명세서&nbsp;&nbsp;&nbsp;&nbsp;(라) 테스트 절차서&nbsp;&nbsp;&nbsp;&nbsp;(마) 테스트 결함 보고서&nbsp;&nbsp;&nbsp;&nbsp;(바) 테스트 평가 보고서",
         "explanation": "",
         "options": [
             { "value": "① (라) - (다) - (나) - (마)", "right": false },
@@ -494,7 +501,8 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?<br>[FL-2405-42.jpg]",
+        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?",
+        "question_sub": "<다음>(가) 95%의 문장 커버리지가 충족되어야 한다.<br>(나) 90%의 테스트 케이스(테스트 절차)가 통과되어야 한다.<br>(다) 발견된 결함의 수가 2개 이하이어야 한다.",
         "explanation": "",
         "options": [
             { "value": "① (가)", "right": false },
@@ -708,55 +716,64 @@ var cstsfl_2405_quizData = [
     },
     {
         "type": "text",
-        "question": "다음은 무엇에 대한 설명인지 기재하시오.<br>[FL-2405-62.jpg]",
+        "question": "다음은 무엇에 대한 설명인지 기재하시오.",
+        "question_sub": "<다음>소프트웨어 개발 단계별 테스트 분류 중 이 테스트 레벨은 시스템을 대상으로 실제 운영환경에서 사용자가 하는 테스트로, 시스템을 배포하거나 실제 사용할 준비가 되었는지 평가한다.",
         "explanation": "인수 테스트 | 사용자 인수 테스트",
         "correct": ["인수 테스트", "사용자 인수 테스트"]
     },
     {
         "type": "text",
-        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?<br>[FL-2405-63.jpg]",
+        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?",
+        "question_sub": "<다음>최근 릴리즈된 버전에 대해 테스트 팀에서 시스템 테스트를 했는데 꽤 많은 결함이 발견되었다. 특히 기본 기능 관련 동작에서 많은 결함이 발견되었다. 테스트팀은 발견한 결함으로 시스템에 등록하고 개발자에게 할당했다.<br>개발자는 원인을 분석한 후 소스를 수정하여 이를 새로운 버전에 반영하였다. 테스트 팀에서는 개발자의 결함이 제대로 수정되었는지 확인하기 위해 동일한 테스트 케이스를 사용하여 새로운 버전을 테스트 하였다.",
         "explanation": "재테스팅(Re-testing)",
         "correct": ["재테스팅", "Re-testing", "re-testing"]
     },
     {
         "type": "text",
-        "question": "<보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?<br>[FL-2405-64.jpg]",
+        "question": "<보기>의 프로그램을 제어 흐름 그래프로 작성했을 때 최소 기본 블록은 몇 개인가?",
+        "question_sub": "<보기>int  foo(int x, int  y, int z) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int w=0;<br>&nbsp;&nbsp;&nbsp;&nbsp;if  (x>0 || y>0)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z=z+10;<br>&nbsp;&nbsp;&nbsp;&nbsp;if  (z>10)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;w=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;return w;<br>}",
         "explanation": "5개",
         "correct": "5개"
     },
     {
         "type": "text",
-        "question": "다음은 구조기반 테스트 커버리지에 대한 설명이다. 어떤 테스트 커버리지에 대한 설명인지 기재하시오.<br>[FL-2405-65.jpg]",
+        "question": "다음은 구조기반 테스트 커버리지에 대한 설명이다. 어떤 테스트 커버리지에 대한 설명인지 기재하시오.",
+        "question_sub": "<다음>∙ 각 기본 조건식 및 전체 조건식의 결괏값이 참(True)과 거짓(False)을 적어도 한 번 이상 실행 시키는 것을 기준으로 하는 테스트 방법<br>∙ 테스트 케이스 수트에 의해 실행된 전체 조건식과 기본 조건식이 몇 (%)인지 측정",
         "explanation": "결정/조건, 조건/분기 및 / 기준 좌우가 바뀌어도 정답",
         "correct": ["결정/조건", "조건/분기"]
     },
     {
         "type": "text",
-        "question": "<보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.<br>[FL-2405-66.jpg]",
+        "question": "<보기>의 단계들을 나열하여, 동등 분할을 하는 절차로 구성하시오.",
+        "question_sub": "<보기>(가) 동등 클래스에서 최소 하나 이상의 대푯값을 선정한다.<br>(나) 명세에서 입력과 출력을 식별한다.<br>(다) 대푯값을 테스트 케이스에 반영하여 테이블을 작성한다.<br>(라) 입력과 출력 영역을 동등 클래스들로 분할한다.",
         "explanation": "나 → 라 → 가 → 다",
-        "correct": "나 → 라 → 가 → 다"
+        "correct": "나-라-가-다"
     },
     {
         "type": "text",
-        "question": "<보기>의 명세를 기반으로 동등분할과 경계값 분석을 적용하여 테스트 케이스를 설계하였다. 이때 설계된 테스트 케이스 수는 각각 몇 개 인가? (단. 경계값 분석은 2-value를 적용한다.)[FL-2405-67.jpg]",
+        "question": "<보기>의 명세를 기반으로 동등분할과 경계값 분석을 적용하여 테스트 케이스를 설계하였다. 이때 설계된 테스트 케이스 수는 각각 몇 개 인가? (단. 경계값 분석은 2-value를 적용한다.)<br>&nbsp;&nbsp;(동등 분할:______개, 경계값 분석:______개)",
+        "question_sub": "<보기>- 나이가 20세 이상이면, 즉 20세부터 보험 가입이 가능하다.<br>- 나이가 50세를 초과하면, 즉 51세부터 10%의 가산이 있다.<br>- 나이가 80세를 초과하면, 즉 81세부터 가입이 불가하다.<br>- 나이는 양수 이외 값은 입력 자체가 불가능하다. (오직 양의 정수(1부터)만 입력 가능)",
         "explanation": "동등분할: 4개, 경계값 분석: 7개",
         "correct": "동등분할 4개, 경계값 분석 7개"
     },
     {
         "type": "text",
-        "question": "다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?<br>[FL-2405-68.jpg]",
+        "question": "다음의 설명에서 빈칸에 들어갈 알맞은 테스팅은 무엇인가?",
+        "question_sub": "<다음>(______) 테스팅은 소프트웨어 변경이 발생한 후에 수행되는 테스트로 소프트웨어에 가해진 변경이 의도하지 않은 결함을 만들지 않았으며 시스템이 기존의 요구사항을 충족함을 검증하기 위하여 수행하는 테스트이다.",
         "explanation": "리그레션 또는 회귀",
         "correct": ["리그레션", "회귀", "regression", "Regression"]
     },
     {
         "type": "text",
-        "question": "다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?<br>[FL-2405-69.jpg]",
+        "question": "다음은 결함 분석 방법에 대한 설명이다. 빈칸에 들어갈 알맞은 용어는 무엇인가?",
+        "question_sub": "<다음>입력값, 테스트 절차, 테스트 환경 중에 어떤 요소가 결함 발생에 영향을 미치는지 분석하여 결함 발생의 구체적인 상황을 파악하는 방법을 결함의 (______) 라고 한다.",
         "explanation": "고립화 또는 Isolation",
         "correct": ["고립화", "Isolation", "isolation"]
     },
     {
         "type": "text",
-        "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?<br>[FL-2405-70.jpg]",
+        "question": "다음의 보기에서 설명하는 활동은 테스트 프로세스의 어느 단계에 해당하는가?",
+        "question_sub": "<보기>- 테스트 프로젝트에서 생성된 결과물을 이후 테스트 프로젝트에서 재사용될 수 있도록 테스트 자산으로 관리한다.<br>- 테스트 프로젝트에서 사용되었던 다양한 테스트 환경 요소들을 약속된 상태로 정리한다.<br>- 수행한 테스팅 작업과 그 결과를 보고서에 기록한다.",
         "explanation": "테스트 종료",
         "correct": "테스트 종료"
     }
