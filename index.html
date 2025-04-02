@@ -288,20 +288,17 @@
 
       /* 기본 라디오 버튼 숨기기 : 250402 */
       input[type="radio"] {
-        appearance: none;
-        /* 기본 브라우저 스타일 제거 */
+        appearance: none;        /* 기본 브라우저 스타일 제거 */
         -webkit-appearance: none;
         -moz-appearance: none;
         width: 20px;
         height: 20px;
-        border: 2px solid #ccc;
-        /* 기본 테두리 */
-        border-radius: 50%;
-        /* 원형 버튼 */
+        border: 2px solid #ccc;        /* 기본 테두리 */
+        border-radius: 50%;        /* 원형 버튼 */
         outline: none;
         cursor: pointer;
-        transition: all 0.3s ease;
-        /* 부드러운 전환 효과 */
+        position: relative;
+        transition: all 0.3s ease;        /* 부드러운 전환 효과 */
       }
 
       /* 마우스 오버 시 테두리 */
@@ -315,12 +312,14 @@
         background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
         background-size: contain;        /* 이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left center; /* 이미지 위치 조정 */
+        padding-left: 30px; /* 텍스트와 이미지 간격 확보 */
       }
 
       /* 라벨과 간격 조정  : 250402 */
       .option label {
-        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
       }
 
       .result {
