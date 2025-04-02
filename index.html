@@ -43,7 +43,7 @@
       text-decoration: none;
       padding: 0.5rem 1rem;
       border-radius: 20px;
-      font-weight: 500;
+      font-weight: bold;
       transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 
       /* 메뉴 항목에도 옅은 테두리 */
@@ -58,11 +58,11 @@
     }
 
     .nav-tabs a.active {
-      background: #007bff;
+      background: #6839a0;
       color: #fff;
 
       /* 활성화 상태일 때 테두리 색상도 강조 */
-      border-color: #007bff;
+      border-color: #6839a0;
 
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     }
@@ -130,9 +130,12 @@
 
     /* 포커스 상태의 스타일 */
     input.text-input:focus {
-      outline: none;      /* 기본 포커스 아웃라인 제거 */
-      border-color: darkblue;      /* 포커스 시 더 진한 파란색 테두리 */
-      background-color: #f0f8ff;      /* 포커스 시 연한 파란색 배경 */
+      outline: none;
+      /* 기본 포커스 아웃라인 제거 */
+      border-color: darkblue;
+      /* 포커스 시 더 진한 파란색 테두리 */
+      background-color: #f0f8ff;
+      /* 포커스 시 연한 파란색 배경 */
       color: rgba(0, 0, 34, 0.322); /* 글자색 설정 */
     }
   </style>
@@ -144,21 +147,21 @@
   </div>
   <div class="nav-tabs">
     <a href="csts_fl_2501.html" class="active">
-      FL 2025년 1회</a>
+      FL 25-1회</a>
     <a href="csts_fl_2405.html">
-      FL 2024년 5회 </a>
+      FL 24-5회 </a>
     <a href="csts_fl_2404.html">
-      FL 2024년 4회 </a>
+      FL 24-4회 </a>
     <a href="csts_fl_2403.html">
-      FL 2024년 3회 </a>
+      FL 24-3회 </a>
     <a href="csts_fl_2402.html">
-      FL 2024년 2회 </a>
+      FL 24-2회 </a>
     <a href="csts_fl_2401.html">
-      FL 2024년 1회 </a>
+      FL 24-1회 </a>
     <a href="csts_al_2402.html">
-      AL 2024년 2회 </a>
+      AL 24-2회 </a>
     <a href="csts_al_2401.html">
-      AL 2024년 1회 </a>
+      AL 24-1회 </a>
   </div>
   <div class="content">
 
@@ -388,7 +391,7 @@
 
       .progress {
         height: 100%;
-        background: #0078d4;
+        background: #721bff;
         transition: width 0.4s ease-in-out;
         width: 0;
         border-radius: 15px 0 0 15px;
@@ -401,10 +404,10 @@
         left: 0;
         text-align: center;
         line-height: 25px;
-        color: #848383;
+        color: #ffffff;
         font-size: 16px;
         font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        /* text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); */
         z-index: 1;
       }
 
