@@ -105,6 +105,26 @@
       background-color: #f9f9f9;
     }
 
+    /* <보기> 제목 스타일 */
+    .question-sub-title {
+      text-align: center;
+      /* 가운데 정렬 */
+      font-weight: bold;
+      /* 굵은 글씨 */
+      margin-bottom: 10px;
+      /* 아래 여백 */
+    }
+
+    /* <보기> 내용 스타일 */
+    .question-sub-content {
+      white-space: pre-line;
+      /* 줄바꿈 유지 */
+      text-indent: 20px;
+      /* 첫 줄 들여쓰기 */
+      line-height: 1.6;
+      /* 줄 간격 */
+    }
+
     /* 주관식 input 필드 스타일 */
     input.text-input {
       border: 2px solid blue;
@@ -806,11 +826,12 @@
           // <보기> 처리: question_sub가 있는 경우 표로 표시 : 250402
           if (q.question_sub) {
             questionSubHTML = `
-                <table class="question-sub-table">
-                    <tr>
-                        <td>${q.question_sub}</td>
-                    </tr>
-                </table>
+            <div class="question-sub-container">
+              <div class="question-sub-title"><보기></div>
+              <div class="question-sub-content">
+                  ${q.question_sub.replace('<보기>', '').trim()}
+              </div>
+            </div>
             `;
           }
           // 문제 HTML 생성
