@@ -94,36 +94,54 @@
 
     /* question-sub 테이블 스타일 */
     .question-sub-table {
-      width: 100%;      /* 테이블 너비를 100%로 설정 */
-      border: 1px solid #2a0073;      /* 테두리 색상 */
-      margin: 5px 0;      /* 테이블 위아래 여백 */
-      border-collapse: collapse;      /* 테두리 겹침 제거 */
+      width: 100%;
+      /* 테이블 너비를 100%로 설정 */
+      border: 1px solid #2a0073;
+      /* 테두리 색상 */
+      margin: 5px 0;
+      /* 테이블 위아래 여백 */
+      border-collapse: collapse;
+      /* 테두리 겹침 제거 */
     }
 
     /* <보기> 제목 스타일 */
     .question-sub-title {
-      text-align: center;      /* 가운데 정렬 */
-      font-weight: bold;      /* 굵은 글씨 */
-      padding: 3px 0; /* 위아래 패딩 줄이기 */
+      text-align: center;
+      /* 가운데 정렬 */
+      font-weight: bold;
+      /* 굵은 글씨 */
+      padding: 3px 0;
+      /* 위아래 패딩 줄이기 */
     }
 
     /* <보기> 내용 스타일 */
     .question-sub-content {
-      text-align: left;      /* 왼쪽 정렬 */
-      padding: 3px 10px;      /* 내부 여백 */
-      line-height: 1.6;      /* 줄 간격 설정 */
+      text-align: left;
+      /* 왼쪽 정렬 */
+      padding: 3px 10px;
+      /* 내부 여백 */
+      line-height: 1.6;
+      /* 줄 간격 설정 */
     }
 
     /* 주관식 input 필드 스타일 */
     input.text-input {
-      border: 2px solid rgb(203, 203, 255);       /* 색 테두리 */
-      padding: 10px 12px; /* 내부 여백 (위아래 10px, 좌우 12px) */
-      font-size: 15px; /* 폰트 크기 */
-      width: 100%;      /* 너비를 100%로 설정 */
-      box-sizing: border-box;      /* 테두리와 패딩을 포함한 크기 계산 */
-      border-radius: 4px;      /* 둥근 모서리 */
-      height: 40px; /* 높이를 명확하게 지정 */
-      color: rgba(0, 0, 34, 0.322); /* 글자색 설정 */
+      border: 2px solid rgb(203, 203, 255);
+      /* 색 테두리 */
+      padding: 10px 12px;
+      /* 내부 여백 (위아래 10px, 좌우 12px) */
+      font-size: 15px;
+      /* 폰트 크기 */
+      width: 100%;
+      /* 너비를 100%로 설정 */
+      box-sizing: border-box;
+      /* 테두리와 패딩을 포함한 크기 계산 */
+      border-radius: 4px;
+      /* 둥근 모서리 */
+      height: 40px;
+      /* 높이를 명확하게 지정 */
+      color: rgba(0, 0, 34, 0.322);
+      /* 글자색 설정 */
     }
 
     /* 포커스 상태의 스타일 */
@@ -134,7 +152,8 @@
       /* 포커스 시 더 진한 파란색 테두리 */
       background-color: #f0f8ff;
       /* 포커스 시 연한 파란색 배경 */
-      color: rgba(0, 0, 34, 0.322); /* 글자색 설정 */
+      color: rgba(0, 0, 34, 0.322);
+      /* 글자색 설정 */
     }
   </style>
 </head>
@@ -144,22 +163,14 @@
     <h1></h1>
   </div>
   <div class="nav-tabs">
-    <a href="csts_fl_2501.html" class="active">
-      FL 25-1회</a>
-    <a href="csts_fl_2405.html">
-      FL 24-5회 </a>
-    <a href="csts_fl_2404.html">
-      FL 24-4회 </a>
-    <a href="csts_fl_2403.html">
-      FL 24-3회 </a>
-    <a href="csts_fl_2402.html">
-      FL 24-2회 </a>
-    <a href="csts_fl_2401.html">
-      FL 24-1회 </a>
-    <a href="csts_al_2402.html">
-      AL 24-2회 </a>
-    <a href="csts_al_2401.html">
-      AL 24-1회 </a>
+    <a href="#" data-set="cstsal_2402" class="active">AL 24-2회</a>
+    <a href="#" data-set="cstsal_2401">AL 24-1회</a>
+    <a href="#" data-set="cstsfl_2501">FL 25-1회</a>
+    <a href="#" data-set="cstsfl_2405">FL 24-5회</a>
+    <a href="#" data-set="cstsfl_2404">FL 24-4회</a>
+    <a href="#" data-set="cstsfl_2403">FL 24-3회</a>
+    <a href="#" data-set="cstsfl_2402">FL 24-2회</a>
+    <a href="#" data-set="cstsfl_2401">FL 24-1회</a>
   </div>
   <div class="content">
 
@@ -245,7 +256,8 @@
       .question-text {
         font-weight: 500;
         margin-bottom: 15px;
-        line-height: 1.6;      /* 줄 간격 설정 */
+        line-height: 1.6;
+        /* 줄 간격 설정 */
       }
 
       .options {
@@ -253,13 +265,20 @@
       }
 
       .option {
-        display: flex; /* 플렉스 박스를 사용하여 정렬 */
-        align-items: center; /* 세로 중앙 정렬 */
-        gap: 10px; /* 버튼과 텍스트 사이 간격 */
-        margin: 10px 0; /* 옵션 간의 간격 */
-        padding: 10px; /* 내부 여백 */
-        border-radius: 5px; /* 둥근 모서리 */
-        transition: background 0.3s ease; /* 배경색 전환 효과 */
+        display: flex;
+        /* 플렉스 박스를 사용하여 정렬 */
+        align-items: center;
+        /* 세로 중앙 정렬 */
+        gap: 10px;
+        /* 버튼과 텍스트 사이 간격 */
+        margin: 10px 0;
+        /* 옵션 간의 간격 */
+        padding: 10px;
+        /* 내부 여백 */
+        border-radius: 5px;
+        /* 둥근 모서리 */
+        transition: background 0.3s ease;
+        /* 배경색 전환 효과 */
       }
 
       .option:hover {
@@ -268,42 +287,53 @@
 
       /* 기본 라디오 버튼 숨기기 : 250402 */
       input[type="radio"] {
-        appearance: none;        /* 기본 브라우저 스타일 제거 */
+        appearance: none;
+        /* 기본 브라우저 스타일 제거 */
         -webkit-appearance: none;
         -moz-appearance: none;
         width: 20px;
         height: 20px;
-        border: 2px solid #ccc;        /* 기본 테두리 */
-        border-radius: 50%;        /* 원형 버튼 */
+        border: 2px solid #ccc;
+        /* 기본 테두리 */
+        border-radius: 50%;
+        /* 원형 버튼 */
         outline: none;
         cursor: pointer;
         vertical-align: middle;
         display: inline-block;
         margin: 0;
         position: relative;
-        transition: all 0.3s ease;        /* 부드러운 전환 효과 */
-        flex-shrink: 0; /* 크기 줄어들지 않도록 고정 */
+        transition: all 0.3s ease;
+        /* 부드러운 전환 효과 */
+        flex-shrink: 0;
+        /* 크기 줄어들지 않도록 고정 */
         box-sizing: border-box;
       }
 
       /* 마우스 오버 시 테두리 */
       input[type="radio"]:hover {
-        border-color: rgb(197, 170, 255);        /*  테두리 */
+        border-color: rgb(197, 170, 255);
+        /*  테두리 */
       }
 
       /* 선택된 상태에서 이미지 사용 */
       input[type="radio"]:checked {
-        background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
-        background-size: cover;  /* 이미지를 축소하여 맞춤 */
+        background-image: url('img/radio_checked_p.png');
+        /* 체크된 상태의 이미지 */
+        background-size: cover;
+        /* 이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
-        background-position: center;        /* 이미지 위치 조정 */
+        background-position: center;
+        /* 이미지 위치 조정 */
         border: none
       }
 
       /* 라벨과 간격 조정  : 250402 */
       .option label {
-        display: inline-flex; /* 라디오 버튼과 텍스트를 가로로 정렬 */
-        align-items: center; /* 라디오 버튼을 텍스트 맨 위에 맞춤 */
+        display: inline-flex;
+        /* 라디오 버튼과 텍스트를 가로로 정렬 */
+        align-items: center;
+        /* 라디오 버튼을 텍스트 맨 위에 맞춤 */
         margin-left: 10px;
         font-size: 15px;
         line-height: 1.4;
@@ -607,14 +637,84 @@
       <div id="score"></div>
     </div>
 
-    <script src="static/js/cstsfl_2501_quizData.inc.js"></script>
+    <!-- <script src="static/js/cstsfl_2501_quizData.inc.js"></script> -->
     <script>
       let QUESTIONS_PER_PAGE = 10;
       let currentPage = 0;
       let currentQuestions = [];
       let totalScore = 0;
 
-      const userAnswers = {}; // 사용자가 입력한 값을 저장할 객체 : 250328 heina
+      const userAnswers = {}; // 사용자가 주관식 입력한 값을 저장할 객체 : 250328 heina
+
+      let currentDataName = "cstsfl_2501"; // 기본 데이터 이름 : 250409 heina
+      let quizData = {}; // 로드된 데이터들을 저장 : 250409 heina
+
+      // -------------------- [ nab tab data 한 페이지에서 처리 : 250409 heina ] ---------------------------
+      function loadQuizData(dataName, callback) { // 데이터 JS 파일 로드
+        if (quizData[dataName]) {
+          callback(quizData[dataName]);
+          return;
+        }
+
+        const script = document.createElement("script");
+        script.src = `static/js/${dataName}_quizData.inc.js`;
+        script.onload = () => {
+          // 예: window.cstsfl_2501_quizData 를 quizData[dataName]에 저장
+          quizData[dataName] = window[`${dataName}_quizData`];
+          callback(quizData[dataName]);
+        };
+        document.body.appendChild(script);
+      }
+
+      document.querySelectorAll('.nav-tabs a').forEach(tab => { // 탭 클릭 이벤트 연결
+        tab.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // 탭 상태 표시
+          document.querySelectorAll('.nav-tabs a').forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+
+          const selectedSet = this.dataset.set;
+          currentDataName = selectedSet;
+
+          loadQuizData(selectedSet, function (data) {
+            // 데이터를 현재 데이터로 설정
+            currentPage = 0;
+            currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
+            updateCurrentQuestions = () => {
+              const startIdx = currentPage * QUESTIONS_PER_PAGE;
+              const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, data.length);
+              currentQuestions = data.slice(startIdx, endIdx);
+            };
+            updateNavigation = () => {
+              const totalPages = Math.ceil(data.length / QUESTIONS_PER_PAGE);
+              document.getElementById("prevButton").disabled = (currentPage === 0);
+              document.getElementById("nextButton").disabled = (currentPage >= totalPages - 1);
+            };
+            updateProgress = () => {
+              const progressElement = document.getElementById('progress');
+              const totalPages = Math.ceil(data.length / QUESTIONS_PER_PAGE);
+              progressElement.style.width = ((currentPage + 1) / totalPages) * 100 + "%";
+              const startQuestion = currentPage * QUESTIONS_PER_PAGE + 1;
+              const endQuestion = Math.min((currentPage + 1) * QUESTIONS_PER_PAGE, data.length);
+              document.getElementById('progress-text').textContent = `문항 ${startQuestion}-${endQuestion} / ${data.length}`;
+            };
+
+            updateCurrentQuestions();
+            displayQuestions();
+            updateNavigation();
+            updateProgress();
+          });
+        });
+      });
+
+      window.addEventListener('DOMContentLoaded', () => { // 처음에 기본 데이터 로드
+        loadQuizData("cstsfl_2501", function (data) {
+          currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
+          initializeQuiz();
+        });
+      });
+      // -------------------- [ nab tab data 한 페이지에서 처리 : 250409 heina ] ---------------------------
 
       // 이미지 클릭 시 새 탭으로 열기
       function showFullSizeImage(src) {
