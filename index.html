@@ -294,16 +294,16 @@
       /* 선택된 상태에서 이미지 사용 */
       input[type="radio"]:checked {
         background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
-        background-size: 100% 100%;        /* 이미지를 축소하여 맞춤 */
+        background-size: cover; /*  100% 100%;        이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
         background-position: center;        /* 이미지 위치 조정 */
-        border: 2px solid #c69cfb; /* 체크 시에도 테두리 유지 (색상은 예시) */
+        border: none /*2px solid #c69cfb;  체크 시에도 테두리 유지 (색상은 예시) */
       }
 
       /* 라벨과 간격 조정  : 250402 */
       .option label {
-        display: flex; /* 라디오 버튼과 텍스트를 가로로 정렬 */
-        align-items: flex-start; /* 라디오 버튼을 텍스트 맨 위에 맞춤 */
+        display: inline-flex; /* 라디오 버튼과 텍스트를 가로로 정렬 */
+        align-items: center; /* 라디오 버튼을 텍스트 맨 위에 맞춤 */
         gap: 10px; /* 라디오 버튼과 텍스트 간격 */
         margin-bottom: 10px;
       }
