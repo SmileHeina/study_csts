@@ -658,13 +658,15 @@
           initializeQuiz();
         });
       });
-      
+
       function loadQuizData(dataName, callback) { // 데이터 JS 파일 로드
         if (quizData[dataName]) {
           callback(quizData[dataName]);
           return;
         }
-
+        console.log(currentDataName); // ex: 'cstsfl_2405'
+        console.log(quizData[currentDataName]); // 현재 로드된 데이터 배열
+        
         const script = document.createElement("script");
         script.src = `static/js/${dataName}_quizData.inc.js`;
         script.onload = () => {
