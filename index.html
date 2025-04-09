@@ -172,6 +172,7 @@
     <a href="#" data-set="cstsfl_2402">FL 24-2회</a>
     <a href="#" data-set="cstsfl_2401">FL 24-1회</a>
   </div>
+
   <div class="content">
 
     <style>
@@ -660,8 +661,9 @@
         script.src = `static/js/${dataName}_quizData.inc.js`;
         script.onload = () => {
           // 예: window.cstsfl_2501_quizData 를 quizData[dataName]에 저장
-          quizData[dataName] = window[`${dataName}_quizData`];
-          callback(quizData[dataName]);
+          const data = window[`${dataName}_quizData`];
+          quizData[dataName] = data;
+          callback(data);
         };
         document.body.appendChild(script);
       }
@@ -707,9 +709,9 @@
           });
         });
       });
-
+      cstsal_2402_quizData
       window.addEventListener('DOMContentLoaded', () => { // 처음에 기본 데이터 로드
-        loadQuizData("cstsal_2402", function (data) {
+        loadQuizData("cstsfl_2501", function (data) {
           currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
           initializeQuiz();
         });
