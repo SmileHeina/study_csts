@@ -112,8 +112,6 @@
       text-align: left;      /* 왼쪽 정렬 */
       padding: 3px 10px;      /* 내부 여백 */
       line-height: 1.6;      /* 줄 간격 설정 */
-/*      text-indent: 20px;       첫 줄 들여쓰기 */
-/*      white-space: pre-line;      /* 줄바꿈 유지 */
     }
 
     /* 주관식 input 필드 스타일 */
@@ -255,13 +253,13 @@
       }
 
       .option {
-        margin: 10px 0;
-        padding: 10px;
-        border-radius: 5px;
-        transition: background 0.3s ease;
-
-        display: flex;
-        align-items: center;
+        display: flex; /* 플렉스 박스를 사용하여 정렬 */
+        align-items: center; /* 세로 중앙 정렬 */
+        gap: 10px; /* 버튼과 텍스트 사이 간격 */
+        margin: 10px 0; /* 옵션 간의 간격 */
+        padding: 10px; /* 내부 여백 */
+        border-radius: 5px; /* 둥근 모서리 */
+        transition: background 0.3s ease; /* 배경색 전환 효과 */
       }
 
       .option:hover {
@@ -279,9 +277,13 @@
         border-radius: 50%;        /* 원형 버튼 */
         outline: none;
         cursor: pointer;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0;
         position: relative;
-        transition: all 0.3s ease;
-        /* 부드러운 전환 효과 */
+        transition: all 0.3s ease;        /* 부드러운 전환 효과 */
+        flex-shrink: 0; /* 크기 줄어들지 않도록 고정 */
+        box-sizing: border-box;
       }
 
       /* 마우스 오버 시 테두리 */
@@ -292,7 +294,7 @@
       /* 선택된 상태에서 이미지 사용 */
       input[type="radio"]:checked {
         background-image: url('img/radio_checked_p.png');        /* 체크된 상태의 이미지 */
-        background-size: 100% 100%;        /* 이미지를 축소하여 맞춤 */
+        background-size: cover;  /* 이미지를 축소하여 맞춤 */
         background-repeat: no-repeat;
         background-position: center;        /* 이미지 위치 조정 */
         border: none;        /* 기존 테두리 제거 */
@@ -300,9 +302,11 @@
 
       /* 라벨과 간격 조정  : 250402 */
       .option label {
-        display: inline-block;        /* 라벨을 인라인 블록으로 설정 */
-        vertical-align: middle;        /* 텍스트와 라벨 정렬 */
-        padding-left: 10px;        /* 텍스트와 이미지 간격 확보 */
+        display: inline-flex; /* 라디오 버튼과 텍스트를 가로로 정렬 */
+        align-items: center; /* 라디오 버튼을 텍스트 맨 위에 맞춤 */
+        margin-left: 10px;
+        font-size: 15px;
+        line-height: 1.4;
       }
 
       .result {
