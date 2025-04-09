@@ -1308,7 +1308,13 @@
         if (explanationDiv) explanationDiv.classList.remove('visible');
       }
 
-      document.addEventListener('DOMContentLoaded', initializeQuiz);
+      // document.addEventListener('DOMContentLoaded', initializeQuiz);
+      document.addEventListener('DOMContentLoaded', () => {
+        loadQuizData("cstsfl_2501", function (data) {
+          currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
+          initializeQuiz();
+        });
+      });
     </script>
 
   </div>
