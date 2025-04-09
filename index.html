@@ -640,6 +640,7 @@
 
     <!-- <script src="static/js/cstsfl_2501_quizData.inc.js"></script> -->
     <script>
+      let currentDataName = "cstsal_2402"; // 기본 데이터 이름 : 250409 heina
       let QUESTIONS_PER_PAGE = 10;
       let currentPage = 0;
       let currentQuestions = [];
@@ -647,7 +648,7 @@
 
       const userAnswers = {}; // 사용자가 주관식 입력한 값을 저장할 객체 : 250328 heina
 
-      let currentDataName = "cstsal_2402"; // 기본 데이터 이름 : 250409 heina
+      // let currentDataName = "cstsal_2402"; // 기본 데이터 이름 : 250409 heina
       let quizData = {}; // 로드된 데이터들을 저장 : 250409 heina
 
       // -------------------- [ nab tab data 한 페이지에서 처리 : 250409 heina ] ---------------------------
@@ -728,8 +729,8 @@
       function jumpToQuestion() {
         const input = document.getElementById('questionNumberInput');
         const questionNum = parseInt(input.value);
-        if (isNaN(questionNum) || questionNum < 1 || questionNum > cstsfl_2501_quizData.length) {
-          alert('올바른 문제 번호를 입력하세요. (1 ~ ' + cstsfl_2501_quizData.length + ')');
+        if (isNaN(questionNum) || questionNum < 1 || questionNum > quizData[currentDataName].length) {
+          alert('올바른 문제 번호를 입력하세요. (1 ~ ' + quizData[currentDataName].length + ')');
           return;
         }
 
@@ -823,8 +824,8 @@
 
       function loadQuestionSet() {
         const startIdx = currentPage * QUESTIONS_PER_PAGE;
-        const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, cstsfl_2501_quizData.length);
-        currentQuestions = cstsfl_2501_quizData.slice(startIdx, endIdx);
+        const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, quizData[currentDataName].length);
+        currentQuestions = quizData[currentDataName].slice(startIdx, endIdx);
         displayQuestions();
         updateCurrentQuestions();
       }
@@ -836,17 +837,17 @@
           prevButton.disabled = (currentPage === 0);
         }
         if (nextButton) {
-          nextButton.disabled = (currentPage === Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE) - 1);
+          nextButton.disabled = (currentPage === Math.ceil(quizData[currentDataName].length / QUESTIONS_PER_PAGE) - 1);
         }
       }
 
       function updateProgress() {
         const progressElement = document.getElementById('progress');
-        const totalPages = Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE);
+        const totalPages = Math.ceil(quizData[currentDataName].length / QUESTIONS_PER_PAGE);
         let progressPercent = ((currentPage + 1) / totalPages) * 100;
         progressElement.style.width = progressPercent + '%';
 
-        const totalQuestions = cstsfl_2501_quizData.length;
+        const totalQuestions = quizData[currentDataName].length;
         const startQuestion = currentPage * QUESTIONS_PER_PAGE + 1;
         const endQuestion = Math.min((currentPage + 1) * QUESTIONS_PER_PAGE, totalQuestions);
 
@@ -1168,7 +1169,7 @@
         if (scoreElement) {
           //250331      scoreElement.textContent = `점수: ${score}/${currentQuestions.length}`;
           scoreElement.textContent =
-            `현재 페이지 점수: ${score}/${currentQuestions.length}, 총 점수: ${totalScore}/${cstsfl_2501_quizData.length}`;
+            `현재 페이지 점수: ${score}/${currentQuestions.length}, 총 점수: ${totalScore}/${quizData[currentDataName].length}`;
         }
       }
 
@@ -1179,8 +1180,8 @@
 
       function updateCurrentQuestions() {
         const start = currentPage * QUESTIONS_PER_PAGE;
-        const end = Math.min(start + QUESTIONS_PER_PAGE, cstsfl_2501_quizData.length);
-        currentQuestions = cstsfl_2501_quizData.slice(start, end);
+        const end = Math.min(start + QUESTIONS_PER_PAGE, quizData[currentDataName].length);
+        currentQuestions = quizData[currentDataName].slice(start, end);
       }
 
       function resetQuiz() {
@@ -1207,7 +1208,7 @@
         const scoreElement = document.getElementById('score');
         if (scoreElement) {
           //250331      scoreElement.textContent = '점수: 0/0';
-          scoreElement.textContent = `점수: 0/${currentQuestions.length}, 총 점수: ${totalScore}/${cstsfl_2501_quizData.length}`;
+          scoreElement.textContent = `점수: 0/${currentQuestions.length}, 총 점수: ${totalScore}/${quizData[currentDataName].length}`;
         }
       }
 
@@ -1224,7 +1225,7 @@
       }
 
       function nextPage() {
-        const maxPage = Math.ceil(cstsfl_2501_quizData.length / QUESTIONS_PER_PAGE) - 1;
+        const maxPage = Math.ceil(quizData[currentDataName].length / QUESTIONS_PER_PAGE) - 1;
         if (currentPage < maxPage) {
           currentPage++;
           updateCurrentQuestions();
