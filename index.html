@@ -96,19 +96,26 @@
       currentQuestions.forEach((q, index) => {
         const div = document.createElement("div");
         div.className = "question";
-        let html = `<strong>${q.question}</strong>`;
 
-        if (q.img) {
-          html += `<br><img src="${q.img}" alt="문제 이미지" style="max-width:100%; margin-top: 10px;">`;
+        // 이미지 파일명이 문제 텍스트 안에 포함되어 있는 경우 추출
+        const imgMatch = q.question.match(/\[(.*?)\]/);
+        const imageName = imgMatch ? imgMatch[1] : null;
+        const questionText = q.question.replace(/\[.*?\]/, '').trim();
+
+        let html = `<strong>${questionText}</strong>`;
+
+        if (imageName) {
+          html += `<br><img src="static/img/${imageName}" alt="문제 이미지" style="max-width:100%; margin-top: 10px;">`;
         }
 
         if (q.options && Array.isArray(q.options)) {
           html += `<ul style="list-style:none; padding-left:0;">`;
           q.options.forEach((opt, idx) => {
+            const value = typeof opt === 'string' ? opt : opt.value;
             html += `
               <li>
                 <label>
-                  <input type="radio" name="q${index}" value="${opt}" id="answer-${index}-${idx}"> ${opt}
+                  <input type="radio" name="q${index}" value="${value}" id="answer-${index}-${idx}"> ${value}
                 </label>
               </li>`;
           });
@@ -139,17 +146,6 @@
       progressText.textContent = `문항 ${start}-${end} / ${total}`;
     }
 
-    function highlightQuestion(index) {
-      const questionElements = document.querySelectorAll('.question');
-      if (questionElements[index]) {
-        questionElements[index].scrollIntoView({ behavior: 'smooth', block: 'center' });
-        questionElements[index].classList.add('highlight');
-        setTimeout(() => {
-          questionElements[index].classList.remove('highlight');
-        }, 2000);
-      }
-    }
-
     function checkAnswers() {
       let score = 0;
       currentQuestions.forEach((q, index) => {
@@ -163,15 +159,19 @@
           userAnswer = input ? input.value.trim() : "";
         }
 
+        const correctValue = q.options && Array.isArray(q.options) ?
+          q.options.find(opt => typeof opt === 'object' ? opt.right : false)?.value?.trim() :
+          q.answer?.trim();
+
         const feedback = document.createElement("div");
         feedback.className = "result";
 
-        if (userAnswer === q.answer?.trim()) {
+        if (userAnswer === correctValue) {
           feedback.textContent = "✔ 정답!";
           feedback.style.color = "green";
           score++;
         } else {
-          feedback.textContent = `✖ 오답. 정답: ${q.answer}`;
+          feedback.textContent = `✖ 오답. 정답: ${correctValue}`;
           feedback.style.color = "red";
         }
 
