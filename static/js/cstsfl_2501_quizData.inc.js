@@ -62,7 +62,8 @@ var cstsfl_2501_quizData = [
         "correct": 2
     },
     {
-        "type": "radio",
+        // "type": "radio",
+         "type": "checkbox",
         "question": "단위 테스트 수행 시 각 모듈을 단독으로 실행하기 위한 환경 구성에 관한 설명 중 올바르지 않은 것은 무엇인가?",
         "explanation": "",
         "options": [
@@ -86,7 +87,8 @@ var cstsfl_2501_quizData = [
         "correct": 0
     },
     {
-        "type": "radio",
+        // "type": "radio",
+         "type": "checkbox",
         "question": "다음 시스템 테스트에 대한 설명으로 올바르지 않은 것은 무엇인가?",
         "explanation": "",
         "options": [
