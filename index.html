@@ -647,7 +647,7 @@
 
       const userAnswers = {}; // 사용자가 주관식 입력한 값을 저장할 객체 : 250328 heina
 
-      let currentDataName = "cstsfl_2501"; // 기본 데이터 이름 : 250409 heina
+      let currentDataName = "cstsal_2402"; // 기본 데이터 이름 : 250409 heina
       let quizData = {}; // 로드된 데이터들을 저장 : 250409 heina
 
       // -------------------- [ nab tab data 한 페이지에서 처리 : 250409 heina ] ---------------------------
@@ -688,11 +688,13 @@
               const endIdx = Math.min(startIdx + QUESTIONS_PER_PAGE, data.length);
               currentQuestions = data.slice(startIdx, endIdx);
             };
+            
             updateNavigation = () => {
               const totalPages = Math.ceil(data.length / QUESTIONS_PER_PAGE);
               document.getElementById("prevButton").disabled = (currentPage === 0);
               document.getElementById("nextButton").disabled = (currentPage >= totalPages - 1);
             };
+
             updateProgress = () => {
               const progressElement = document.getElementById('progress');
               const totalPages = Math.ceil(data.length / QUESTIONS_PER_PAGE);
@@ -711,7 +713,7 @@
       });
 
       window.addEventListener('DOMContentLoaded', () => { // 처음에 기본 데이터 로드
-        loadQuizData("cstsfl_2501", function (data) {
+        loadQuizData("currentDataName", function (data) {
           currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
           initializeQuiz();
         });
@@ -1310,7 +1312,7 @@
 
       // document.addEventListener('DOMContentLoaded', initializeQuiz);
       document.addEventListener('DOMContentLoaded', () => {
-        loadQuizData("cstsal_2402", function (data) {
+        loadQuizData(currentDataName, function (data) {
           currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
           initializeQuiz();
         });
