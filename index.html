@@ -652,6 +652,13 @@
       let quizData = {}; // 로드된 데이터들을 저장 : 250409 heina
 
       // -------------------- [ nab tab data 한 페이지에서 처리 : 250409 heina ] ---------------------------
+      document.addEventListener('DOMContentLoaded', () => {
+        loadQuizData(currentDataName, function (data) {
+          currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
+          initializeQuiz();
+        });
+      });
+      
       function loadQuizData(dataName, callback) { // 데이터 JS 파일 로드
         if (quizData[dataName]) {
           callback(quizData[dataName]);
@@ -1312,12 +1319,6 @@
       }
 
       // document.addEventListener('DOMContentLoaded', initializeQuiz);
-      document.addEventListener('DOMContentLoaded', () => {
-        loadQuizData(currentDataName, function (data) {
-          currentQuestions = data.slice(0, QUESTIONS_PER_PAGE);
-          initializeQuiz();
-        });
-      });
     </script>
 
   </div>
