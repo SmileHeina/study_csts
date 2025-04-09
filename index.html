@@ -659,24 +659,32 @@
         });
       });
 
-      function loadQuizData(dataName, callback) { // 데이터 JS 파일 로드
+      function loadQuizData(dataName, callback) { // data js file load
         if (quizData[dataName]) {
+          console.log("✅ Already loaded:", dataName);
           callback(quizData[dataName]);
           return;
         }
-        
-        const script = document.createElement("script");
-        script.src = `static/js/${dataName}_quizData.inc.js`;
 
-        console.log(currentDataName); // ex: 'cstsfl_2405'
-        console.log(quizData[currentDataName]); // 현재 로드된 데이터 배열
-        
+        const script = document.createElement("script");
+        script.src = `static/js/${dataName}_quizData.inc.js`; // ✅ 백틱으로 변수 사용
+        console.log("📦 Loading script:", script.src);
+
         script.onload = () => {
-          // 예: window.cstsfl_2501_quizData 를 quizData[dataName]에 저장
           const data = window[`${dataName}_quizData`];
+          if (!data) {
+            console.error("❌ Data variable not found:", `${dataName}_quizData`);
+            return;
+          }
           quizData[dataName] = data;
+          console.log("✅ Data loaded for", dataName);
           callback(data);
         };
+
+        script.onerror = () => {
+          console.error("❌ Failed to load script:", script.src);
+        };
+
         document.body.appendChild(script);
       }
 
