@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>동적 퀴즈 페이지</title>
+  <title>동적 퀴즈 페이지 (개선 버전)</title>
   <link rel="stylesheet" href="static/css/style.css">
   <style>
     body {
@@ -32,6 +32,10 @@
     .question {
       margin-bottom: 20px;
     }
+    .result {
+      margin-top: 5px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -46,6 +50,7 @@
   <div>
     <button id="prevButton">이전</button>
     <button id="nextButton">다음</button>
+    <button id="checkButton">채점</button>
   </div>
 
   <div id="progress-container">
@@ -91,7 +96,28 @@
       currentQuestions.forEach((q, index) => {
         const div = document.createElement("div");
         div.className = "question";
-        div.innerHTML = `<strong>${q.question}</strong>`;
+        let html = `<strong>${q.question}</strong>`;
+
+        if (q.img) {
+          html += `<br><img src="${q.img}" alt="문제 이미지" style="max-width:100%; margin-top: 10px;">`;
+        }
+
+        if (q.options && Array.isArray(q.options)) {
+          html += `<ul style="list-style:none; padding-left:0;">`;
+          q.options.forEach((opt, idx) => {
+            html += `
+              <li>
+                <label>
+                  <input type="radio" name="q${index}" value="${opt}" id="answer-${index}-${idx}"> ${opt}
+                </label>
+              </li>`;
+          });
+          html += `</ul>`;
+        } else {
+          html += `<input type="text" id="answer-${index}" placeholder="정답 입력">`;
+        }
+
+        div.innerHTML = html;
         container.appendChild(div);
       });
     }
@@ -124,8 +150,38 @@
       }
     }
 
+    function checkAnswers() {
+      let score = 0;
+      currentQuestions.forEach((q, index) => {
+        const container = document.querySelectorAll(".question")[index];
+        let userAnswer = "";
+        if (q.options && Array.isArray(q.options)) {
+          const checked = container.querySelector("input[type='radio']:checked");
+          userAnswer = checked ? checked.value.trim() : "";
+        } else {
+          const input = container.querySelector("input[type='text']");
+          userAnswer = input ? input.value.trim() : "";
+        }
+
+        const feedback = document.createElement("div");
+        feedback.className = "result";
+
+        if (userAnswer === q.answer?.trim()) {
+          feedback.textContent = "✔ 정답!";
+          feedback.style.color = "green";
+          score++;
+        } else {
+          feedback.textContent = `✖ 오답. 정답: ${q.answer}`;
+          feedback.style.color = "red";
+        }
+
+        container.appendChild(feedback);
+      });
+      alert(`이 페이지에서 정답 ${score}개 맞췄습니다!`);
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
-      loadQuizData(currentDataName, function (data) {
+      loadQuizData(currentDataName, function () {
         updateCurrentQuestions();
         updateNavigation();
         updateProgress();
@@ -165,6 +221,8 @@
         updateProgress();
       }
     });
+
+    document.getElementById("checkButton").addEventListener("click", checkAnswers);
   </script>
 </body>
 </html>
