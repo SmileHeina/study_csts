@@ -664,11 +664,13 @@
           callback(quizData[dataName]);
           return;
         }
-        console.log(currentDataName); // ex: 'cstsfl_2405'
-        console.log(quizData[currentDataName]); // 현재 로드된 데이터 배열
         
         const script = document.createElement("script");
         script.src = `static/js/${dataName}_quizData.inc.js`;
+
+        console.log(currentDataName); // ex: 'cstsfl_2405'
+        console.log(quizData[currentDataName]); // 현재 로드된 데이터 배열
+        
         script.onload = () => {
           // 예: window.cstsfl_2501_quizData 를 quizData[dataName]에 저장
           const data = window[`${dataName}_quizData`];
