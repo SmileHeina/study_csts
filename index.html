@@ -130,7 +130,7 @@
               <div class="question-sub-content">${subContent}</div>
             </div>
           `;
-        
+        }
         if (q.question_sub_02) {
           const subTitle2 = q.question_sub_02.startsWith("<보기>") ? "<보기>" : (q.question_sub_02.startsWith("<다음>") ? "<다음>" : "");
           const subContent2 = q.question_sub_02.replace(/<보기>|<다음>/, '').trim();
