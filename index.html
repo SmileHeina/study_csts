@@ -104,7 +104,8 @@
         const imageName = imgMatch ? imgMatch[1] : null;
         const questionText = q.question.replace(/\[.*?\]/, '').trim();
 
-        let html = `<strong>${globalQuestionNumber}. ${questionText}</strong>`;
+        // let html = `<strong>${globalQuestionNumber}. ${questionText}</strong>`;
+        let html = `${globalQuestionNumber}. ${questionText}`;
 
         if (imageName) {
           html += `<br><img src="img/${imageName}" alt="문제 이미지" style="max-width:100%; margin-top: 10px;">`;
