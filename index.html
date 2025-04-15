@@ -125,16 +125,11 @@
           const subTitle = q.question_sub.startsWith("<보기>") ? "&lt;보기&gt;" : (q.question_sub.startsWith("<다음>") ? "&lt;다음&gt;" : "");
           const subContent = q.question_sub.replace(/<보기>|<다음>/, '').trim();
           html += `
-            <table class="question-sub-table">
-              <tr>
-                <td>
-                  <div class="question-sub-title">${subTitle}</div>
-                  <div class="question-sub-content">${subContent}</div>
-                </td>
-              </tr>
-            </table>`;
-        }
-
+            <div class="question-sub-box">
+              <div class="question-sub-label">&lt;보기&gt;</div>
+              <div class="question-sub-content">${subContent}</div>
+            </div>
+          `;
         
         if (q.question_sub_02) {
           const subTitle2 = q.question_sub_02.startsWith("<보기>") ? "<보기>" : (q.question_sub_02.startsWith("<다음>") ? "<다음>" : "");
