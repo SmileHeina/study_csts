@@ -1,0 +1,179 @@
+/* 전체 스타일 초기화 및 배경 설정 */
+body {
+  font-family: 'Malgun Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+/* 상단 헤더 */
+.header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* 네비게이션 탭 */
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+
+.nav-tabs a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  background: #fff;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-tabs a:hover {
+  background: #f1f1f1;
+  transform: translateY(-1px);
+}
+
+.nav-tabs a.active {
+  background: #6839a0;
+  color: #fff;
+  border-color: #6839a0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* 콘텐츠 영역 */
+.content {
+  padding: 2rem;
+}
+
+/* 퀴즈 문제 영역 */
+.question {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.question strong {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* 문제 이미지 */
+.question img {
+  max-width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* 보기 옵션 영역 */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.option label {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+input[type="radio"]:hover {
+  border-color: rgb(197, 170, 255);
+}
+
+input[type="radio"]:checked {
+  background-image: url('img/radio_checked_p.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+/* 주관식 입력 필드 */
+input.text-input {
+  border: 2px solid rgb(203, 203, 255);
+  padding: 10px 12px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 40px;
+  color: rgba(0, 0, 34, 0.322);
+}
+
+input.text-input:focus {
+  outline: none;
+  border-color: darkblue;
+  background-color: #f0f8ff;
+}
+
+/* 채점 결과 메시지 */
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* 프로그레스 바 */
+#progress-container {
+  margin-top: 20px;
+}
+
+#progress {
+  height: 10px;
+  background: #6c63ff;
+  transition: width 0.3s ease-in-out;
+}
+
+#progress-text {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+  .nav-tabs {
+    flex-wrap: wrap;
+    padding: 0.5rem;
+  }
+
+  .nav-tabs a {
+    margin: 2px;
+    font-size: 14px;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}
