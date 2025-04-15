@@ -183,23 +183,16 @@ input.text-input:focus {
     padding: 1rem;
   }
 
-   .question-sub-table {
-     border-collapse: collapse;
-     width: 100%;
-     margin: 10px 0;
-   }
+   .question-sub-table, 
+   .question-sub-table th, 
    .question-sub-table td {
-     border-left: 2px solid #333;
-     border-right: 2px solid #333;
+     border: 2px solid #333;
+     border-collapse: collapse;
+   }
+   
+   .question-sub-table th, 
+   .question-sub-table td {
      padding: 12px;
      vertical-align: top;
    }
-   .question-sub-title {
-     font-weight: bold;
-     margin-bottom: 8px;
-   }
-   .question-sub-content {
-     margin-top: 4px;
-   }
-
 }
