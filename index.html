@@ -111,16 +111,31 @@
           html += `<br><img src="img/${imageName}" alt="문제 이미지" style="max-width:100%; margin-top: 10px;">`;
         }
 
+        // if (q.question_sub) {
+        //   const subTitle = q.question_sub.startsWith("<보기>") ? "<보기>" : (q.question_sub.startsWith("<다음>") ? "<다음>" : "");
+        //   const subContent = q.question_sub.replace(/<보기>|<다음>/, '').trim();
+        //   html += `
+        //     <table class="question-sub-table">
+        //       <tr><td class="question-sub-title">${subTitle}</td></tr>
+        //       <tr><td class="question-sub-content">${subContent}</td></tr>
+        //     </table>`;
+        // }
+
         if (q.question_sub) {
-          const subTitle = q.question_sub.startsWith("<보기>") ? "<보기>" : (q.question_sub.startsWith("<다음>") ? "<다음>" : "");
+          const subTitle = q.question_sub.startsWith("<보기>") ? "&lt;보기&gt;" : (q.question_sub.startsWith("<다음>") ? "&lt;다음&gt;" : "");
           const subContent = q.question_sub.replace(/<보기>|<다음>/, '').trim();
           html += `
             <table class="question-sub-table">
-              <tr><td class="question-sub-title">${subTitle}</td></tr>
-              <tr><td class="question-sub-content">${subContent}</td></tr>
+              <tr>
+                <td>
+                  <div class="question-sub-title">${subTitle}</div>
+                  <div class="question-sub-content">${subContent}</div>
+                </td>
+              </tr>
             </table>`;
         }
 
+        
         if (q.question_sub_02) {
           const subTitle2 = q.question_sub_02.startsWith("<보기>") ? "<보기>" : (q.question_sub_02.startsWith("<다음>") ? "<다음>" : "");
           const subContent2 = q.question_sub_02.replace(/<보기>|<다음>/, '').trim();
