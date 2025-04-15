@@ -1,11 +1,17 @@
 /* 전체 스타일 초기화 및 배경 설정 */
 body {
-  font-family: 'Malgun Gothic', sans-serif;
+   font-family: 'D2Coding ligature', 'Malgun Gothic', sans-serif;
   margin: 0;
   padding: 0;
   background: #f4f4f4;
 }
 
+input,
+textarea,
+pre,
+code {
+  font-family: 'D2Coding ligature', monospace;
+}
 /* 상단 헤더 */
 .header {
   background: #2c3e50;
@@ -112,7 +118,7 @@ input[type="radio"]:hover {
 }
 
 input[type="radio"]:checked {
-  background-image: url('img/radio_checked_p.png');
+  background-image: url('../../img/radio_checked_p.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
