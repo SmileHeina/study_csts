@@ -183,7 +183,34 @@ input.text-input:focus {
     padding: 1rem;
   }
 
-   .question-sub-table, 
+   .question-sub-table {
+  border: 1.5px solid #333;
+  border-radius: 4px;
+  padding: 18px 18px 18px 18px;
+  margin: 24px 0;
+  background: #fff;
+  position: relative;
+}
+
+.question-sub-table-title {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 12px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.question-sub-table-content {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+   
+/*    .question-sub-table, 
    .question-sub-table th, 
    .question-sub-table td {
      border: 2px solid #333;
@@ -194,5 +221,5 @@ input.text-input:focus {
    .question-sub-table td {
      padding: 12px;
      vertical-align: top;
-   }
+   } */
 }
