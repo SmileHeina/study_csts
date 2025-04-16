@@ -68,12 +68,13 @@ code {
   margin-bottom: 25px;
   padding: 20px;
   border-bottom: 1px solid #eee;
+  line-height: 1.7;
 }
 
 .question strong {
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* 문제 이미지 */
@@ -122,7 +123,7 @@ ul {
   align-items: center;
   margin-left: 10px;
   font-size: 15px;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 input[type="radio"] {
