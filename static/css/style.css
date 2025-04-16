@@ -184,11 +184,11 @@ input.text-input:focus {
   }
 
    .question-sub-box {
-     border: 1.5px solid #333;
+     border: 2.5px solid #ff0000;
      border-radius: 2px;
      padding: 24px 18px 18px 18px;
      margin: 24px 0 16px 0;
-     background: #fff;
+     background: #ff7b7b;
      position: relative;
    }
    
