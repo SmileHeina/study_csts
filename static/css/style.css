@@ -180,20 +180,52 @@ input.text-input:focus {
 
 /* 프로그레스 바 */
 #progress-container {
-  margin-top: 20px;
+  margin: 20px auto;
+  width: 90%;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
 #progress {
-  height: 10px;
-  background: #6c63ff;
+  height: 16px;
+  background: #b9a6f3; /* 부드러운 보라 */
+  border-radius: 10px;
   transition: width 0.3s ease-in-out;
 }
 
 #progress-text {
   text-align: center;
-  margin-top: 5px;
-  font-size: 14px;
+  margin-top: 8px;
+  font-size: 15px;
   font-weight: bold;
+  color: #333;
+}
+
+/* 버튼 */
+.button-container,
+#quiz-container + div {
+  text-align: center;
+  margin: 20px 0;
+}
+
+button {
+  background-color: #d4c2f0;
+  color: #2c1a5f;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #b9a6f3;
+  transform: translateY(-2px);
 }
 
 /* 반응형 디자인 */
@@ -211,6 +243,4 @@ input.text-input:focus {
   .content {
     padding: 1rem;
   }
-
-
 }
