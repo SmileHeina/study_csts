@@ -83,6 +83,34 @@ code {
   cursor: pointer;
 }
 
+/* 보기, 다음 영역 */
+.question-sub-box {
+  border: 1.5px solid #222;
+  border-radius: 2px;
+  padding: 22px 18px 18px 18px;
+  margin: 24px 0 16px 0;
+  background: #fff;
+  position: relative;
+}
+
+.question-sub-label {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 0 16px;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.question-sub-content {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+
 /* 보기 옵션 영역 */
 ul {
   list-style: none;
@@ -183,30 +211,5 @@ input.text-input:focus {
     padding: 1rem;
   }
 
-.question-sub-box {
-  border: 1.5px solid #222;
-  border-radius: 2px;
-  padding: 22px 18px 18px 18px;
-  margin: 24px 0 16px 0;
-  background: #fff;
-  position: relative;
-}
 
-.question-sub-label {
-  position: absolute;
-  top: -14px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #fff;
-  padding: 0 16px;
-  font-weight: normal;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.question-sub-content {
-  font-size: 15px;
-  line-height: 1.7;
-  text-align: left;
-}
 }
