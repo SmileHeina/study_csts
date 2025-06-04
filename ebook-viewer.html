@@ -3,7 +3,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>🎓 CSTS 가이드(FL 시험 범위) 📖</title>
+  <title>📖 CSTS Guide(FL 시험 범위)</title>
   <link rel="stylesheet" href="static/css/style.css">
   <style>
     body {
@@ -15,30 +15,54 @@
       border: none;
       display: block;
     }
+
+    /* TOP 버튼 스타일 */
+    #top-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #6839a0;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      display: none;
+      z-index: 1000;
+    }
+
+    #top-button:hover {
+      background-color: #502e7d;
+    }
   </style>
 </head>
 <body>
 
   <!-- 챕터 버튼들 -->
   <div class="nav-tabs">
-    <a href="#" class="active" data-src="pdf/CSTS-Guide-FL_chap001.pdf">Chapter 01</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap02.pdf">Chapter 02</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap03.pdf">Chapter 03</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap04.pdf">Chapter 04</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap06.pdf">Chapter 06</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap08.pdf">Chapter 08</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap09.pdf">Chapter 09</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap10.pdf">Chapter 10</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap11.pdf">Chapter 11</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap12.pdf">Chapter 12</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap13.pdf">Chapter 13</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap14.pdf">Chapter 14</a>
-    <a href="#" data-src="pdf/CSTS-Guide-FL_chap15.pdf">Chapter 15</a>
-  </div>
+    <a href="#" class="active" data-src="pdf/CSTS-Guide-FL_chap01.pdf" title="테스트 개요">Chapter 01</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap02.pdf" title="테스트 분류와 테스팅 방법">Chapter 02</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap03.pdf" title="소프트웨어 개발 단계와 테스트">Chapter 03</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap04.pdf" title="품질 특성과 비기능 테스트">Chapter 04</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap06.pdf" title="소프트웨어 생명 주기 모델과 테스트">Chapter 06</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap08.pdf" title="정적 테스트">Chapter 08</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap09.pdf" title="구조 기반 테스트">Chapter 09</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap10.pdf" title="명세 기반 테스트">Chapter 10</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap11.pdf" title="테스트 프로세스 개요">Chapter 11</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap12.pdf" title="테스트 계획">Chapter 12</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap13.pdf" title="테스트 설계/구현 및 테스트 환경 구축/관리">Chapter 13</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap14.pdf" title="테스트 실행 및 결함 보고">Chapter 14</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap15.pdf" title="테스트 모니터링/제어 및 테스트 종료">Chapter 15</a>
+</div>
 
   <!-- PDF 뷰어 -->
-  <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap001.pdf" type="application/pdf">
-
+  <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf">
+<!-- TOP 버튼 -->
+  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>
+  
   <script>
     document.querySelectorAll('.nav-tabs a').forEach(tab => {
       tab.addEventListener('click', function (e) {
@@ -51,8 +75,21 @@
         // PDF 변경
         const pdfPath = this.dataset.src;
         document.getElementById('pdf-viewer').src = pdfPath;
+
+        // 페이지 상단으로 스크롤 (필요 시)
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     });
+
+    // TOP 버튼 스크롤 제어
+    const topButton = document.getElementById('top-button');
+    window.addEventListener('scroll', () => {
+      topButton.style.display = (window.scrollY > 300) ? 'block' : 'none';
+    });
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   </script>
 
 </body>
