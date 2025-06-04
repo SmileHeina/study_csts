@@ -239,7 +239,9 @@ iframe#pdf-viewer {
 }
 
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) { */
+@media  (-webkit-min-device-pixel-ratio: 2), 
+       (min-resolution: 192dpi)  {
 /*
    .nav-tabs {
     flex-wrap: wrap;
