@@ -18,25 +18,25 @@
 
     /* TOP 버튼 스타일 */
     #top-button {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #6839a0;
-      color: white;
-      border: none;
-      border-radius: 30px;
-      padding: 10px 16px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-      display: none;
-      z-index: 1000;
-    }
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #6839a0;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: block; /* 항상 보이도록 설정 */
+    z-index: 1000;
+  }
 
-    #top-button:hover {
-      background-color: #502e7d;
-    }
+  #top-button:hover {
+    background-color: #502e7d;
+  }
   </style>
 </head>
 <body>
@@ -78,6 +78,8 @@
 
         // 페이지 상단으로 스크롤 (필요 시)
         window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        topButton.style.display = 'block';
       });
     });
 
