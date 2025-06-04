@@ -17,7 +17,7 @@
     }
 
     /* TOP 버튼 스타일 */
-    #top-button {
+/*    #top-button {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -37,6 +37,7 @@
   #top-button:hover {
     background-color: #502e7d;
   }
+*/
   </style>
 </head>
 <body>
@@ -58,10 +59,10 @@
     <a href="#" data-src="pdf/CSTS-Guide-FL_chap15.pdf" title="테스트 모니터링/제어 및 테스트 종료">Chapter 15</a>
 </div>
 
-  <!-- PDF 뷰어 -->
+<!-- PDF 뷰어 -->
   <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf">
 <!-- TOP 버튼 -->
-  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>
+<!--  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>-->
   
   <script>
     document.querySelectorAll('.nav-tabs a').forEach(tab => {
@@ -79,10 +80,11 @@
         // 페이지 상단으로 스크롤 (필요 시)
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
-        topButton.style.display = 'block';
+//        topButton.style.display = 'block';
       });
     });
 
+/*
     // TOP 버튼 스크롤 제어
     const topButton = document.getElementById('top-button');
     window.addEventListener('scroll', () => {
@@ -92,6 +94,7 @@
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+*?    
   </script>
 
 </body>
