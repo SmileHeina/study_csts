@@ -76,17 +76,10 @@
   }
 });
 
-/*
-    // TOP 버튼 스크롤 제어
-    const topButton = document.getElementById('top-button');
-    window.addEventListener('scroll', () => {
-      topButton.style.display = (window.scrollY > 300) ? 'block' : 'none';
-    });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-*/
+// 창 로드 시 실행
+window.addEventListener('load', function() {
+  alert('모바일 여부: ' + (isMobile() ? '모바일' : '아니네') + '\n' + '해상도 : ' + window.innerWidth + 'x' + window.innerHeight);
+});
   </script>
 
 </body>
