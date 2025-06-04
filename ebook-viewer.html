@@ -60,8 +60,9 @@
 </div>
 
 <!-- PDF 뷰어 -->
-<!-- <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"> -->
-<iframe id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"></iframe>
+<!-- <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"> 
+<iframe id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"></iframe>-->
+<iframe id="pdf-viewer" type="application/pdf"></iframe>
 
 <!-- TOP 버튼 -->
 <!--  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>-->
@@ -94,6 +95,19 @@
       }
     });
   });
+
+  window.addEventListener('DOMContentLoaded', function () {
+  const viewer = document.getElementById('pdf-viewer');
+  const initialPdf = "pdf/CSTS-Guide-FL_chap01.pdf";
+
+  if (!isMobile()) {
+    viewer.src = initialPdf; // PC는 바로 로딩
+  } else {
+    setTimeout(() => {
+      viewer.src = initialPdf; // 모바일은 약간 지연해서 로딩
+    }, 100); 
+  }
+});
 
 /*
     // TOP 버튼 스크롤 제어
