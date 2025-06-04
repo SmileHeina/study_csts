@@ -44,6 +44,7 @@
     <a href="#" data-set="cstsfl_2501" class="active">FL 25-1회</a>
     <a href="#" data-set="cstsfl_2405">FL 24-5회</a>
     <a href="#" data-set="cstsal_2402">AL 24-2회</a>
+    <a href="#" data-set="csts_guide_ebook">CSTS 가이드_FL 교제 보기</a>
   </div>
 
   <div id="progress-container">
@@ -227,11 +228,41 @@
         this.classList.add('active');
         currentDataName = this.dataset.set;
         currentPage = 0;
-        loadQuizData(currentDataName, function () {
-          updateCurrentQuestions();
-          updateNavigation();
-          updateProgress();
-        });
+        if(currentDataName == 'csts_guide_ebook'){
+                // 새 창 열기
+      const ebookWindow = window.open('', 'ebookWindow');
+      ebookWindow.document.write(`
+        <!DOCTYPE html>
+        <html lang="ko">
+        <head>
+          <meta charset="UTF-8">
+          <title>CSTS 가이드 eBook</title>
+          <style>
+            body {
+              margin: 0;
+              padding: 0;
+              background-color: #f9f9f9;
+            }
+            embed {
+              width: 100%;
+              height: 100vh;
+              border: none;
+            }
+          </style>
+        </head>
+        <body>
+          <embed src="/pdf/CSTS가이드일반등급-chap01_테스트개요.pdf" type="application/pdf">
+        </body>
+        </html>
+      `);
+        }
+        else{
+          loadQuizData(currentDataName, function () {
+            updateCurrentQuestions();
+            updateNavigation();
+            updateProgress();
+          });
+        }
       });
     });
 
