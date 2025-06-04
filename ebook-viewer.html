@@ -9,36 +9,8 @@
     body {
       margin: 0;
     }
-    embed {
-      width: 100%;
-      height: calc(100vh - 80px);
-      border: none;
-      display: block;
-    }
-
-    /* TOP 버튼 스타일 */
-/*    #top-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #6839a0;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 10px 16px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    display: block; /* 항상 보이도록 설정 */
-    z-index: 1000;
-  }
-
-  #top-button:hover {
-    background-color: #502e7d;
-  }
-*/
   </style>
+  
 </head>
 <body class="ebook-viewer">
 
@@ -60,12 +32,7 @@
 </div>
 
 <!-- PDF 뷰어 -->
-<!-- <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"> 
-<iframe id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"></iframe>-->
 <iframe id="pdf-viewer" type="application/pdf"></iframe>
-
-<!-- TOP 버튼 -->
-<!--  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>-->
   
 <script>
   function isMobile() {
