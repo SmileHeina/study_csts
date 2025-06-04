@@ -229,32 +229,8 @@
         currentDataName = this.dataset.set;
         currentPage = 0;
         if(currentDataName == 'csts_guide_ebook'){
-                // 새 창 열기
-      const ebookWindow = window.open('', 'ebookWindow');
-      ebookWindow.document.write(`
-        <!DOCTYPE html>
-        <html lang="ko">
-        <head>
-          <meta charset="UTF-8">
-          <title>CSTS 가이드 eBook</title>
-          <style>
-            body {
-              margin: 0;
-              padding: 0;
-              background-color: #f9f9f9;
-            }
-            embed {
-              width: 100%;
-              height: 100vh;
-              border: none;
-            }
-          </style>
-        </head>
-        <body>
-          <embed src="/pdf/CSTS가이드일반등급-chap01_테스트개요.pdf" type="application/pdf">
-        </body>
-        </html>
-      `);
+          // 새 창 열기
+          window.open('/ebook-viewer.html', '_blank');
         }
         else{
           loadQuizData(currentDataName, function () {
