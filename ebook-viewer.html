@@ -3,21 +3,57 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>CSTS 가이드 eBook</title>
+  <title>🎓 CSTS 가이드(FL 시험 범위) 📖</title>
+  <link rel="stylesheet" href="static/css/style.css">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
     }
     embed {
       width: 100%;
-      height: 100vh;
+      height: calc(100vh - 80px);
       border: none;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <embed src="pdf/CSTS가이드일반등급-chap01_테스트개요.pdf" type="application/pdf">
+
+  <!-- 챕터 버튼들 -->
+  <div class="nav-tabs">
+    <a href="#" class="active" data-src="pdf/CSTS-Guide-FL_chap01.pdf">Chapter 01</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap02.pdf">Chapter 02</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap03.pdf">Chapter 03</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap04.pdf">Chapter 04</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap06.pdf">Chapter 06</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap08.pdf">Chapter 08</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap09.pdf">Chapter 09</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap10.pdf">Chapter 10</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap11.pdf">Chapter 11</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap12.pdf">Chapter 12</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap13.pdf">Chapter 13</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap14.pdf">Chapter 14</a>
+    <a href="#" data-src="pdf/CSTS-Guide-FL_chap15.pdf">Chapter 15</a>
+  </div>
+
+  <!-- PDF 뷰어 -->
+  <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf">
+
+  <script>
+    document.querySelectorAll('.nav-tabs a').forEach(tab => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // 탭 활성화 처리
+        document.querySelectorAll('.nav-tabs a').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        // PDF 변경
+        const pdfPath = this.dataset.src;
+        document.getElementById('pdf-viewer').src = pdfPath;
+      });
+    });
+  </script>
+
 </body>
 </html>
