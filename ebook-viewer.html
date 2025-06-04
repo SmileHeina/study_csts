@@ -60,24 +60,34 @@
 </div>
 
 <!-- PDF 뷰어 -->
-  <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf">
+<!-- <embed id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"> -->
+<iframe id="pdf-viewer" src="pdf/CSTS-Guide-FL_chap01.pdf" type="application/pdf"></iframe>
+
 <!-- TOP 버튼 -->
 <!--  <button id="top-button" onclick="scrollToTop()">🔝 TOP</button>-->
   
   <script>
+  function isMobile() {
+    return /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+  }
+    
     document.querySelectorAll('.nav-tabs a').forEach(tab => {
       tab.addEventListener('click', function (e) {
         e.preventDefault();
 
-        // 탭 활성화 처리
+        const pdfPath = this.dataset.src;
+
+        if (isMobile()) {
+          // 모바일은 새 탭으로 PDF 열기
+          window.open(pdfPath, '_blank');
+        } else {
+        // PC는 iframe 내부에서 PDF 보기
         document.querySelectorAll('.nav-tabs a').forEach(t => t.classList.remove('active'));
         this.classList.add('active');
 
-        // PDF 변경
-        const pdfPath = this.dataset.src;
-        document.getElementById('pdf-viewer').src = pdfPath;
+        const viewer = document.getElementById('pdf-viewer');
+        viewer.src = pdfPath;
 
-        // 페이지 상단으로 스크롤 (필요 시)
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
 //        topButton.style.display = 'block';
