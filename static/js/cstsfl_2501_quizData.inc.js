@@ -62,8 +62,8 @@ var cstsfl_2501_quizData = [
         "correct": 2
     },
     {
-         "type": "radio",
-         "type": "checkbox",        "question": "단위 테스트 수행 시 각 모듈을 단독으로 실행하기 위한 환경 구성에 관한 설명 중 올바르지 않은 것은 무엇인가?",
+        "type": "radio",
+        "question": "단위 테스트 수행 시 각 모듈을 단독으로 실행하기 위한 환경 구성에 관한 설명 중 올바르지 않은 것은 무엇인가?",
         "explanation": "",
         "options": [
             { "value": "① 테스트 스텁(Test Stub): 테스트 중인 컴포넌트가 상호작용하는 다른 모듈 대신 사용하는 소프트웨어이다.", "right": false },
@@ -778,3 +778,4 @@ var cstsfl_2501_quizData = [
         "correct": "테스트 종료"
     }
 ];
+
