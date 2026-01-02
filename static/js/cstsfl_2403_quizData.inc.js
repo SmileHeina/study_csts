@@ -255,7 +255,7 @@ var cstsfl_2403_quizData = [
             { "value": "③ 선언 후 사용하지 않은 변수", "right": false },
             { "value": "④ 요구사항과 다른 연산 결과", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
@@ -780,4 +780,5 @@ var cstsfl_2403_quizData = [
     }
 
 ];
+
 
