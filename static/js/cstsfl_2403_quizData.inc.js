@@ -218,7 +218,7 @@ var cstsfl_2403_quizData = [
             { "value": "③ 요구사항을 만족하기 위한 여러 대안을 추천하거나 대안들을 검토한다.", "right": false },
             { "value": "④ 대상 작업물이 의도된 사용에 적합한지 평가한다.", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
@@ -780,3 +780,4 @@ var cstsfl_2403_quizData = [
     }
 
 ];
+
