@@ -84,7 +84,7 @@ var cstsfl_2403_quizData = [
             { "value": "③ 자료 흐름 분석", "right": false },
             { "value": "④ 커버리지 측정", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
@@ -778,4 +778,5 @@ var cstsfl_2403_quizData = [
         "explanation": "",
         "correct": ["결함 분석", "결함 판단", "테스트 결과 분석", "결과 분석", "테스트 실행 결과 분석"]
     }
+
 ];
