@@ -256,7 +256,7 @@ var cstsfl_2404_quizData = [
             { "value": "③ 스페이스 사용 규칙", "right": false },
             { "value": "④ 권장 아키텍처", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
@@ -276,664 +276,507 @@ var cstsfl_2404_quizData = [
         "question": "<보기>의 프로그램 코드에서 (a=250) 테스트 케이스를 통해 수행되는 경로로 올바른 것은?[FL-2404-23.jpg]",
         "explanation": "",
         "options": [
-            { "value": "① 1, 2, 3, 4, 5, 7, 9, 10", "right": false },
-            { "value": "② 1, 2, 3, 4, 5, 7, 8, 9, 10", "right": true },
+            { "value": "① 1, 2, 3, 4, 5, 7, 9, 10", "right": true },
+            { "value": "② 1, 2, 3, 4, 5, 7, 8, 9, 10", "right": false },
             { "value": "③ 1, 2, 3, 4, 6, 9, 10", "right": false },
             { "value": "④ 1, 2, 3, 9, 10", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "<보기>의 제어 흐름 그래프를 갖는 프로그램에서 A, B, E, H, K의 경로로 테스트를 수행했을 때, 문장 커버리지는 얼마인가?[FL-2404-24.jpg]",
+        "explanation": "",
+        "options": [
+            { "value": "① 37.5%", "right": false },
+            { "value": "② 50%", "right": true },
+            { "value": "③ 62.5%", "right": false },
+            { "value": "④ 75%", "right": false }
+        ],
+        "correct": 1
+    },
+    {
+        "type": "radio",
+        "question": "다음 코드에 대해 문장 커버리지와 결정 커버리지 100%를 만족시키기 위한 최소 테스트 케이스 수는?",
+        "question_sub": "1      READ P, Q<br>2      IF P+Q > 100 THEN<br>3          PRINT “P+Q IS LARGE”<br>        ENDIF<br>        IF P > 50 THEN<br>         PRINT “P IS LARGE”<br>      ENDIF",
+        "explanation": "",
+        "options": [
+            { "value": "① 문장 커버리지 1개, 결정 커버리지 1개", "right": false },
+            { "value": "② 문장 커버리지 1개, 결정 커버리지 2개", "right": true },
+            { "value": "③ 문장 커버리지 2개, 결정 커버리지 2개", "right": false },
+            { "value": "④ 문장 커버리지 2개, 결정 커버리지 3개", "right": false }
+        ],
+        "correct": 1
+    },
+    {
+        "type": "radio",
+        "question": "<보기>의 제어 흐름 그래프에서 테스트 케이스가 {(x=2, y=0, z=1), (x=0, y=2, z=0)}이면 조건 커버리지는 얼마인가?[FL-2404-26.jpg",
+        "explanation": "",
+        "options": [
+            { "value": "① 50%", "right": false },
+            { "value": "② 66.7%", "right": false },
+            { "value": "③ 83.3%", "right": false },
+            { "value": "④ 100%", "right": true }
+        ],
+        "correct": 3
+    },
+    {
+        "type": "radio",
+        "question": "<보기>의 프로그램 코드에서 다중 조건 커버리지의 분모에 해당하는 “전체 프로그램 개별 조건들의 조합 수”는 몇 개 인가?",
+        "question_sub": "<보기> If ((x>1) and (y==1)){<br>       z=z/x;<br> }<br><br>If ((x==2) or (z>1)){<br>       z=z+1;<br> }",
+        "explanation": "",
+        "options": [
+            { "value": "① 2", "right": false },
+            { "value": "② 4", "right": false },
+            { "value": "③ 6", "right": false },
+            { "value": "④ 8","right": true }
+        ],
+        "correct": 3
+    },
+    {
+        "type": "radio",
+        "question": " A시에서는 <보기>와 같이 배기량을 4단계로 나누어 자동차 세율을 산정한다. 동등 클래스 분할 기법을 사용하여 선정할 수 있는 최소의 테스트 입력값으로 올바른 것은?",
+        "question_sub": "<보기>- 배기량 ~999CC <br>- 배기량 1,000~1,499CC<br>- 배기량 1,500~1,999CC<br>- 배기량 2,000CC 이상",
+        "explanation": "",
+        "options": [
+            { "value": "① 1000CC, 1500CC, 2000CC", "right": false },
+            { "value": "② 980CC, 1250CC, 1700CC, 2001CC", "right": true },
+            { "value": "③ 999CC, 1000CC, 1500CC, 1999CC, 2000CC", "right": false },
+            { "value": "④ 999CC, 1000CC, 1500CC, 1501CC, 1999CC, 2000CC", "right": false }
+        ],
+        "correct": 1
+    },
+    {
+        "type": "radio",
+        "question": "한국기업이 운영하는 웹사이트에서 비밀번호는 알파벳, 숫자를 제외한 특수 부호가 최소한 1개 이상 5개 이하로 들어가야 한다. 3-value 경곗값 분석 방법을 사용하여 비밀번호 기능을 테스트하려고 할 때 테스트 입력으로서 적절한 것은?",
+        "question_sub": "(가) ab#$cde           (나) #$%@**<br>(다) ab%%@k          (라) abcde",
+        "explanation": "",
+        "options": [
+            { "value": "① (가), (나), (다)", "right": false },
+            { "value": "② (가), (나), (라)", "right": true },
+            { "value": "③ (나), (다), (라)", "right": false },
+            { "value": "④ (가), (다), (라)", "right": false }
+        ],
+        "correct": 1
+    },
+    {
+        "type": "radio",
+        "question": "입력 인자(X)에 대해 10≤X≤30 제약조건이 있는 시스템을 개발 중이다. 개발자가 실수로 X≤30 조건을 누락하여 10≤X로 구현하였을 때, 다음 중에서 경계 누락 오류를 찾을 가능성이 가장 높은 테스트 입력값은 무엇인가?",
+        "explanation": "",
+        "options": [
+            { "value": "① 9", "right": false },
+            { "value": "② 10", "right": false },
+            { "value": "③ 30", "right": true },
+            { "value": "④ 31", "right": false }
+        ],
+        "correct": 3
+    },
+    {
+        "type": "radio",
+        "question": "아래 그림은 워드 프로그램의 글꼴을 지정하는 화면이다. 설정한 글꼴, 글꼴 스타일, 크기, 글꼴 색 및 효과에 따라 정상적으로 글꼴이 변경되는지 테스트하려고 할 때, 사용할 수 있는 가장 적절한 테스트 설계 기법은 무엇인가?[FL-24040-31.jpg]",
+        "explanation": "",
+        "options": [
+            { "value": "① 경곗값 분석 테스팅", "right": false },
+            { "value": "② 상태 전이 테스팅", "right": false },
+            { "value": "③ 결정표 테스팅", "right": false },
+            { "value": "④ 조합 테스팅", "right": true }
+        ],
+        "correct": 3
+    },
+    {
+        "type": "radio",
+        "question": "다음 중 결정 테이블에 대한 설명으로 올바르지 않은 것은 무엇인가?",
+        "explanation": "",
+        "options": [
+            { "value": "① 입력 조건의 모든 조합에 대한 시스템의 행동을 고려하여 테스트 케이스를 도출하는 기법이다.", "right": false },
+            { "value": "② 복잡한 논리적 관계를 표현하기에 좋은 기법이다.", "right": false },
+            { "value": "③ 가능한 모든 입력값들의 조합으로 테스트하는 것은 불가능하므로 모든 짝의 조합을 테스트하는 기법이다.", "right": true },
+            { "value": "④ 누락된 요구사항이 있는지 검사하는데 좋은 기법이다.", "right": false }
+        ],
+        "correct": 2
+    },
+    {
+        "type": "radio",
+        "question": "다음은 항공권 예약의 상태 전이도이다. “노선 예약됨“에서 ”발권됨“까지 상태가 전이되는 경우에 대해 테스트 케이스를 작성하려고 할 때, 도출된 테스트 케이스로 적합한 것은 무엇인가?[FL-2404-33.jpg]",
         "explanation": "",
         "options": [
             { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
+            { "value": "② ", "right": false },
+            { "value": "③ ", "right": true },
             { "value": "④ ", "right": false }
         ],
-        "correct": 
+        "correct": 2
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음은 ATM의 “계좌이체” 기능을 표현한 액티비티 다이어그램이다. 시나리오 테스트를 적용하여 계좌이체에 대한 테스트 시나리오를 작성한다면, 몇 개의 테스트 시나리오가 설계되는가?[FL-2404-34.jpg]",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 1개", "right": false },
+            { "value": "② 2개", "right": false },
+            { "value": "③ 3개", "right": false },
+            { "value": "④ 4개", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
-        "question": "",
+        "question": " 탐색적 테스트(Exploratory Test)를 효과적으로 활용할 수 있는 상황으로 가장 적절하지 않은 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 요구사항의 잦은 변경", "right": false },
+            { "value": "② 테스트 프로세스의 개선", "right": true },
+            { "value": "③ 테스트를 수행 할 시간적 압박이 극심한 경우", "right": false },
+            { "value": "④ 공식적인 테스트의 보완 및 강화", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중 테스트 관리 산출물과 산출물에 포함될 주요 항목으로 가장 거리가 먼 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 테스트 현황 보고서 - 계획 대비 진척도", "right": false },
+            { "value": "② 테스트 현황 보고서 – 이후 테스트 계획", "right": false },
+            { "value": "③ 테스트 종료 보고서 - 테스트 방해 요인", "right": false },
+            { "value": "④ 테스트 종료 보고서 - 위험 분석", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중 테스트 프로세스 활동과 산출물 연결이 가장 올바른 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 테스트 실행 ― 테스트 케이스 명세서", "right": false },
+            { "value": "② 테스트 설계 및 구현 ― 테스트 절차 명세서", "right": true },
+            { "value": "③ 테스트 모니터링 및 제어 ― 테스트 환경 요건 명세서", "right": false },
+            { "value": "④ 테스트 환경 구축 및 관리 ― 테스트 데이터 요건 명세서", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중에서 테스트 계획을 수립할 때 테스트 컨텍스트를 설정하는 과정에 해당되지 않는 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 테스트 대상에 대한 테스트 완료 여부를 결정하는 기준을 정한다.", "right": true },
+            { "value": "② 테스트 대상 및 테스트 범위를 바탕으로 어떤 개별 테스트를 수행할지 결정하도록 한다.", "right": false },
+            { "value": "③ 테스트 대상의 미션 또는 비즈니스 목표 등을 기술한다.", "right": false },
+            { "value": "④ 각 테스트 레벨별로 초점을 두는 테스트 범위가 다를 수 있다.", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 데이터에 대한 구체적인 요건을 식별할 때 반드시 결정되어야 하는 요소가 아닌 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 데이터의 규모", "right": false },
+            { "value": "② 데이터의 중요도", "right": true },
+            { "value": "③ 데이터의 저장 위치", "right": false },
+            { "value": "④ 데이터의 접근 권한", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?",
+        "question_sub": "<다음>(가) 95%의 문장 커버리지가 충족되어야 한다.<br>(나) 90%의 테스트 케이스(테스트 절차)가 통과되어야 한다.<br>(다) 발견된 결함의 수가 2개 이하이어야 한다.",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① (가)", "right": false },
+            { "value": "② (가), (나)", "right": false },
+            { "value": "③ (가), (다)", "right": false },
+            { "value": "④ (가), (나), (다)", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 담당자 A씨는 고객이 요청한 기능이 충분히 테스트 되었는지 테스트 메트릭을 활용하여 확인하고자 한다. 이를 위한 테스트 메트릭으로 가장 적절한 것은 무엇인가?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 요구사항 커버리지", "right": true },
+            { "value": "② 테스트 케이스 수", "right": false },
+            { "value": "③ 상태별 결함 수", "right": false },
+            { "value": "④ 테스트 진척율", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 설계 작업에서는 테스트 범위와 테스트 전략을 구체화하여 테스트 설계 명세서를 작성한다. 다음 중 테스트 설계 작업 순서로 가장 적절한 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 테스트 전략 구체화 → 피처 집합 식별 → 피처 구체화", "right": false },
+            { "value": "② 피처 집합 식별 → 피처 구체화 → 테스트 전략 구체화", "right": true },
+            { "value": "③ 우선순위 결정 → 피처 구체화 → 테스트 전략 구체화", "right": false },
+            { "value": "④ 테스트 전략 구체화 → 피처 집합 식별 → 우선순위 결정", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "“침입 탐지 판단 성능”이라는 피처의 테스트 케이스를 작성하기 위해 세부 피처를 도출하였다. 도출할 수 있는 세부 피처 중 “침입 탐지 판단 성능” 피처와 가장 거리가 먼 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 움직임 센서 탐지 성능", "right": false },
+            { "value": "② 적외선 카메라 탐지 성능", "right": false },
+            { "value": "③ 소리 센서 탐지 성능", "right": false },
+            { "value": "④ 안드로이드 단말기 알림 성능", "right": true }
         ],
-        "correct": 
+        "correct": 3
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중에서 테스트 케이스에 대한 설명으로 가장 거리가 먼 것은 무엇인가?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 피처를 구체화한 세부 피처를 바탕으로 테스트 케이스를 개발한다.", "right": false },
+            { "value": "② 예상 결과와 실제 결과를 비교하는 행위(action)는 테스트 절차에 기술한다.", "right": true },
+            { "value": "③ 테스트 케이스가 실행되기 위해서 테스트 대상 및 테스트 환경 항목에 대하여 요구되는 특정 상태를 기술한다.", "right": false },
+            { "value": "④ 테스트 베이시스의 해당 항목에 대한 참조를 나열한다.", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 설계 시 테스트 절차 명세에 작성되는 항목이 아닌 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 종료 작업", "right": false },
+            { "value": "② 시작 작업", "right": false },
+            { "value": "③ 예상 결과", "right": true },
+            { "value": "④ 우선 순위", "right": false }
         ],
-        "correct": 
+        "correct": 2
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 실행 시 단계별 활동으로 올바르지 않은 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 리그레션 테스트 케이스 선택 시, 영향받을 부분이 작은 대상부터 실행", "right": true },
+            { "value": "② 테스트 케이스 실행 시, 사전에 정의된 테스트 환경을 대상으로 테스트 절차에 따라 실행", "right": false },
+            { "value": "③ 테스트 케이스 실행 시, 오류를 기록하고 필요 시 테스트 재연이 가능하도록 작성", "right": false },
+            { "value": "④ 테스트 결함분석 시, 발견된 결함을 분석하고 각 결함을 구체적으로 정의하여 개발자에게 통보", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "결함 추적 보고서에 대한 설명으로 올바르지 않은 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 결함 검토 정보에는 결함 검토 결과와 담당 개발자를 기술한다.", "right": false },
+            { "value": "② 결함 해결 정보에는 테스터가 어떻게 결함을 확인했는지 기술한다.", "right": true },
+            { "value": "③ 해결안이 Fixed이면 재테스팅 수행 결과를 기술한다.", "right": false },
+            { "value": "④ 해결안이 중복이면 판단의 타당성 검토 결과를 기술한다.", "right": false }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중 테스트 모니터링 및 제어 활동으로 올바르지 않은 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 결함 발견율, 조치율, 수정율 및 결함 추이를 관리한다.", "right": false },
+            { "value": "② 계획된 일정 대비 테스트가 정상적으로 수행되는지 확인한다.", "right": false },
+            { "value": "③ 테스트를 수행할 인적 자원에 대한 역량 및 역할을 결정한다.", "right": true },
+            { "value": "④ 정기적 또는 비정기적으로 회의를 통해 테스트 진행 상태를 확인한다.", "right": false }
         ],
-        "correct": 
+        "correct": 2
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 프로세스를 수행하는 과정에서 기존 위험의 위험도가 상승하였을 때 취할 수 있는 조치로 올바른 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 테스트를 환경을 변경한다.", "right": false },
+            { "value": "② 테스트를 종료 시킨다.", "right": false },
+            { "value": "③ 테스트 설계 강도를 높인다.", "right": true },
+            { "value": "④ 테스트 인력을 교체한다.", "right": false }
         ],
-        "correct": 
+        "correct": 2
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "다음 중 테스트 종료 조건에 대한 기준(Exit Criteria)으로 올바르지 않은 것은?",
         "explanation": "",
         "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
+            { "value": "① 전체 요구 사항 중 테스트를 통해 확인된 요구 사항 비율", "right": false },
+            { "value": "② 준비된 테스트 케이스의 통과율(Pass rate)", "right": false },
+            { "value": "③ 해당 제품 개발자의 승인 여부", "right": true },
+            { "value": "④ 발견된 결함 수 대비 수정된 결함 수", "right": false }
         ],
-        "correct": 
+        "correct": 2
     },
     {
         "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "① ", "right": false },
-            { "value": "② ", "right": true },
-            { "value": "③ ", "right": false },
-            { "value": "④ ", "right": false }
-        ],
-        "correct": 
-    },
-
-    {
-        "type": "radio",
-        "question": "",
+        "question": "예외사항 처리 테스트는 시스템이 동작하는 실제 환경과는 다른 환경에서 테스트를 수행하는 것이 중요하다. 이는 테스트 환경과 실제 환경의 차이가 크면 클수록 테스트를 통하여 예외사항 처리의 결함 발견 가능성이 커지기 때문이다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "인수 테스트는 사용자의 요구사항을 만족하는지 확인하기 위한 테스트이다. 따라서 인수 테스트에서 사용하는 테스트 케이스는 사용자 또는 소프트웨어 구입자가 제시할 수 없고 개발자가 제시해야 한다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "서로 다른 시스템과의 상호연동능력을 확인하기 위한 테스트로, 테스트하고자 하는 제품이 다른 제품과 공통으로 환경 및 자원을 공유하면서 그 제품에 유해한 영향을 미치지 않고 올바른 기능을 수행할 수 있는지 확인하는 테스트는 이식성 테스트이다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "모델 기반 테스트는 잘 구축된 모델을 통한 테스트 자동화뿐 아니라, 테스트 모델 구축의 자동화도 가능하게 하여 효율적인 테스트를 수행할 수 있다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "기술 리뷰(Technical review)는 대표 엔지니어(Lead Engineer)가 주재하며 경우에 따라 관리자가 해결해야 하는 이슈가 있으면 관리자도 참가할 수 있다.",
+        "explanation": "",
+        "options": [
+            { "value": "○", "right": true },
+            { "value": "X", "right": false }
+        ],
+        "correct": 0
+    },
+    {
+        "type": "radio",
+        "question": "조건/분기 커버리지는 각 개별 조건식 및 전체 조건식의 결과 값이 참(True)과 거짓(False)을 적어도 한 번 이상 실행시키는 것을 기준으로 하는 테스트 방법이다.",
+        "explanation": "",
+        "options": [
+            { "value": "○", "right": true },
+            { "value": "X", "right": false }
+        ],
+        "correct": 0
+    },
+    {
+        "type": "radio",
+        "question": "오류 추정은 입력값의 명시적 제약사항, 묵시적 제약사항을 테스트 하기에 적절하다. ",
+        "explanation": "",
+        "options": [
+            { "value": "○", "right": true },
+            { "value": "X", "right": false }
+        ],
+        "correct": 0
+    },
+    {
+        "type": "radio",
+        "question": "테스트 계획을 세울 때 테스트 레벨에 따라 중점을 두는 비 기능적 테스트의 범위는 요구사항 명세서를 기준으로 일관되게 적용해야 한다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 로그는 테스트 수행 시, 수행한 작업과 발생한 오류들을 시간대별로 기록한 문서이다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "○", "right": true },
+            { "value": "X", "right": false }
         ],
         "correct": 
     },
     {
         "type": "radio",
-        "question": "",
+        "question": "테스트 산출물과 테스트 환경, 테스트 데이터는 재사용될 가능성이 낮기 때문에 테스트 자산 관리에서 제외된다.",
         "explanation": "",
         "options": [
             { "value": "○", "right": false },
             { "value": "X", "right": true }
         ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
-        ],
-        "correct": 
-    },
-    {
-        "type": "radio",
-        "question": "",
-        "explanation": "",
-        "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
-        ],
-        "correct": 
+        "correct": 1
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음 설명에 적절한 테스트 용어를 기재하시오.",
+        "question_sub": "<다음>요구사항을 잘못 이해하거나, 코딩 시 실수하거나, 테스트 케이스를 잘못 만드는 등 개발 및 테스트 과정에서 일어날 수 있는 사람의 실수",
+        "explanation": "에러|Error|error|오류",
+        "correct": ["에러, 오류, Error, error"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음은 ISO/IEC 25010 품질 특성에 관한 설명이다. 어떤 품질 특성에 대한 설명인지 기술 하시오.",
+        "question_sub": "<다음>특정 조건에서 특정 기간 동안 오동작 없이 의도된 기능을 수행하는 소프트웨어의 능력을 말하며, 부특성으로는 성숙성, 가용성, 결함 허용성, 복구성이 있다.",
+        "explanation": "신뢰성",
+        "correct": ["신뢰성"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음 아래의 보기에 공통으로 들어갈 용어는 무엇인지 기술하시오.",
+        "question_sub": "<보기>소스코드의 (          )가 높은 모듈은 결함을 수정하기 위한 작업이 새로운 결함을 발생시킬 가능성을 높일 수 있고, 유지보수성이 낮아지는데 영향을 미칠 수 있다. 따라서 정적 분석으로 (          )가 높은 모듈을 식별하고 리팩토링 및 재구성을 통해 복잡도를 낮게 만들 필요가 있다.",
+        "explanation": "복잡도|순환 복잡도",
+        "correct": ["복잡도, 순환 복잡도"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": " (           )은 개발이 시작됨과 동시에 테스트 계획 및 설계에 필요한 활동이 시작되며, 개발과 테스트를 동등하게 보고 명확하게 구분한다. 빈칸에 들어갈 소프트웨어 생명 주기 모델은?",
+        "explanation": "V 모델|V&V 모델|Verification & Validation 모델",
+        "correct": ["V 모델,v 모델,V&V 모델, Verification & Validation 모델"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "워크쓰루 회의에서 검사할 작업 및 참가자를 선정하고 회의를 주재하는 사람은?",
+        "explanation": "작성자",
+        "correct": ["작성자"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음은 테스트에 대한 설명이다. 빈칸에 들어갈 적절한 용어를 기재하시오.",
+        "question_sub": "<다음>(           )는(은) 유사한 분야의 소프트웨어에 대한 테스트 경험이나 관련 분야의 지식을 가진 테스터가 경험을 바탕으로 테스트하는 방법이다. 따라서 테스터의 역량에 따라 테스트 품질이 달라지며, 테스트 베이시스의 의존도가 낮으며, 테스트 품질의 일관성을 보장할 수 없다.",
+        "explanation": "경험 기반 테스트|경험 기반 테스팅",
+        "correct": ["경험 기반 테스트, 경험 기반 테스팅"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음 중 입력 인자와 클래스의 개수가 <보기>와 같을 때, 페어와이즈 조합 테스트를 적용하면 생성되는 테스트 케이스는 몇 개인가?[FL-2404-67.jpg]",
+        "explanation": "9개",
+        "correct": ["9개"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.",
+        "question_sub": "<다음>(        )은/는 소프트웨어 변경이 발생한 후에 수행하는 테스트로 소프트웨어에 가해진 변경이 의도하지 않은 결함을 만들지 않았으며 시스템이 기존 요구사항을 충족함을 검증하기 위하여 수행하는 테스트 활동이다.",
+        "explanation": "리그레션 테스팅|regression testing|회귀 테스트|회귀 테스팅",
+        "correct": ["리그레션 테스팅, regression testing, 회귀 테스트, 회귀 테스팅"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음은 결함 보고서에 기록되는 중요한 항목 중 하나에 대한 설명이다. 어떤 항목에 대한 설명인지 적으시오.",
+        "question_sub": "<다음>- 결함이 시스템에 미치는 정도를 표현한다.<br>- 발견자의 관점에서 볼 때 기술적인 측면과 비즈니스적인 측면을 모두 고려하여 검출된 결함이 미칠 수 있는 영향의 범위와 크기를 바탕으로 기술한다.<br>- 결함 해결에 소요되는 예상 시간도 기술할 수 있다.<br>- IEEE 829에서는 Show Stopper, Fatal, No Workaround, Workaround, Cosmetic으로 기술한다.<br>- IEEE std 1044_2009_IEEE Standard Classification for Software Anomalies에서는 Critical, Major, Normal, Minor 등으로 기술한다.",
+        "explanation": "심각도|결함 심각도",
+        "correct": ["심각도, 결함 심각도"]
     },
     {
         "type": "text",
-        "question": "",
-        "explanation": "",
-        "correct": [""]
+        "question": "다음 빈칸에 공통으로 들어갈 용어는 무엇인가?",
+        "question_sub": "테스트 종료 단계의 테스트 종료 보고서는 테스트 수행 활동을 요약하며, 각 테스트 활동에 대한 (          )을 정리한다. 테스트 현황 보고서와 마찬가지로 테스트 계획에서 명시된 (          )에 대한 측정치를 기술한다. 여기서는 테스트 종료 시점의 각 (        )의 최종 측정치를 기술한다.",
+        "explanation": " 테스트 매트릭|Test Metric|테스트 메트릭스|메트릭|메트릭스|Metric|Metrics",
+        "correct": [" 테스트 매트릭, Test Metric, 테스트 메트릭스, 메트릭, 메트릭스, Metric, Metrics"]
     }
 ];
