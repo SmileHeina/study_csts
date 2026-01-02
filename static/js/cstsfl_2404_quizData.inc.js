@@ -618,7 +618,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -628,7 +628,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -638,7 +638,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -648,7 +648,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -658,7 +658,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": true },
-            { "value": "❌",, "right": false }
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -668,7 +668,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": true },
-            { "value": "❌",, "right": false }
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -678,7 +678,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": true },
-            { "value": "❌",, "right": false }
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -688,7 +688,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -698,7 +698,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": true },
-            { "value": "❌",, "right": false }
+            { "value": "❌", "right": false }
         ],
         "correct": 0
     },
@@ -708,7 +708,7 @@ var cstsfl_2404_quizData = [
         "explanation": "",
         "options": [
             { "value": "⭕", "right": false },
-            { "value": "❌",, "right": true }
+            { "value": "❌", "right": true }
         ],
         "correct": 1
     },
@@ -781,6 +781,7 @@ var cstsfl_2404_quizData = [
     }
 
 ];
+
 
 
 
