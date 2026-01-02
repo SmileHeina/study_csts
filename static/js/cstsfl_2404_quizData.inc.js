@@ -310,7 +310,7 @@ var cstsfl_2404_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 제어 흐름 그래프에서 테스트 케이스가 {(x=2, y=0, z=1), (x=0, y=2, z=0)}이면 조건 커버리지는 얼마인가?[FL-2404-26].jpg",
+        "question": "<보기>의 제어 흐름 그래프에서 테스트 케이스가 {(x=2, y=0, z=1), (x=0, y=2, z=0)}이면 조건 커버리지는 얼마인가?[FL-2404-26.jpg]",
         "explanation": "",
         "options": [
             { "value": "① 50%", "right": false },
@@ -349,7 +349,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "한국기업이 운영하는 웹사이트에서 비밀번호는 알파벳, 숫자를 제외한 특수 부호가 최소한 1개 이상 5개 이하로 들어가야 한다. 3-value 경곗값 분석 방법을 사용하여 비밀번호 기능을 테스트하려고 할 때 테스트 입력으로서 적절한 것은?",
-        "question_sub": "(가) ab#$cde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) #$%@**<br>(다) ab%%@k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) abcde",
+        "question_sub": "(가) ab#$cde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) #$%@**<br>(다) ab%%@k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) abcde",
         "explanation": "",
         "options": [
             { "value": "① (가), (나), (다)", "right": false },
@@ -781,5 +781,6 @@ var cstsfl_2404_quizData = [
     }
 
 ];
+
 
 
