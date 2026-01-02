@@ -700,7 +700,7 @@ var cstsfl_2404_quizData = [
             { "value": "○", "right": true },
             { "value": "X", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
@@ -779,4 +779,5 @@ var cstsfl_2404_quizData = [
         "explanation": " 테스트 매트릭|Test Metric|테스트 메트릭스|메트릭|메트릭스|Metric|Metrics",
         "correct": [" 테스트 매트릭, Test Metric, 테스트 메트릭스, 메트릭, 메트릭스, Metric, Metrics"]
     }
+
 ];
