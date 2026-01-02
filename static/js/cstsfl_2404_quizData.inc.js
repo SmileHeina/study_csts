@@ -261,7 +261,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "다음 프로그램에 대해 자료흐름 분석을 수행하여 검출되는 자료 패턴 중에서 잠재적 오류인 패턴은 무엇인가?",
-        "question_sub": "   int foo(int x) {<br>      int y;<br>     if (x==1)<br>        y=x+1;<br>     x=10;<br>    return y;<br>      y=10;<br>   }",
+        "question_sub": "int foo(int x) {<br>&nbsp;&nbsp;&nbsp;&nbsp;int y;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (x==1)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y=x+1;<br>&nbsp;&nbsp;&nbsp;&nbsp;x=10;<br>&nbsp;&nbsp;&nbsp;&nbsp;return y;<br>&nbsp;&nbsp;&nbsp;&nbsp;y=10;<br>}",
         "explanation": "",
         "options": [
             { "value": "① ~u", "right": true },
@@ -298,7 +298,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "다음 코드에 대해 문장 커버리지와 결정 커버리지 100%를 만족시키기 위한 최소 테스트 케이스 수는?",
-        "question_sub": "1      READ P, Q<br>2      IF P+Q > 100 THEN<br>3          PRINT “P+Q IS LARGE”<br>        ENDIF<br>        IF P > 50 THEN<br>         PRINT “P IS LARGE”<br>      ENDIF",
+        "question_sub": "1&nbsp;&nbsp;&nbsp;&nbsp;READ P, Q<br>2&nbsp;&nbsp;&nbsp;&nbsp;IF P+Q > 100 THEN<br>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P+Q IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;IF P > 50 THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
         "explanation": "",
         "options": [
             { "value": "① 문장 커버리지 1개, 결정 커버리지 1개", "right": false },
@@ -323,7 +323,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "<보기>의 프로그램 코드에서 다중 조건 커버리지의 분모에 해당하는 “전체 프로그램 개별 조건들의 조합 수”는 몇 개 인가?",
-        "question_sub": "<보기> If ((x>1) and (y==1)){<br>       z=z/x;<br> }<br><br>If ((x==2) or (z>1)){<br>       z=z+1;<br> }",
+        "question_sub": "<보기>If ((x>1) and (y==1)){<br>&nbsp;&nbsp;&nbsp;&nbsp;z=z/x;<br>}<br><br>If ((x==2) or (z>1)){<br>&nbsp;&nbsp;&nbsp;&nbsp;z=z+1;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 2", "right": false },
@@ -349,7 +349,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "한국기업이 운영하는 웹사이트에서 비밀번호는 알파벳, 숫자를 제외한 특수 부호가 최소한 1개 이상 5개 이하로 들어가야 한다. 3-value 경곗값 분석 방법을 사용하여 비밀번호 기능을 테스트하려고 할 때 테스트 입력으로서 적절한 것은?",
-        "question_sub": "(가) ab#$cde         (나) #$%@**<br>(다) ab%%@k         (라) abcde",
+        "question_sub": "(가) ab#$cde&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) #$%@**<br>(다) ab%%@k&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) abcde",
         "explanation": "",
         "options": [
             { "value": "① (가), (나), (다)", "right": false },
@@ -781,4 +781,5 @@ var cstsfl_2404_quizData = [
     }
 
 ];
+
 
