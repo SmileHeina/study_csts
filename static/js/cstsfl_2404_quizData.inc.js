@@ -298,7 +298,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "다음 코드에 대해 문장 커버리지와 결정 커버리지 100%를 만족시키기 위한 최소 테스트 케이스 수는?",
-        "question_sub": "1&nbsp;&nbsp;&nbsp;&nbsp;READ P, Q<br>2&nbsp;&nbsp;&nbsp;&nbsp;IF P+Q > 100 THEN<br>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P+Q IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>&nbsp;&nbsp;&nbsp;&nbsp;IF P > 50 THEN<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
+        "question_sub": "1&nbsp;&nbsp;&nbsp;&nbsp;READ P, Q<br>2&nbsp;&nbsp;&nbsp;&nbsp;IF P+Q > 100 THEN<br>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P+Q IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF<br>44&nbsp;&nbsp;&nbsp;&nbsp;IF P > 50 THEN<br>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRINT “P IS LARGE”<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
         "explanation": "",
         "options": [
             { "value": "① 문장 커버리지 1개, 결정 커버리지 1개", "right": false },
@@ -617,8 +617,8 @@ var cstsfl_2404_quizData = [
         "question": "예외사항 처리 테스트는 시스템이 동작하는 실제 환경과는 다른 환경에서 테스트를 수행하는 것이 중요하다. 이는 테스트 환경과 실제 환경의 차이가 크면 클수록 테스트를 통하여 예외사항 처리의 결함 발견 가능성이 커지기 때문이다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -627,8 +627,8 @@ var cstsfl_2404_quizData = [
         "question": "인수 테스트는 사용자의 요구사항을 만족하는지 확인하기 위한 테스트이다. 따라서 인수 테스트에서 사용하는 테스트 케이스는 사용자 또는 소프트웨어 구입자가 제시할 수 없고 개발자가 제시해야 한다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -637,8 +637,8 @@ var cstsfl_2404_quizData = [
         "question": "서로 다른 시스템과의 상호연동능력을 확인하기 위한 테스트로, 테스트하고자 하는 제품이 다른 제품과 공통으로 환경 및 자원을 공유하면서 그 제품에 유해한 영향을 미치지 않고 올바른 기능을 수행할 수 있는지 확인하는 테스트는 이식성 테스트이다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -647,8 +647,8 @@ var cstsfl_2404_quizData = [
         "question": "모델 기반 테스트는 잘 구축된 모델을 통한 테스트 자동화뿐 아니라, 테스트 모델 구축의 자동화도 가능하게 하여 효율적인 테스트를 수행할 수 있다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -657,8 +657,8 @@ var cstsfl_2404_quizData = [
         "question": "기술 리뷰(Technical review)는 대표 엔지니어(Lead Engineer)가 주재하며 경우에 따라 관리자가 해결해야 하는 이슈가 있으면 관리자도 참가할 수 있다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌",, "right": false }
         ],
         "correct": 0
     },
@@ -667,8 +667,8 @@ var cstsfl_2404_quizData = [
         "question": "조건/분기 커버리지는 각 개별 조건식 및 전체 조건식의 결과 값이 참(True)과 거짓(False)을 적어도 한 번 이상 실행시키는 것을 기준으로 하는 테스트 방법이다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌",, "right": false }
         ],
         "correct": 0
     },
@@ -677,8 +677,8 @@ var cstsfl_2404_quizData = [
         "question": "오류 추정은 입력값의 명시적 제약사항, 묵시적 제약사항을 테스트 하기에 적절하다. ",
         "explanation": "",
         "options": [
-            { "value": "○", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌",, "right": false }
         ],
         "correct": 0
     },
@@ -687,8 +687,8 @@ var cstsfl_2404_quizData = [
         "question": "테스트 계획을 세울 때 테스트 레벨에 따라 중점을 두는 비 기능적 테스트의 범위는 요구사항 명세서를 기준으로 일관되게 적용해야 한다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -697,8 +697,8 @@ var cstsfl_2404_quizData = [
         "question": "테스트 로그는 테스트 수행 시, 수행한 작업과 발생한 오류들을 시간대별로 기록한 문서이다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": true },
-            { "value": "X", "right": false }
+            { "value": "⭕", "right": true },
+            { "value": "❌",, "right": false }
         ],
         "correct": 0
     },
@@ -707,8 +707,8 @@ var cstsfl_2404_quizData = [
         "question": "테스트 산출물과 테스트 환경, 테스트 데이터는 재사용될 가능성이 낮기 때문에 테스트 자산 관리에서 제외된다.",
         "explanation": "",
         "options": [
-            { "value": "○", "right": false },
-            { "value": "X", "right": true }
+            { "value": "⭕", "right": false },
+            { "value": "❌",, "right": true }
         ],
         "correct": 1
     },
@@ -781,6 +781,7 @@ var cstsfl_2404_quizData = [
     }
 
 ];
+
 
 
 
