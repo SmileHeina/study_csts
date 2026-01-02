@@ -549,7 +549,7 @@ var cstsfl_2403_quizData = [
             { "value": "③ 테스트 케이스 실행 시, 오류를 기록하고 필요 시 테스트 재연이 가능하도록 작성", "right": false },
             { "value": "④ 테스트 결함분석 시, 발견된 결함을 분석하고 각 결함을 구체적으로 정의하여 개발자에게 통보", "right": false }
         ],
-        "correct": 
+        "correct": 0
     },
     {
         "type": "radio",
@@ -780,5 +780,6 @@ var cstsfl_2403_quizData = [
     }
 
 ];
+
 
 
