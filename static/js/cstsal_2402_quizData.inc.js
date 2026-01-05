@@ -309,7 +309,7 @@ var cstsal_2402_quizData = [
     {
         "type": "radio",
         "question": "다음 코드에 대해 MC/DC 커버리지 100%를 만족하는 최소 테스트 케이스 수와 테스트 데이터는?",
-        "question_sub": "<다음>1&nbsp;&nbsp;&nbsp;&nbsp;READ X, Y, Z<br>&nbsp;&nbsp;2&nbsp;R = 0<br>3&nbsp;&nbsp;&nbsp;&nbsp;IF ((X>0) AND (Y>0) AND (Z>0))<br>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R = X+Y+Z<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
+        "question_sub": "<다음>1&nbsp;&nbsp;&nbsp;&nbsp;READ X, Y, Z<br>2&nbsp;&nbsp;&nbsp;R = 0<br>3&nbsp;&nbsp;&nbsp;&nbsp;IF ((X>0) AND (Y>0) AND (Z>0))<br>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R = X+Y+Z<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
         "explanation": "",
         "options": [
             { "value": "① 4개 (X=1, Y=1, Z=1), (X=1, Y=1, Z=-1), (X=1, Y=-1, Z=1), (X=-1, Y=1, Z=1)", "right": true },
@@ -816,6 +816,7 @@ var cstsal_2402_quizData = [
         "correct": ["."]
     }
 ];
+
 
 
 
