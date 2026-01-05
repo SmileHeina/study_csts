@@ -293,10 +293,10 @@ var cstsal_2402_quizData = [
         "question": "<보기>의 프로그램 코드를 시험하기 위해 2개의 테스트 케이스가 도출되었다. 결정/조건 커버리지를 100% 달성하기 위해 실행되어야 할 결정과 조건의 결과로 올바르지 않은 것은?<br>[AL-2402-25.jpg]",
         "explanation": "",
         "options": [
-            { "value": "① (X<Z) : False", "right": false },
-            { "value": "② (Y>8) : True", "right": false },
-            { "value": "③ (X<=Z) : True", "right": true },
-            { "value": "④ (X<Z) or (Y>8): False", "right": false }
+            { "value": "① (X &lt; Z) : False", "right": false },
+            { "value": "② (Y &gt; 8) : True", "right": false },
+            { "value": "③ (X &lt;= Z) : True", "right": true },
+            { "value": "④ (X &lt; Z) or (Y &gt; 8): False", "right": false }
         ],
         "correct": 2
     },
@@ -791,3 +791,4 @@ var cstsal_2402_quizData = [
         "correct": ["."]
     }
 ];
+
