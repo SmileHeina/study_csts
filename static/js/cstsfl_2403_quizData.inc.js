@@ -127,10 +127,10 @@ var cstsfl_2403_quizData = [
         "question": "다음 그림에서 스파이크 테스팅에 해당하는 것은?[FL-2403-11.jpg]",
         "explanation": "",
         "options": [
-            { "value": "", "right": false },
-            { "value": "", "right": false },
-            { "value": "", "right": true },
-            { "value": "", "right": false }
+            { "value": "①", "right": false },
+            { "value": "②", "right": false },
+            { "value": "③", "right": true },
+            { "value": "④", "right": false }
         ],
         "correct": 2
     },
@@ -780,6 +780,7 @@ var cstsfl_2403_quizData = [
     }
 
 ];
+
 
 
 
