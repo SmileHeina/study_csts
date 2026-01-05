@@ -198,7 +198,7 @@ var cstsal_2402_quizData = [
     {
         "type": "radio",
         "question": "다음 빈칸에 들어갈 말로 적절한 것은?",
-        "question_sub": "<다음>(        )의 개념은 코드 통합 작업뿐만 아니라 코드 품질을 평가하는 테스트와 같은 여러 품질관리 활동이 포함되어 있다. (        )은 통합이 빈번하게 이루어질 뿐 아니라 통합되었을 때 즉시 잠재적인 문제가 있는지 바로 결과를 알 수 있기 때문에 소프트웨어 품질을 높이고 통합의 위험을 줄이는 대표적인 방법이다.",
+        "question_sub": "<다음>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)의 개념은 코드 통합 작업뿐만 아니라 코드 품질을 평가하는 테스트와 같은 여러 품질관리 활동이 포함되어 있다. (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은 통합이 빈번하게 이루어질 뿐 아니라 통합되었을 때 즉시 잠재적인 문제가 있는지 바로 결과를 알 수 있기 때문에 소프트웨어 품질을 높이고 통합의 위험을 줄이는 대표적인 방법이다.",
         "explanation": "",
         "options": [
             { "value": "① 리팩토링(Refactoring)", "right": false },
@@ -309,7 +309,7 @@ var cstsal_2402_quizData = [
     {
         "type": "radio",
         "question": "다음 코드에 대해 MC/DC 커버리지 100%를 만족하는 최소 테스트 케이스 수와 테스트 데이터는?",
-        "question_sub": "<다음>1&nbsp;READ X, Y, Z<br>2&nbsp;R = 0<br>3&nbsp;IF ((X>0) AND (Y>0) AND (Z>0))<br>4&nbsp;&nbsp;&nbsp;&nbsp;R = X+Y+Z<br> &nbsp;ENDIF",
+        "question_sub": "<다음>1&nbsp;&nbsp;&nbsp;&nbsp;READ X, Y, Z<br>&nbsp;&nbsp;2&nbsp;R = 0<br>3&nbsp;&nbsp;&nbsp;&nbsp;IF ((X>0) AND (Y>0) AND (Z>0))<br>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R = X+Y+Z<br>&nbsp;&nbsp;&nbsp;&nbsp;ENDIF",
         "explanation": "",
         "options": [
             { "value": "① 4개 (X=1, Y=1, Z=1), (X=1, Y=1, Z=-1), (X=1, Y=-1, Z=1), (X=-1, Y=1, Z=1)", "right": true },
@@ -446,7 +446,7 @@ var cstsal_2402_quizData = [
     {
         "type": "radio",
         "question": "테스트를 계획할 때, 구체적인 테스트 전략을 수립하기에 앞서 테스트 수행의 배경이 되는 다양한 요소들을 테스트 컨텍스트로 식별하고 명세한다. 다음 보기에서 테스트 컨텍스트 항목들로만 구성된 것으로 올바른 것은?",
-        "question_sub": "<보기>(가)테스트 대상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 계획 유형<br>(다)이해관계자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) 위험분석",
+        "question_sub": "<보기>(가)테스트 대상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 계획 유형<br>(다)이해관계자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) 위험분석",
         "explanation": "",
         "options": [
             { "value": "① (가), (나), (다)", "right": true },
@@ -738,13 +738,13 @@ var cstsal_2402_quizData = [
     {
         "type": "text",
         "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.",
-        "question_sub": "<다음>IEEE 1028-2008에서는 (     )의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.",
+        "question_sub": "<다음>IEEE 1028-2008에서는 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.",
         "explanation": "감사, Audit",
         "correct": ["감사", "Audit", "audit"]
     },
     {
         "type": "text",
-        "question": "<보기>에서 설명 하는 테스트 기법은 (      ) 테스트이다.",
+        "question": "<보기>에서 설명 하는 테스트 기법은 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) 테스트이다.",
         "question_sub": "<보기>프로그램 코드에 나타나는 결정들과 관계 없이 조건들의 참 한번, 거짓 한번을 모두 확인하도록 테스트 케이스를 조합하여 수행 한다.",
         "explanation": "조건, Condition",
         "correct": ["조건", "Condition", "condition"]
@@ -766,7 +766,7 @@ var cstsal_2402_quizData = [
     {
         "type": "text",
         "question": "다음 괄호 안에 들어갈 알맞은 단어 하나를 기술하시오.",
-        "question_sub": "<다음>- 테스트 (<u>       </u>)은/는 테스트 현황을 정량적으로 파악하여 테스트의 진척도 및 시스템의 품질을 객관적로 판단하기 위해 수집되는 측정 항목을 말한다.<br>- 테스트 (<u>       </u>)은/는 테스트 완료 기준으로도 사용된다.",
+        "question_sub": "<다음>- 테스트 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은/는 테스트 현황을 정량적으로 파악하여 테스트의 진척도 및 시스템의 품질을 객관적로 판단하기 위해 수집되는 측정 항목을 말한다.<br>- 테스트 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은/는 테스트 완료 기준으로도 사용된다.",
         "explanation": "메트릭(metric) | 측정지표",
         "correct": ["메트릭", "metric", "측정지표"]
     },
@@ -816,5 +816,6 @@ var cstsal_2402_quizData = [
         "correct": ["."]
     }
 ];
+
 
 
