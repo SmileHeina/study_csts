@@ -293,7 +293,7 @@ var cstsfl_2405_quizData = [
     {
         "type": "radio",
         "question": "<보기> 코드를 정적 분석했을 때 발견되는 문제점의 유형은 무엇인가?",
-        "question_sub": "<보기>Bool p;<br>if(p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts('p is true');<br>if(!p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts('p is false');",
+        "question_sub": "<보기>Bool p;<br>if(p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts(\"p is true\");<br>if(!p)<br>&nbsp;&nbsp;&nbsp;&nbsp;puts(\"p is false\");",
         "explanation": "",
         "options": [
             { "value": "① 초기화 하지 않은 변수의 사용", "right": true },
@@ -778,3 +778,4 @@ var cstsfl_2405_quizData = [
         "correct": "테스트 종료"
     }
 ];
+
