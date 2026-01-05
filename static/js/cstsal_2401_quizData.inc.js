@@ -742,7 +742,7 @@ var cstsal_2401_quizData = [
     },
     {
         "type": "text",
-        "question": "<보기>는 ATM에서 현금을 인출하는 시나리오를 도식화한 것이다. 점선으로 표시된 예외적인 상황에 대한 시나리오를 (______) 시나리오라고 부른다.<br>[AL-2401-65.jpg]",
+        "question": "<보기>는 ATM에서 현금을 인출하는 시나리오를 도식화한 것이다. 점선으로 표시된 예외적인 상황에 대한 시나리오를 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) 시나리오라고 부른다.<br>[AL-2401-65.jpg]",
         "explanation": "",
         "correct": ["대안", "Alternative", "alternative", "대체"]
     },
@@ -757,7 +757,7 @@ var cstsal_2401_quizData = [
     {
         "type": "text",
         "question": "테스트 계획 수립 시 수행하는 활동으로 다음 빈칸에 들어갈 알맞은 용어는 무엇인가?",
-        "question_sub": "<다음>- (______)(이)란 결함을 검출한 테스트 절차를 활용하여 검출된 결함의 해결 여부가 검증될 때가지 반복적으로 수행하는 활동이다.<br>- (______)은(는) 기존 결함을 검출하였던 테스트 절차의 수행을 반복하기 때문에 Record&Playback 도구와 같은 자동화 도구를 이용할 수 있다.",
+        "question_sub": "<다음>- (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)(이)란 결함을 검출한 테스트 절차를 활용하여 검출된 결함의 해결 여부가 검증될 때가지 반복적으로 수행하는 활동이다.<br>- (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은(는) 기존 결함을 검출하였던 테스트 절차의 수행을 반복하기 때문에 Record&Playback 도구와 같은 자동화 도구를 이용할 수 있다.",
         "explanation": "",
         "correct": ["재테스팅", "Retesting", "retesting","Re-Testing","re-Testing"]
     },
@@ -776,7 +776,7 @@ var cstsal_2401_quizData = [
     {
         "type": "text",
         "question": "다음의 보기의 빈칸에 공통으로 들어갈 용어는 무엇인가?",
-        "question_sub": "<보기>- 테스트 효과성과 효율성을 높이기 위하여 (______)을(를) 바탕으로 테스트 대상, 피처 그리고 테스트 전략 등을 결정하였다.<br>- (______)이 테스트 계획의 가장 핵심적인 요소이다.<br>- (______)의 정확성이 테스트 효과와 효율성에 많은 영항을 미친다.",
+        "question_sub": "<보기>- 테스트 효과성과 효율성을 높이기 위하여 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)을(를) 바탕으로 테스트 대상, 피처 그리고 테스트 전략 등을 결정하였다.<br>- (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)이 테스트 계획의 가장 핵심적인 요소이다.<br>- (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)의 정확성이 테스트 효과와 효율성에 많은 영항을 미친다.",
         "explanation": "",
         "correct": ["위험 분석"]
     },
@@ -813,3 +813,4 @@ var cstsal_2401_quizData = [
         "correct": ["."]
     }
 ];
+
