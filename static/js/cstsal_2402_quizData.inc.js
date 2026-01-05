@@ -98,7 +98,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 평가 방법을 통해 확인할 수 있는 품질 특성은 무엇인가?<br>[AL-2402-09.jpg]",
+        "question": "<보기>의 평가 방법을 통해 확인할 수 있는 품질 특성은 무엇인가?",
+        "question_sub": "<보기>- 접근 통제가 필요한 데이터 항목 개수 대비 비인가자가 접근 가능한 데이터 항목의 개수를 비교하여 평가<br>- 암호화/복호화가 필요한 데이터 항목 개수 대비 정확히 암호화/복호화한 데이터 항목의 개수를 비교하여 평가<br>- 암호화 알고리즘 사용 개수 대비 손상 및 수용 불가능한 사용 위험 암호화 알고리즘의 개수를 비교하여 평가",
         "explanation": "",
         "options": [
             { "value": "① 기밀성", "right": true },
@@ -122,7 +123,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 요구사항을 확인하기 위해 수행되어야할 비기능 테스트로 올바른 것은?<br>[AL-2402-11.jpg]",
+        "question": "<보기>의 요구사항을 확인하기 위해 수행되어야할 비기능 테스트로 올바른 것은?",
+        "question_sub": "<보기>NON-ActiveX 기반으로 최소 상이한 3종 이상(IE, Firefox, Opera, Chrome, safari 등)의 웹브라우저를 지원하여야 함",
         "explanation": "",
         "options": [
             { "value": "① 이식성 테스트", "right": true },
@@ -134,7 +136,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음의 평가 방법들은 어떤 품질 특성의 평가를 위한 방법인가?<br>[AL-2402-12.jpg]",
+        "question": "다음의 평가 방법들은 어떤 품질 특성의 평가를 위한 방법인가?",
+        "question_sub": "<다음>∙인지적 워크쓰루(Cognitive Walkthrough)<br>∙ FGI(Focus Group Interview)<br>∙휴리스틱 평가(Heuristic Evaluation)",
         "explanation": "",
         "options": [
             { "value": "① 사용성", "right": true },
@@ -194,7 +197,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 빈칸에 들어갈 말로 적절한 것은?<br>[AL-2402-17.jpg]",
+        "question": "다음 빈칸에 들어갈 말로 적절한 것은?",
+        "question_sub": "<다음>(        )의 개념은 코드 통합 작업뿐만 아니라 코드 품질을 평가하는 테스트와 같은 여러 품질관리 활동이 포함되어 있다. (        )은 통합이 빈번하게 이루어질 뿐 아니라 통합되었을 때 즉시 잠재적인 문제가 있는지 바로 결과를 알 수 있기 때문에 소프트웨어 품질을 높이고 통합의 위험을 줄이는 대표적인 방법이다.",
         "explanation": "",
         "options": [
             { "value": "① 리팩토링(Refactoring)", "right": false },
@@ -218,7 +222,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "반드시 관리자가 참여하지 않아야 하는 리뷰를 모두 고른 것은?<br>[AL-2402-19.jpg]",
+        "question": "반드시 관리자가 참여하지 않아야 하는 리뷰를 모두 고른 것은?",
+        "question_sub": "<보기>(가) 워크쓰루<br>(나) 관리 리뷰<br>(다) 인스펙션<br>(라) 기술 리뷰",
         "explanation": "",
         "options": [
             { "value": "① (가), (나)", "right": false },
@@ -266,7 +271,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 프로그램 코드에서 {(x=1, y=2, z=2), (x=15, y=1, z=5)} 의 테스트 케이스가 실행될 때 결정 커버리지는 몇 인가? (소수점 둘째 자리에서 반올림)<br>[AL-2402-23.jpg]",
+        "question": "<보기>의 프로그램 코드에서 {(x=1, y=2, z=2), (x=15, y=1, z=5)} 의 테스트 케이스가 실행될 때 결정 커버리지는 몇 인가? (소수점 둘째 자리에서 반올림)",
+        "question_sub": "<보기>If ((x>10) and (y==1)){<br>&nbsp;&nbsp;&nbsp;&nbsp;z = x + y;<br>}<br>If ((x<z) or (y>8)){<br>&nbsp;&nbsp;&nbsp;&nbsp;z = x;<br>}<br>If (x <= z){<br>&nbsp;&nbsp;&nbsp;&nbsp;return z;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 50%", "right": false },
@@ -302,7 +308,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 코드에 대해 MC/DC 커버리지 100%를 만족하는 최소 테스트 케이스 수와 테스트 데이터는?<br>[AL-2402-26.jpg]",
+        "question": "다음 코드에 대해 MC/DC 커버리지 100%를 만족하는 최소 테스트 케이스 수와 테스트 데이터는?",
+        "question_sub": "<다음>1&nbsp;READ X, Y, Z<br>2&nbsp;R = 0<br>3&nbsp;IF ((X>0) AND (Y>0) AND (Z>0))<br>4&nbsp;&nbsp;&nbsp;&nbsp;R = X+Y+Z<br> &nbsp;ENDIF",
         "explanation": "",
         "options": [
             { "value": "① 4개 (X=1, Y=1, Z=1), (X=1, Y=1, Z=-1), (X=1, Y=-1, Z=1), (X=-1, Y=1, Z=1)", "right": true },
@@ -314,7 +321,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>에서 명세 기반 테스트 기법으로 짝지어진 것은?<br>[AL-2402-27.jpg]",
+        "question": "<보기>에서 명세 기반 테스트 기법으로 짝지어진 것은?",
+        "question_sub": "<보기>(가) 경곗값 분석<br>(나) 조합 테스트<br>(다) 다중 조건 테스트<br>(라) 기본 경로 테스트<br>(마) 시나리오 테스트<br>(바) 오류 추정",
         "explanation": "",
         "options": [
             { "value": "① (가), (나), (다)", "right": false },
@@ -338,7 +346,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "<보기>의 프로그램은 0에서부터 100점까지의 점수 중 70점 이상이면 “pass”를 70점 미만이면 “fail”을 반환한다. 다음 중 결함을 가장 효율적으로 발견할 수 있는 테스트 설계 기법과 입력값을 짝지은 것으로 올바른 것은?<br>[AL-2402-29.jpg]",
+        "question": "<보기>의 프로그램은 0에서부터 100점까지의 점수 중 70점 이상이면 “pass”를 70점 미만이면 “fail”을 반환한다. 다음 중 결함을 가장 효율적으로 발견할 수 있는 테스트 설계 기법과 입력값을 짝지은 것으로 올바른 것은?",
+        "question_sub": "<보기>int checkScore(int score) {<br>&nbsp;&nbsp;&nbsp;&nbsp;if ((score > 100) || (score < 0))<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return “error”;<br>&nbsp;&nbsp;&nbsp;&nbsp;if (score > 70)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return “pass”;<br>&nbsp;&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return “fail”;<br>}",
         "explanation": "",
         "options": [
             { "value": "① 경계 값 분석 기법, 70", "right": true },
@@ -362,7 +371,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중 분류 트리 기법의 절차를 올바르게 정리한 것은?<br>[AL-2402-31.jpg]",
+        "question": "다음 중 분류 트리 기법의 절차를 올바르게 정리한 것은?",
+        "question_sub": "<보기>(가) 각 클래스에 대해서 애스펙트 식별과 분할을 반복한다.<br>(나) 명세를 분석하여 대상 클래스에 적용할 수 있는 애스펙트를 식별한다.<br>(다) 분류 트리의 단말 노드들을 조합하여 테스트 케이스를 설계한다.<br>(라) 애스펙트에 대해서 클래스를 여러 클래스로 분할한다.",
         "explanation": "",
         "options": [
             { "value": "① (나) - (가) - (라) - (다)", "right": false },
@@ -374,7 +384,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "휴대폰 번호 10자리를 입력 받는 입력 항목에 대해 오류 추정을 적용하여 테스트하려고 한다. 이 때 테스트할 수 있는 항목을 모두 고른 것은?<br>[AL-2402-32.jpg]",
+        "question": "휴대폰 번호 10자리를 입력 받는 입력 항목에 대해 오류 추정을 적용하여 테스트하려고 한다. 이 때 테스트할 수 있는 항목을 모두 고른 것은?",
+        "question_sub": "<보기>(가) 입력값이 숫자가 아닌 경우<br>(나) 입력값이 10자리 미만인 경우<br>(다) 입력값이 10자리 이상인 경우<br>(라) 입력 항목에 아무것도 입력하지 않는 경우",
         "explanation": "",
         "options": [
             { "value": "① (가)", "right": false },
@@ -434,7 +445,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "테스트를 계획할 때, 구체적인 테스트 전략을 수립하기에 앞서 테스트 수행의 배경이 되는 다양한 요소들을 테스트 컨텍스트로 식별하고 명세한다. 다음 보기에서 테스트 컨텍스트 항목들로만 구성된 것으로 올바른 것은?<br>[AL-2402-37.jpg]",
+        "question": "테스트를 계획할 때, 구체적인 테스트 전략을 수립하기에 앞서 테스트 수행의 배경이 되는 다양한 요소들을 테스트 컨텍스트로 식별하고 명세한다. 다음 보기에서 테스트 컨텍스트 항목들로만 구성된 것으로 올바른 것은?",
+        "question_sub": "<보기>(가)테스트 대상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(나) 테스트 계획 유형<br>(다)이해관계자&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(라) 위험분석",
         "explanation": "",
         "options": [
             { "value": "① (가), (나), (다)", "right": true },
@@ -470,7 +482,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?<br>[AL-2402-40.jpg]",
+        "question": "다음 중에서 테스트 완료 기준으로 사용되는 예를 모두 고른 것은?",
+        "question_sub": "<다음>(가) 95%의 문장 커버리지가 충족되어야 한다.<br>(나) 90%의 테스트 케이스(테스트 절차)가 통과되어야 한다.<br>(다) 발견된 결함의 수가 2개 이하이어야 한다.",
         "explanation": "",
         "options": [
             { "value": "① (가)", "right": false },
@@ -506,7 +519,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음의 설명에 해당하는 테스트 산출물은 무엇인가?<br>[AL-2402-43.jpg]",
+        "question": "다음의 설명에 해당하는 테스트 산출물은 무엇인가?",
+        "question_sub": "<다음>- 테스트 계획서에 명시된 테스트 컨텍스트, 위험 요소, 테스트 전략과 테스트 수행 계획을 바탕으로 테스트 범위와 전략을 구체화하여 작성<br>- 테스트 설계 기법, 커버리지 명시",
         "explanation": "",
         "options": [
             { "value": "① 테스트 로그", "right": false },
@@ -578,7 +592,8 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음과 같이 테스트가 수행되었다. 테스트 케이스 효율성은 얼마인가?<br>[AL-2402-49.jpg]",
+        "question": "다음과 같이 테스트가 수행되었다. 테스트 케이스 효율성은 얼마인가?",
+        "question_sub": "<다음>∙ 개발된 테스트 케이스 수 = 10개<br>∙ 예상 결과와 동일한 결과가 산출된 테스트 케이스 수 = 4<br>∙ 디버깅을 통해서 확인된 결함 수 = 1",
         "explanation": "",
         "options": [
             { "value": "① 1.0", "right": false },
@@ -702,13 +717,15 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "text",
-        "question": "다음 설명에 적절한 테스트 용어를 기재하시오.<br>[AL-2402-61.jpg]",
+        "question": "다음 설명에 적절한 테스트 용어를 기재하시오.",
+        "question_sub": "<다음>테스트 대상 단위 소프트웨어 모듈간 연동 결함 식별 및 연동 기능을 검증하는 테스트 레벨",
         "explanation": "통합 테스트",
         "correct": ["통합 테스트"]
     },
     {
         "type": "text",
-        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?<br>[AL-2402-62.jpg]",
+        "question": "다음 사례의 내용 중 밑줄 친 부분은 어떤 테스트에 대한 설명인가?",
+        "question_sub": "<다음>최근 릴리즈된 버전에 대해 테스트 팀에서 시스템 테스트를 했는데 꽤 많은 결함이 발견되었다. 특히 기본 기능 관련 동작에서 많은 결함이 발견되었다. 테스트팀은 발견한 결함으로 시스템에 등록하고 개발자에게 할당했다.<br>개발자는 원인을 분석한 후 소스를 수정하여 이를 새로운 버전에 반영하였다. 테스트 팀에서는 개발자의 결함이 제대로 수정되었는지 확인하기 위해 <u>동일한 테스트 케이스를 사용하여 새로운 버전을 테스트</u> 하였다.",
         "explanation": "재테스팅, Re-testing, 재테스트",
         "correct": ["재테스팅", "Re-testing" , "재테스트", "re-testing"]
     },
@@ -720,37 +737,43 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "text",
-        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.<br>[AL-2402-64.jpg]",
+        "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.",
+        "question_sub": "<다음>IEEE 1028-2008에서는 (     )의 목적을 소프트웨어 제품 및 프로세스가 규제, 표준, 가이드라인, 계획, 절차를 준수하고 있는지를 독립적으로 평가하는 것으로 규정하고 있다.",
         "explanation": "감사, Audit",
         "correct": ["감사", "Audit", "audit"]
     },
     {
         "type": "text",
-        "question": "<보기>에서 설명 하는 테스트 기법은 (      ) 테스트이다.<br>[AL-2402-65.jpg]",
+        "question": "<보기>에서 설명 하는 테스트 기법은 (      ) 테스트이다.",
+        "question_sub": "<보기>프로그램 코드에 나타나는 결정들과 관계 없이 조건들의 참 한번, 거짓 한번을 모두 확인하도록 테스트 케이스를 조합하여 수행 한다.",
         "explanation": "조건, Condition",
         "correct": ["조건", "Condition", "condition"]
     },
     {
         "type": "text",
-        "question": "다음의 빈칸에 공통적으로 들어갈 알맞은 용어는 무엇인가?<br>[AL-2402-66.jpg]",
+        "question": "다음의 빈칸에 공통적으로 들어갈 알맞은 용어는 무엇인가?",
+        "question_sub": "<다음>MCDC는 (  가  ) 테스트와 (  나  ) 테스트 요건을 모두 만족해야한다. (  나  )을 구성하는 각 (  가   )이 독립적으로 (  나  )의 결과에 영향을 미쳐야한다. ",
         "explanation": "가: 조건(condition), 나: 결정(decision)",
         "correct": ["가:조건, 나:결정", "가:condition, 나:decision"]
     },
     {
         "type": "text",
-        "question": "다음은 상태 전이 테스트를 수행하는 절차를 무작위로 나열한 것이다. 테스트 수행 절차를 순서대로 쓰시오.<br>[AL-2402-67.jpg]",
+        "question": "다음은 상태 전이 테스트를 수행하는 절차를 무작위로 나열한 것이다. 테스트 수행 절차를 순서대로 쓰시오.",
+        "question_sub": "<다음>가. 상태 전이도에서 전이 트리(Transition Tree)를 만든다.<br>나. 유효하지 않은 전이를 테스트하기 위한 테스트 케이스들을 생성한다.<br>다. 전이 트리에서 각 전이 경로를 테스트하는 테스트 케이스들을 생성한다.<br>라. 테스트하려고 하는 프로그램의 명세를 상태 전이도를 사용하여 모델링한다.",
         "explanation": "라→가→다→나",
         "correct": ["라-가-다-나"]
     },
     {
         "type": "text",
-        "question": "다음 괄호 안에 들어갈 알맞은 단어 하나를 기술하시오.<br>[AL-2402-68.jpg]",
+        "question": "다음 괄호 안에 들어갈 알맞은 단어 하나를 기술하시오.",
+        "question_sub": "<다음>- 테스트 (<u>       </u>)은/는 테스트 현황을 정량적으로 파악하여 테스트의 진척도 및 시스템의 품질을 객관적로 판단하기 위해 수집되는 측정 항목을 말한다.<br>- 테스트 (<u>       </u>)은/는 테스트 완료 기준으로도 사용된다.",
         "explanation": "메트릭(metric) | 측정지표",
         "correct": ["메트릭", "metric", "측정지표"]
     },
     {
         "type": "text",
-        "question": "<보기>의 설명에 해당하는 테스트 산출물은 무엇인가?<br>[AL-2402-69.jpg]",
+        "question": "<보기>의 설명에 해당하는 테스트 산출물은 무엇인가?",
+        "question_sub": "<보기>- 테스트 대상 및 범위를 기술한다.<br>- 테스트의 가정 및 제약 사항을 포함한다.<br>- 테스트 중단 및 재시작 기준을 결정한다.<br>- 테스트 조직 및 인력 구성에 대해 기술한다.",
         "explanation": "",
         "correct": ["테스트 계획서"]
     },
@@ -774,13 +797,15 @@ var cstsal_2402_quizData = [
     },
     {
         "type": "text",
-        "question": "아래 작성된 내용은 자율 주행의 모터 제어 프로그램 명세이다. 이를 분류 트리 기법으로 분석하여 페어와이즈(pair-wise)로 조합할 경우 발생하는 테스트 케이스를 모두 기술하시오.<br>[AL-2402-73.jpg]",
+        "question": "아래 작성된 내용은 자율 주행의 모터 제어 프로그램 명세이다. 이를 분류 트리 기법으로 분석하여 페어와이즈(pair-wise)로 조합할 경우 발생하는 테스트 케이스를 모두 기술하시오.",
+        "question_sub": "<다음>자율 주행 자동차는 속도에 따라 회전 모터를 제어한다. 저속(30km 이하)일 경우에는 회전 모터를 30rpm으로 제어하고, 중속(30km 이상, 80km 이하)일 경우에는 20rpm, 고속(80km 이상)일 경우에는 10rpm으로 제어한다. 또한 낮(08 ~ 18시)일 경우에는 회전 모터를 기존의 속도에 5rpm을 높여서 제어하고 밤(18 ~ 08시)일 경우에는 5rpm을 낮춰서 제어한다. ",
         "explanation": "[AL-2402-73_ex.jpg]",
         "correct": ["."]
     },
     {
         "type": "text",
-        "question": "아래 [보기]를 읽고, 다음 질문에 답하시오.<br>[AL-2402-74.jpg]",
+        "question": "아래 <보기>를 읽고, 다음 질문에 답하시오.<br>(1) 테스트 팀 A 또는 B가 발견하지 못한 결함의 수는?<br>(2) 테스트 팀 A 또는 B가 발견하지 못한 결함의 비율은?",
+        "question_sub": "<보기>테스트팀 A와 B로 두 개의 팀이 테스트를 진행하였다.<br>A팀은 95개의 결함을 발견하고 B팀은 80개의 결함을 발견하였으며,<br>공통 조사를 통하여 두 팀에서 공통으로 발견된 결함은 76개라고 한다.<br>(단, 테스트팀의 독립성과 결함의 독립성을 가정한다.)",
         "explanation": "[AL-2402-74_ex.jpg]",
         "correct": ["."]
     },
@@ -791,4 +816,5 @@ var cstsal_2402_quizData = [
         "correct": ["."]
     }
 ];
+
 
