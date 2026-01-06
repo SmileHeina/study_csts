@@ -40,7 +40,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "<보기>의 요구사항 명세서 기준으로 반드시 수행되어야 할 테스트 유형으로 올바르지 않은것은?",
-        "question_sub": "<보기>1. 기능적 요구사항<br> 1.1 기능 1<br> 1.2 기능 2<br>2. 품질 요구사항<br> 2.1 성능 요구사항<br> 2.2 보안 요구사항<br> 2.3 신뢰성 요구사항",
+        "question_sub": "<보기>1. 기능적 요구사항<br>&nbsp;&nbsp;&nbsp;&nbsp;1.1 기능 1<br>&nbsp;&nbsp;&nbsp;&nbsp;1.2 기능 2<br>2. 품질 요구사항<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 성능 요구사항<br>&nbsp;&nbsp;&nbsp;&nbsp;2.2 보안 요구사항<br>&nbsp;&nbsp;&nbsp;&nbsp;2.3 신뢰성 요구사항",
         "explanation": "",
         "options": [
             { "value": "① 부하 테스트", "right": false },
@@ -112,7 +112,7 @@ var cstsfl_2404_quizData = [
     },
     {
         "type": "radio",
-        "question": "다음 중 아래 괄호(   ) 안에 들어갈 테스팅의 종류로 올바른 것은 무엇인가?",
+        "question": "다음 중 아래 괄호(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) 안에 들어갈 테스팅의 종류로 올바른 것은 무엇인가?",
         "question_sub": "<보기>김PM은 문화공연 예약 웹사이트의 총괄 PM이다.<br>김PM은 사용자 요구사항에 따라 2가지 필수 테스팅을 수행하고 결과 보고서를 제출해야 한다.<br>먼저 공연 예약을 위하여 짧은 시간에 사용자가 몰릴 때 시스템의 반응을 측정하는 ( 가 ) 테 스팅을 수행해야 하고,<br>다음으로는 예약시스템의 처리 능력 이상의 부하, 즉 임계점 이상의 사용자 예약 신청 부하를 가하여 비정상적인 상황에서의 예약 처리를 테스트하는 ( 나 ) 테스팅을 수행해야 한다.",
         "explanation": "",
         "options": [
@@ -151,7 +151,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "radio",
         "question": "다음 괄호 안에 들어갈 가장 알맞은 방법은 무엇인가?",
-        "question_sub": "ISO/IEC/IEEE 29119에서는 테스트 방법을 (      ) 기반 테스트, 명세 기반 테스트, 구조 기반 테스트로 분류한다.",
+        "question_sub": "ISO/IEC/IEEE 29119에서는 테스트 방법을 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) 기반 테스트, 명세 기반 테스트, 구조 기반 테스트로 분류한다.",
         "explanation": "",
         "options": [
             { "value": "① 경험", "right": true },
@@ -729,13 +729,13 @@ var cstsfl_2404_quizData = [
     {
         "type": "text",
         "question": "다음 아래의 보기에 공통으로 들어갈 용어는 무엇인지 기술하시오.",
-        "question_sub": "<보기>소스코드의 (          )가 높은 모듈은 결함을 수정하기 위한 작업이 새로운 결함을 발생시킬 가능성을 높일 수 있고, 유지보수성이 낮아지는데 영향을 미칠 수 있다. 따라서 정적 분석으로 (          )가 높은 모듈을 식별하고 리팩토링 및 재구성을 통해 복잡도를 낮게 만들 필요가 있다.",
+        "question_sub": "<보기>소스코드의 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)가 높은 모듈은 결함을 수정하기 위한 작업이 새로운 결함을 발생시킬 가능성을 높일 수 있고, 유지보수성이 낮아지는데 영향을 미칠 수 있다. 따라서 정적 분석으로 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가 높은 모듈을 식별하고 리팩토링 및 재구성을 통해 복잡도를 낮게 만들 필요가 있다.",
         "explanation": "복잡도|순환 복잡도",
         "correct": ["복잡도, 순환 복잡도"]
     },
     {
         "type": "text",
-        "question": " (           )은 개발이 시작됨과 동시에 테스트 계획 및 설계에 필요한 활동이 시작되며, 개발과 테스트를 동등하게 보고 명확하게 구분한다. 빈칸에 들어갈 소프트웨어 생명 주기 모델은?",
+        "question": " (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은 개발이 시작됨과 동시에 테스트 계획 및 설계에 필요한 활동이 시작되며, 개발과 테스트를 동등하게 보고 명확하게 구분한다. 빈칸에 들어갈 소프트웨어 생명 주기 모델은?",
         "explanation": "V 모델|V&V 모델|Verification & Validation 모델",
         "correct": ["V 모델,v 모델,V&V 모델, Verification & Validation 모델"]
     },
@@ -748,7 +748,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "text",
         "question": "다음은 테스트에 대한 설명이다. 빈칸에 들어갈 적절한 용어를 기재하시오.",
-        "question_sub": "<다음>(           )는(은) 유사한 분야의 소프트웨어에 대한 테스트 경험이나 관련 분야의 지식을 가진 테스터가 경험을 바탕으로 테스트하는 방법이다. 따라서 테스터의 역량에 따라 테스트 품질이 달라지며, 테스트 베이시스의 의존도가 낮으며, 테스트 품질의 일관성을 보장할 수 없다.",
+        "question_sub": "<다음>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)는(은) 유사한 분야의 소프트웨어에 대한 테스트 경험이나 관련 분야의 지식을 가진 테스터가 경험을 바탕으로 테스트하는 방법이다. 따라서 테스터의 역량에 따라 테스트 품질이 달라지며, 테스트 베이시스의 의존도가 낮으며, 테스트 품질의 일관성을 보장할 수 없다.",
         "explanation": "경험 기반 테스트|경험 기반 테스팅",
         "correct": ["경험 기반 테스트, 경험 기반 테스팅"]
     },
@@ -761,7 +761,7 @@ var cstsfl_2404_quizData = [
     {
         "type": "text",
         "question": "다음 괄호 안에 들어갈 알맞은 단어를 기술하시오.",
-        "question_sub": "<다음>(        )은/는 소프트웨어 변경이 발생한 후에 수행하는 테스트로 소프트웨어에 가해진 변경이 의도하지 않은 결함을 만들지 않았으며 시스템이 기존 요구사항을 충족함을 검증하기 위하여 수행하는 테스트 활동이다.",
+        "question_sub": "<다음>(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)은/는 소프트웨어 변경이 발생한 후에 수행하는 테스트로 소프트웨어에 가해진 변경이 의도하지 않은 결함을 만들지 않았으며 시스템이 기존 요구사항을 충족함을 검증하기 위하여 수행하는 테스트 활동이다.",
         "explanation": "리그레션 테스팅|regression testing|회귀 테스트|회귀 테스팅",
         "correct": ["리그레션 테스팅, regression testing, 회귀 테스트, 회귀 테스팅"]
     },
@@ -775,12 +775,13 @@ var cstsfl_2404_quizData = [
     {
         "type": "text",
         "question": "다음 빈칸에 공통으로 들어갈 용어는 무엇인가?",
-        "question_sub": "테스트 종료 단계의 테스트 종료 보고서는 테스트 수행 활동을 요약하며, 각 테스트 활동에 대한 (          )을 정리한다. 테스트 현황 보고서와 마찬가지로 테스트 계획에서 명시된 (          )에 대한 측정치를 기술한다. 여기서는 테스트 종료 시점의 각 (        )의 최종 측정치를 기술한다.",
+        "question_sub": "테스트 종료 단계의 테스트 종료 보고서는 테스트 수행 활동을 요약하며, 각 테스트 활동에 대한 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)을 정리한다. 테스트 현황 보고서와 마찬가지로 테스트 계획에서 명시된 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)에 대한 측정치를 기술한다. 여기서는 테스트 종료 시점의 각 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)의 최종 측정치를 기술한다.",
         "explanation": " 테스트 매트릭|Test Metric|테스트 메트릭스|메트릭|메트릭스|Metric|Metrics",
         "correct": [" 테스트 매트릭, Test Metric, 테스트 메트릭스, 메트릭, 메트릭스, Metric, Metrics"]
     }
 
 ];
+
 
 
 
